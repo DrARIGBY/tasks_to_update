@@ -1,0 +1,322 @@
+{
+  "schema_version": "1.0.0",
+  "submission_id": "mfu_1775764988847_avifmz",
+  "generated_at": "2026-04-09T20:03:08.846Z",
+  "extension_version": "1.14.0",
+  "project_name": "THE_Tester",
+  "machine_id": "machine_setjcq",
+  "total_steps": 8,
+  "total_files_changed": 39,
+  "providers_used": [
+    "codex"
+  ],
+  "steps": [
+    {
+      "step_id": "7.7",
+      "step_name": "Data source observation & column selection",
+      "phase_id": 7,
+      "phase_name": "Integration Testing & End-to-End Orchestration",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "test",
+      "completed_at": "2026-04-09T20:00:55.346Z",
+      "duration_ms": 56307,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/src/data_source_config.json",
+          "action": "modified",
+          "lines": 199
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/PKG-INFO",
+          "action": "modified",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/SOURCES.txt",
+          "action": "modified",
+          "lines": 245
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/dependency_links.txt",
+          "action": "modified",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/top_level.txt",
+          "action": "modified",
+          "lines": 11
+        }
+      ]
+    },
+    {
+      "step_id": "7.1",
+      "step_name": "Validate venv and install remaining integration deps",
+      "phase_id": 7,
+      "phase_name": "Integration Testing & End-to-End Orchestration",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "validate",
+      "completed_at": "2026-04-09T20:00:55.599Z",
+      "duration_ms": 56606,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/src/data_source_config.json",
+          "action": "modified",
+          "lines": 199
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/PKG-INFO",
+          "action": "modified",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/SOURCES.txt",
+          "action": "modified",
+          "lines": 245
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/dependency_links.txt",
+          "action": "modified",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/top_level.txt",
+          "action": "modified",
+          "lines": 11
+        }
+      ]
+    },
+    {
+      "step_id": "7.99_columns",
+      "step_name": "Data source observation & column selection",
+      "phase_id": 7,
+      "phase_name": "Integration Testing & End-to-End Orchestration",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "unknown",
+      "completed_at": "2026-04-09T20:00:56.776Z",
+      "duration_ms": 57758,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/src/data_source_config.json",
+          "action": "modified",
+          "lines": 199
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/PKG-INFO",
+          "action": "modified",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/SOURCES.txt",
+          "action": "modified",
+          "lines": 245
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/dependency_links.txt",
+          "action": "modified",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/top_level.txt",
+          "action": "modified",
+          "lines": 11
+        }
+      ]
+    },
+    {
+      "step_id": "7.2",
+      "step_name": "Data adapter: prepare all_modules",
+      "phase_id": 7,
+      "phase_name": "Integration Testing & End-to-End Orchestration",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "coding_simple",
+      "completed_at": "2026-04-09T20:01:56.855Z",
+      "duration_ms": 59763,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/webapp-testing/SKILL.md",
+          "action": "created",
+          "lines": 96
+        },
+        {
+          "file": "Scripts/_skills/webapp-testing/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/webapp-testing/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/webapp-testing/scripts/with_server.py",
+          "action": "created",
+          "lines": 106
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/PKG-INFO",
+          "action": "modified",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/SOURCES.txt",
+          "action": "modified",
+          "lines": 248
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/dependency_links.txt",
+          "action": "modified",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/top_level.txt",
+          "action": "modified",
+          "lines": 11
+        }
+      ]
+    },
+    {
+      "step_id": "7.3",
+      "step_name": "Build CLI orchestrator for full test pipeline",
+      "phase_id": 7,
+      "phase_name": "Integration Testing & End-to-End Orchestration",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "coding_complex",
+      "completed_at": "2026-04-09T20:01:56.883Z",
+      "duration_ms": 59766,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/PKG-INFO",
+          "action": "modified",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/SOURCES.txt",
+          "action": "modified",
+          "lines": 248
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/dependency_links.txt",
+          "action": "modified",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/top_level.txt",
+          "action": "modified",
+          "lines": 11
+        }
+      ]
+    },
+    {
+      "step_id": "7.5",
+      "step_name": "Run multi-capability batch test and verify outputs",
+      "phase_id": 7,
+      "phase_name": "Integration Testing & End-to-End Orchestration",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "test",
+      "completed_at": "2026-04-09T20:02:55.621Z",
+      "duration_ms": 58548,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/PKG-INFO",
+          "action": "modified",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/SOURCES.txt",
+          "action": "modified",
+          "lines": 248
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/dependency_links.txt",
+          "action": "modified",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/top_level.txt",
+          "action": "modified",
+          "lines": 11
+        }
+      ]
+    },
+    {
+      "step_id": "7.6",
+      "step_name": "Validate Streamlit dashboard with real test data",
+      "phase_id": 7,
+      "phase_name": "Integration Testing & End-to-End Orchestration",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "validate",
+      "completed_at": "2026-04-09T20:02:57.688Z",
+      "duration_ms": 60642,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/PKG-INFO",
+          "action": "modified",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/SOURCES.txt",
+          "action": "modified",
+          "lines": 248
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/dependency_links.txt",
+          "action": "modified",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/top_level.txt",
+          "action": "modified",
+          "lines": 11
+        }
+      ]
+    },
+    {
+      "step_id": "7.4",
+      "step_name": "Run end-to-end integration test with sample capability",
+      "phase_id": 7,
+      "phase_name": "Integration Testing & End-to-End Orchestration",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "test",
+      "completed_at": "2026-04-09T20:02:58.444Z",
+      "duration_ms": 61364,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/PKG-INFO",
+          "action": "modified",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/SOURCES.txt",
+          "action": "modified",
+          "lines": 248
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/dependency_links.txt",
+          "action": "modified",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/the_tester_scripts.egg-info/top_level.txt",
+          "action": "modified",
+          "lines": 11
+        }
+      ]
+    }
+  ]
+}
