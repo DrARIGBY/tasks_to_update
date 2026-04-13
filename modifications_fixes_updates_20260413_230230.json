@@ -1,0 +1,440 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1776121350782_8t02sr",
+  "generated_at": "2026-04-13T23:02:30.781Z",
+  "extension_version": "1.14.0",
+  "project_name": "Image_Deviation_Monitor",
+  "machine_id": "machine_setjcq",
+  "total_steps": 23,
+  "total_files_changed": 16,
+  "providers_used": [
+    "codex",
+    "claude_code"
+  ],
+  "report_type": "project",
+  "flags": {
+    "has_extension_issues": false,
+    "has_project_issues": true,
+    "was_cancelled": false,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "build_error",
+      "scope": "project",
+      "summary": "Build step failed",
+      "step_id": "2.1",
+      "provider": "codex",
+      "count": 23
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "2.1",
+      "step_name": "Build sentient-being pair generator",
+      "phase_id": 2,
+      "phase_name": "Neutral Prompt Generation Engine",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "coding_simple",
+      "completed_at": "2026-04-13T23:02:25.431Z",
+      "duration_ms": 138,
+      "success": false,
+      "error": "Codex CLI exited with code 2: /bin/sh: -c: line 0: syntax error near unexpected token `('\n/bin/sh: -c: line 0: `codex exec --json --sandbox workspace-write --skip-git-repo-check --model codex-mini-latest You are an AI engineer on project \"Image_Deviation_Monitor\". Purpose:  build a experiment that creates the prompts to describe a completely emotionaless scene which is as nutral in everyway possible and of the size 720x720.  The image must be of at least 2 sentient things (dogs, cats, dog and cat, humans, monkeys, dinosours,",
+      "file_changes": []
+    },
+    {
+      "step_id": "1.3",
+      "step_name": "Create experiment configuration schema",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "coding_simple",
+      "completed_at": "2026-04-13T23:02:25.439Z",
+      "duration_ms": 106,
+      "success": false,
+      "error": "Codex CLI exited with code 2: /bin/sh: -c: line 0: syntax error near unexpected token `('\n/bin/sh: -c: line 0: `codex exec --json --sandbox workspace-write --skip-git-repo-check --model codex-mini-latest You are an AI engineer on project \"Image_Deviation_Monitor\". Purpose:  build a experiment that creates the prompts to describe a completely emotionaless scene which is as nutral in everyway possible and of the size 720x720.  The image must be of at least 2 sentient things (dogs, cats, dog and cat, humans, monkeys, dinosours,",
+      "file_changes": []
+    },
+    {
+      "step_id": "1.1",
+      "step_name": "Initialize project structure and dependencies",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "coding_simple",
+      "completed_at": "2026-04-13T23:02:25.445Z",
+      "duration_ms": 133,
+      "success": false,
+      "error": "Codex CLI exited with code 2: /bin/sh: -c: line 0: syntax error near unexpected token `('\n/bin/sh: -c: line 0: `codex exec --json --sandbox workspace-write --skip-git-repo-check --model codex-mini-latest You are an AI engineer on project \"Image_Deviation_Monitor\". Purpose:  build a experiment that creates the prompts to describe a completely emotionaless scene which is as nutral in everyway possible and of the size 720x720.  The image must be of at least 2 sentient things (dogs, cats, dog and cat, humans, monkeys, dinosours,",
+      "file_changes": []
+    },
+    {
+      "step_id": "2.3",
+      "step_name": "Build follow-up prompt templates for iteration",
+      "phase_id": 2,
+      "phase_name": "Neutral Prompt Generation Engine",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "coding_simple",
+      "completed_at": "2026-04-13T23:02:25.451Z",
+      "duration_ms": 166,
+      "success": false,
+      "error": "Codex CLI exited with code 2: /bin/sh: -c: line 0: syntax error near unexpected token `('\n/bin/sh: -c: line 0: `codex exec --json --sandbox workspace-write --skip-git-repo-check --model codex-mini-latest You are an AI engineer on project \"Image_Deviation_Monitor\". Purpose:  build a experiment that creates the prompts to describe a completely emotionaless scene which is as nutral in everyway possible and of the size 720x720.  The image must be of at least 2 sentient things (dogs, cats, dog and cat, humans, monkeys, dinosours,",
+      "file_changes": []
+    },
+    {
+      "step_id": "1.2",
+      "step_name": "Build LLM provider abstraction and model selector",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-04-13T23:02:25.573Z",
+      "duration_ms": 11,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    },
+    {
+      "step_id": "1.2_adapter",
+      "step_name": "Create data source adapter for Build LLM provider abstraction and model selector",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-13T23:02:25.944Z",
+      "duration_ms": 10,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "1.2_env",
+      "step_name": "Setup test environment for Build LLM provider abstraction and model selector",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-13T23:02:26.348Z",
+      "duration_ms": 11,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "3.2",
+      "step_name": "Implement image storage with naming and metadata",
+      "phase_id": 3,
+      "phase_name": "Image Generation & Storage Pipeline",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "coding_simple",
+      "completed_at": "2026-04-13T23:02:26.529Z",
+      "duration_ms": 94,
+      "success": false,
+      "error": "Codex CLI exited with code 2: /bin/sh: -c: line 0: syntax error near unexpected token `('\n/bin/sh: -c: line 0: `codex exec --json --sandbox workspace-write --skip-git-repo-check --model codex-mini-latest You are an AI engineer on project \"Image_Deviation_Monitor\". Purpose:  build a experiment that creates the prompts to describe a completely emotionaless scene which is as nutral in everyway possible and of the size 720x720.  The image must be of at least 2 sentient things (dogs, cats, dog and cat, humans, monkeys, dinosours,",
+      "file_changes": []
+    },
+    {
+      "step_id": "3.1",
+      "step_name": "Build image generation service with 720x720 output",
+      "phase_id": 3,
+      "phase_name": "Image Generation & Storage Pipeline",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-04-13T23:02:26.710Z",
+      "duration_ms": 11,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    },
+    {
+      "step_id": "3.1_adapter",
+      "step_name": "Create data source adapter for Build image generation service with 720x720 output",
+      "phase_id": 3,
+      "phase_name": "Image Generation & Storage Pipeline",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-13T23:02:27.074Z",
+      "duration_ms": 12,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "3.1_env",
+      "step_name": "Setup test environment for Build image generation service with 720x720 output",
+      "phase_id": 3,
+      "phase_name": "Image Generation & Storage Pipeline",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-13T23:02:27.451Z",
+      "duration_ms": 14,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "4.1",
+      "step_name": "Build multi-metric image sentiment analyzer",
+      "phase_id": 4,
+      "phase_name": "Image Sentiment & Emotion Analysis Engine",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-04-13T23:02:27.825Z",
+      "duration_ms": 12,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    },
+    {
+      "step_id": "4.1_adapter",
+      "step_name": "Create data source adapter for Build multi-metric image sentiment analyzer",
+      "phase_id": 4,
+      "phase_name": "Image Sentiment & Emotion Analysis Engine",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-13T23:02:28.186Z",
+      "duration_ms": 10,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "4.1_env",
+      "step_name": "Setup test environment for Build multi-metric image sentiment analyzer",
+      "phase_id": 4,
+      "phase_name": "Image Sentiment & Emotion Analysis Engine",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-13T23:02:28.537Z",
+      "duration_ms": 12,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "5.1",
+      "step_name": "Build main experiment orchestrator",
+      "phase_id": 5,
+      "phase_name": "Experiment Orchestration Loop",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-04-13T23:02:28.893Z",
+      "duration_ms": 12,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "6.1",
+      "step_name": "Build deviation trajectory graphs per image",
+      "phase_id": 6,
+      "phase_name": "Report Generation & Visualization",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "coding_simple",
+      "completed_at": "2026-04-13T23:02:29.096Z",
+      "duration_ms": 111,
+      "success": false,
+      "error": "Codex CLI exited with code 2: /bin/sh: -c: line 0: syntax error near unexpected token `('\n/bin/sh: -c: line 0: `codex exec --json --sandbox workspace-write --skip-git-repo-check --model codex-mini-latest You are an AI engineer on project \"Image_Deviation_Monitor\". Purpose:  build a experiment that creates the prompts to describe a completely emotionaless scene which is as nutral in everyway possible and of the size 720x720.  The image must be of at least 2 sentient things (dogs, cats, dog and cat, humans, monkeys, dinosours,",
+      "file_changes": []
+    },
+    {
+      "step_id": "7.3",
+      "step_name": "Build CLI entry point with run modes",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "coding_simple",
+      "completed_at": "2026-04-13T23:02:29.107Z",
+      "duration_ms": 111,
+      "success": false,
+      "error": "Codex CLI exited with code 2: /bin/sh: -c: line 0: syntax error near unexpected token `('\n/bin/sh: -c: line 0: `codex exec --json --sandbox workspace-write --skip-git-repo-check --model codex-mini-latest You are an AI engineer on project \"Image_Deviation_Monitor\". Purpose:  build a experiment that creates the prompts to describe a completely emotionaless scene which is as nutral in everyway possible and of the size 720x720.  The image must be of at least 2 sentient things (dogs, cats, dog and cat, humans, monkeys, dinosours,",
+      "file_changes": []
+    },
+    {
+      "step_id": "7.1",
+      "step_name": "Write unit tests for analysis and scoring modules",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "test",
+      "completed_at": "2026-04-13T23:02:29.282Z",
+      "duration_ms": 20,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "6.3",
+      "step_name": "Generate comparative summary across all images",
+      "phase_id": 6,
+      "phase_name": "Report Generation & Visualization",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "analyze",
+      "completed_at": "2026-04-13T23:02:29.290Z",
+      "duration_ms": 18,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "7.2",
+      "step_name": "Run integration test with 3-iteration mini experiment",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "test",
+      "completed_at": "2026-04-13T23:02:29.665Z",
+      "duration_ms": 18,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    },
+    {
+      "step_id": "7.2_adapter",
+      "step_name": "Create data source adapter for Run integration test with 3-iteration mini experiment",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-13T23:02:30.024Z",
+      "duration_ms": 12,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "7.2_env",
+      "step_name": "Setup test environment for Run integration test with 3-iteration mini experiment",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-13T23:02:30.411Z",
+      "duration_ms": 15,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "7.99_columns",
+      "step_name": "Data source observation & column selection",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-13T23:02:30.781Z",
+      "duration_ms": 13,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    }
+  ]
+}
