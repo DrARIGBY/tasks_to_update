@@ -1,0 +1,171 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1776132334362_d1f9nh",
+  "generated_at": "2026-04-14T02:05:34.359Z",
+  "extension_version": "1.16.12",
+  "project_name": "Image_Deviation_Monitor",
+  "machine_id": "machine_setjcq",
+  "total_steps": 4,
+  "total_files_changed": 16,
+  "providers_used": [
+    "claude_code"
+  ],
+  "report_type": "extension",
+  "flags": {
+    "has_extension_issues": true,
+    "has_project_issues": false,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "timeout",
+      "scope": "extension",
+      "summary": "CLI execution timed out",
+      "step_id": "3.1_adapter",
+      "provider": "claude_code",
+      "count": 2
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "3.1_adapter",
+      "step_name": "Create data source adapter for Build image generation service with 720x720 output",
+      "phase_id": 3,
+      "phase_name": "Image Generation & Storage Pipeline",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T01:59:43.760Z",
+      "duration_ms": 120215,
+      "success": false,
+      "error": "Claude Code killed (signal SIGTERM) — possible stall or timeout",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    },
+    {
+      "step_id": "3.1",
+      "step_name": "Build image generation service with 720x720 output",
+      "phase_id": 3,
+      "phase_name": "Image Generation & Storage Pipeline",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-04-14T01:59:44.294Z",
+      "duration_ms": 120605,
+      "success": false,
+      "error": "Claude Code killed (signal SIGTERM) — possible stall or timeout",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    },
+    {
+      "step_id": "3.1_adapter",
+      "step_name": "Create data source adapter for Build image generation service with 720x720 output",
+      "phase_id": 3,
+      "phase_name": "Image Generation & Storage Pipeline",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T02:05:04.908Z",
+      "duration_ms": 612157,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    },
+    {
+      "step_id": "3.1_env",
+      "step_name": "Setup test environment for Build image generation service with 720x720 output",
+      "phase_id": 3,
+      "phase_name": "Image Generation & Storage Pipeline",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T02:05:30.879Z",
+      "duration_ms": 637929,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    }
+  ]
+}
