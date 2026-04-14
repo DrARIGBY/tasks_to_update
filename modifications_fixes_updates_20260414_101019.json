@@ -1,0 +1,820 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1776161419401_1f2hei",
+  "generated_at": "2026-04-14T10:10:19.400Z",
+  "extension_version": "1.14.0",
+  "project_name": "quick_test",
+  "machine_id": "machine_xscm2i",
+  "total_steps": 14,
+  "total_files_changed": 117,
+  "providers_used": [
+    "claude_code"
+  ],
+  "report_type": "project",
+  "flags": {
+    "has_extension_issues": false,
+    "has_project_issues": true,
+    "was_cancelled": false,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "build_error",
+      "scope": "project",
+      "summary": "Build step failed",
+      "step_id": "1.1",
+      "provider": "claude_code",
+      "count": 14
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "1.1",
+      "step_name": "Project scaffold and dependency installation",
+      "phase_id": 1,
+      "phase_name": "Setup & Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_simple",
+      "completed_at": "2026-04-14T10:10:14.594Z",
+      "duration_ms": 15,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/SKILL.md",
+          "action": "created",
+          "lines": 523
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/format_output.json",
+          "action": "created",
+          "lines": 570
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/content_scraper.py",
+          "action": "created",
+          "lines": 671
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/debug_wikipedia_structure.py",
+          "action": "created",
+          "lines": 61
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/equation_cleaner.py",
+          "action": "created",
+          "lines": 286
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/link_filter.py",
+          "action": "created",
+          "lines": 353
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/pdf_generator.py",
+          "action": "created",
+          "lines": 700
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/pipeline_orchestrator.py",
+          "action": "created",
+          "lines": 378
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/reference_extractor.py",
+          "action": "created",
+          "lines": 270
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/requirements.txt",
+          "action": "created",
+          "lines": 4
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/structure_analyzer.py",
+          "action": "created",
+          "lines": 453
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/url_folder_manager.py",
+          "action": "created",
+          "lines": 239
+        }
+      ]
+    },
+    {
+      "step_id": "1.2",
+      "step_name": "Config system with model auto-detection",
+      "phase_id": 1,
+      "phase_name": "Setup & Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_simple",
+      "completed_at": "2026-04-14T10:10:14.977Z",
+      "duration_ms": 16,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/azure-agent/SKILL.md",
+          "action": "created",
+          "lines": 142
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/references/azure_services_catalog.json",
+          "action": "created",
+          "lines": 291
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/references/cli_commands.md",
+          "action": "created",
+          "lines": 327
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/references/documentation_tracker.json",
+          "action": "created",
+          "lines": 116
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/references/portal_setup_guides.json",
+          "action": "created",
+          "lines": 644
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/references/pricing_reference.json",
+          "action": "created",
+          "lines": 275
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/references/usage_guide.md",
+          "action": "created",
+          "lines": 225
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/scripts/azure_docs_scraper.py",
+          "action": "created",
+          "lines": 841
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/scripts/azure_setup.py",
+          "action": "created",
+          "lines": 677
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/scripts/key_manager.py",
+          "action": "created",
+          "lines": 437
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/scripts/latex_manual_generator.py",
+          "action": "created",
+          "lines": 1388
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/scripts/pdf_generator.py",
+          "action": "created",
+          "lines": 637
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/scripts/pipeline_generator.py",
+          "action": "created",
+          "lines": 419
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/__init__.py",
+          "action": "created",
+          "lines": 28
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/base_service.py",
+          "action": "created",
+          "lines": 229
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/cognitive_services.py",
+          "action": "created",
+          "lines": 314
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/cosmos_db.py",
+          "action": "created",
+          "lines": 292
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/document_intelligence.py",
+          "action": "created",
+          "lines": 198
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/functions.py",
+          "action": "created",
+          "lines": 389
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/openai_service.py",
+          "action": "created",
+          "lines": 372
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/speech_services.py",
+          "action": "created",
+          "lines": 308
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/storage.py",
+          "action": "created",
+          "lines": 306
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/templates/Keys.json.template",
+          "action": "created",
+          "lines": 201
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/templates/input.env.template",
+          "action": "created",
+          "lines": 128
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/templates/latex/chapter_templates.tex",
+          "action": "created",
+          "lines": 354
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/templates/latex/manual_template.tex",
+          "action": "created",
+          "lines": 288
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/templates/output.env.template",
+          "action": "created",
+          "lines": 108
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/templates/output.json.template",
+          "action": "created",
+          "lines": 398
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/templates/pipeline_config.yaml",
+          "action": "created",
+          "lines": 183
+        }
+      ]
+    },
+    {
+      "step_id": "1.3",
+      "step_name": "Neutral prompt bank generation",
+      "phase_id": 1,
+      "phase_name": "Setup & Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_simple",
+      "completed_at": "2026-04-14T10:10:15.348Z",
+      "duration_ms": 9,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "2.1",
+      "step_name": "Multi-provider image generation abstraction",
+      "phase_id": 2,
+      "phase_name": "Image Generation Pipeline",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-04-14T10:10:15.714Z",
+      "duration_ms": 8,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "2.2",
+      "step_name": "Experiment orchestrator with iteration logic",
+      "phase_id": 2,
+      "phase_name": "Image Generation Pipeline",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-04-14T10:10:16.080Z",
+      "duration_ms": 10,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "2.3",
+      "step_name": "Results tracking and JSON persistence",
+      "phase_id": 2,
+      "phase_name": "Image Generation Pipeline",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_simple",
+      "completed_at": "2026-04-14T10:10:16.435Z",
+      "duration_ms": 9,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "3.1",
+      "step_name": "Image sentiment analysis pipeline",
+      "phase_id": 3,
+      "phase_name": "Sentiment & Emotion Analysis",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-04-14T10:10:16.794Z",
+      "duration_ms": 18,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/SKILL.md",
+          "action": "created",
+          "lines": 278
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/references/output_schema.json",
+          "action": "created",
+          "lines": 286
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/__init__.py",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/business_rules/__init__.py",
+          "action": "created",
+          "lines": 39
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/business_rules/deceased_billing_detector.py",
+          "action": "created",
+          "lines": 265
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/business_rules/duplicate_claims_detector.py",
+          "action": "created",
+          "lines": 308
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/business_rules/geographic_detector.py",
+          "action": "created",
+          "lines": 315
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/business_rules/impossible_day_detector.py",
+          "action": "created",
+          "lines": 271
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/business_rules/phantom_billing_detector.py",
+          "action": "created",
+          "lines": 297
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/business_rules/provider_outlier_detector.py",
+          "action": "created",
+          "lines": 311
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/business_rules/rule_engine.py",
+          "action": "created",
+          "lines": 325
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/business_rules/unbundling_detector.py",
+          "action": "created",
+          "lines": 244
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/business_rules/upcoding_detector.py",
+          "action": "created",
+          "lines": 347
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/data_connector.py",
+          "action": "created",
+          "lines": 506
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/fraud_pipeline.py",
+          "action": "created",
+          "lines": 530
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/report_generator.py",
+          "action": "created",
+          "lines": 361
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/statistical_ml/__init__.py",
+          "action": "created",
+          "lines": 40
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/statistical_ml/basic_stats.py",
+          "action": "created",
+          "lines": 176
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/statistical_ml/iqr_outlier.py",
+          "action": "created",
+          "lines": 195
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/statistical_ml/isolation_forest_detector.py",
+          "action": "created",
+          "lines": 259
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/statistical_ml/lda_classifier.py",
+          "action": "created",
+          "lines": 240
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/statistical_ml/ml_pipeline.py",
+          "action": "created",
+          "lines": 386
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/statistical_ml/model_evaluator.py",
+          "action": "created",
+          "lines": 283
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/statistical_ml/pca_reducer.py",
+          "action": "created",
+          "lines": 202
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/statistical_ml/svd_decomposition.py",
+          "action": "created",
+          "lines": 193
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/scripts/statistical_ml/zscore_anomaly.py",
+          "action": "created",
+          "lines": 224
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/services/__init__.py",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/services/base_fraud_service.py",
+          "action": "created",
+          "lines": 223
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/services/databricks_service.py",
+          "action": "created",
+          "lines": 372
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/services/sql_server_service.py",
+          "action": "created",
+          "lines": 389
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/templates/connection_config.json.template",
+          "action": "created",
+          "lines": 104
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/templates/fraud_config.yaml",
+          "action": "created",
+          "lines": 339
+        },
+        {
+          "file": "Scripts/_skills/healthcare-fraud-detection/templates/fraud_input.env.template",
+          "action": "created",
+          "lines": 68
+        }
+      ]
+    },
+    {
+      "step_id": "3.2",
+      "step_name": "Multi-metric emotion classification",
+      "phase_id": 3,
+      "phase_name": "Sentiment & Emotion Analysis",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-04-14T10:10:17.174Z",
+      "duration_ms": 11,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "3.3",
+      "step_name": "Threshold detection and early stopping",
+      "phase_id": 3,
+      "phase_name": "Sentiment & Emotion Analysis",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_simple",
+      "completed_at": "2026-04-14T10:10:17.525Z",
+      "duration_ms": 10,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "4.1",
+      "step_name": "Unit tests for analysis and orchestration",
+      "phase_id": 4,
+      "phase_name": "Testing & Validation",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "test",
+      "completed_at": "2026-04-14T10:10:17.907Z",
+      "duration_ms": 13,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/extractor/SKILL.md",
+          "action": "created",
+          "lines": 320
+        },
+        {
+          "file": "Scripts/_skills/extractor/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/extractor/format_output.json",
+          "action": "created",
+          "lines": 422
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/data_cleaner.py",
+          "action": "created",
+          "lines": 319
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/data_standardizer.py",
+          "action": "created",
+          "lines": 187
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/pipeline_orchestrator.py",
+          "action": "created",
+          "lines": 224
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/quality_analyzer.py",
+          "action": "created",
+          "lines": 323
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/report_generator.py",
+          "action": "created",
+          "lines": 550
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/requirements.txt",
+          "action": "created",
+          "lines": 5
+        }
+      ]
+    },
+    {
+      "step_id": "4.2",
+      "step_name": "End-to-end dry run with 3 iterations",
+      "phase_id": 4,
+      "phase_name": "Testing & Validation",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "validate",
+      "completed_at": "2026-04-14T10:10:18.277Z",
+      "duration_ms": 12,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    },
+    {
+      "step_id": "5.1",
+      "step_name": "Deviation tracking graphs and visualizations",
+      "phase_id": 5,
+      "phase_name": "Reporting & Visualization",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_simple",
+      "completed_at": "2026-04-14T10:10:18.641Z",
+      "duration_ms": 16,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/data_analyist/SKILL.md",
+          "action": "created",
+          "lines": 125
+        },
+        {
+          "file": "Scripts/_skills/data_analyist/__init__.py",
+          "action": "created",
+          "lines": 2
+        }
+      ]
+    },
+    {
+      "step_id": "5.2",
+      "step_name": "PDF report generator with image grid layout",
+      "phase_id": 5,
+      "phase_name": "Reporting & Visualization",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "report",
+      "completed_at": "2026-04-14T10:10:19.033Z",
+      "duration_ms": 21,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/document_creator/SKILL.md",
+          "action": "created",
+          "lines": 497
+        },
+        {
+          "file": "Scripts/_skills/document_creator/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/document_creator/format_output.json",
+          "action": "created",
+          "lines": 284
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/corrections_handler.py",
+          "action": "created",
+          "lines": 543
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/document_orchestrator.py",
+          "action": "created",
+          "lines": 452
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/docx_builder.py",
+          "action": "created",
+          "lines": 477
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/latex_builder.py",
+          "action": "created",
+          "lines": 666
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/pptx_builder.py",
+          "action": "created",
+          "lines": 481
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/requirements.txt",
+          "action": "created",
+          "lines": 21
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/source_tracker.py",
+          "action": "created",
+          "lines": 413
+        },
+        {
+          "file": "Scripts/_skills/document_creator/templates/latex/academic.tex",
+          "action": "created",
+          "lines": 109
+        },
+        {
+          "file": "Scripts/_skills/document_creator/templates/latex/minimal.tex",
+          "action": "created",
+          "lines": 59
+        },
+        {
+          "file": "Scripts/_skills/document_creator/templates/latex/report.tex",
+          "action": "created",
+          "lines": 109
+        },
+        {
+          "file": "Scripts/_skills/pdf/SKILL.md",
+          "action": "created",
+          "lines": 295
+        },
+        {
+          "file": "Scripts/_skills/pdf/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/pdf/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/pdf/scripts/check_bounding_boxes.py",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/_skills/pdf/scripts/check_bounding_boxes_test.py",
+          "action": "created",
+          "lines": 227
+        },
+        {
+          "file": "Scripts/_skills/pdf/scripts/check_fillable_fields.py",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/_skills/pdf/scripts/convert_pdf_to_images.py",
+          "action": "created",
+          "lines": 36
+        },
+        {
+          "file": "Scripts/_skills/pdf/scripts/create_validation_image.py",
+          "action": "created",
+          "lines": 42
+        },
+        {
+          "file": "Scripts/_skills/pdf/scripts/extract_form_field_info.py",
+          "action": "created",
+          "lines": 153
+        },
+        {
+          "file": "Scripts/_skills/pdf/scripts/fill_fillable_fields.py",
+          "action": "created",
+          "lines": 115
+        },
+        {
+          "file": "Scripts/_skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+          "action": "created",
+          "lines": 108
+        }
+      ]
+    },
+    {
+      "step_id": "5.3",
+      "step_name": "Final tabulation and experiment summary",
+      "phase_id": 5,
+      "phase_name": "Reporting & Visualization",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "analyze",
+      "completed_at": "2026-04-14T10:10:19.400Z",
+      "duration_ms": 12,
+      "success": false,
+      "error": "Claude Code exited with code 2: ",
+      "file_changes": []
+    }
+  ]
+}
