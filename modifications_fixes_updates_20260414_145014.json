@@ -1,0 +1,3336 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1776178214128_lseww8",
+  "generated_at": "2026-04-14T14:50:14.126Z",
+  "extension_version": "1.17.5",
+  "project_name": "Image_Deviation_Monitor",
+  "machine_id": "machine_setjcq",
+  "total_steps": 3,
+  "total_files_changed": 654,
+  "providers_used": [
+    "claude_code"
+  ],
+  "report_type": "project",
+  "flags": {
+    "has_extension_issues": false,
+    "has_project_issues": false,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [],
+  "steps": [
+    {
+      "step_id": "7.2",
+      "step_name": "Run integration test with 3-iteration mini experiment",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "test",
+      "completed_at": "2026-04-14T14:47:05.309Z",
+      "duration_ms": 2029287,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "modified",
+          "lines": 138
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 323
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/__init__.py",
+          "action": "modified",
+          "lines": 114
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes.py",
+          "action": "modified",
+          "lines": 663
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes_1.py",
+          "action": "modified",
+          "lines": 515
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes_3.py",
+          "action": "created",
+          "lines": 245
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime.py",
+          "action": "modified",
+          "lines": 677
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime_5.py",
+          "action": "created",
+          "lines": 768
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi.py",
+          "action": "created",
+          "lines": 650
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_1.py",
+          "action": "created",
+          "lines": 180
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_2.py",
+          "action": "created",
+          "lines": 538
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_3.py",
+          "action": "created",
+          "lines": 400
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_4.py",
+          "action": "created",
+          "lines": 511
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_5.py",
+          "action": "created",
+          "lines": 436
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/write_unit_tests_for_analysis_and_scoring_modules.py",
+          "action": "modified",
+          "lines": 450
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/write_unit_tests_for_analysis_and_scoring_modules_1.py",
+          "action": "created",
+          "lines": 403
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "modified",
+          "lines": 68
+        },
+        {
+          "file": "Scripts/tests/test_7_2.py",
+          "action": "modified",
+          "lines": 1601
+        },
+        {
+          "file": "Scripts/tests/test_7_2_adapter.py",
+          "action": "modified",
+          "lines": 1700
+        },
+        {
+          "file": "Scripts/tests/test_7_2_env.py",
+          "action": "created",
+          "lines": 1130
+        },
+        {
+          "file": "Scripts/tests/test_7_4_env.py",
+          "action": "created",
+          "lines": 581
+        },
+        {
+          "file": "Scripts/tests/test_deviation.py",
+          "action": "modified",
+          "lines": 676
+        },
+        {
+          "file": "Scripts/tests/test_deviation_1.py",
+          "action": "modified",
+          "lines": 427
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/SSL.py",
+          "action": "created",
+          "lines": 3287
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/__init__.py",
+          "action": "created",
+          "lines": 32
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/_util.py",
+          "action": "created",
+          "lines": 130
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/crypto.py",
+          "action": "created",
+          "lines": 2453
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/debug.py",
+          "action": "created",
+          "lines": 41
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/py.typed",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/rand.py",
+          "action": "created",
+          "lines": 51
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/version.py",
+          "action": "created",
+          "lines": 29
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/ElementInclude.py",
+          "action": "created",
+          "lines": 245
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/__init__.py",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/_elementpath.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 911
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/_elementpath.py",
+          "action": "created",
+          "lines": 344
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/apihelpers.pxi",
+          "action": "created",
+          "lines": 1820
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/builder.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 660
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/builder.py",
+          "action": "created",
+          "lines": 244
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/classlookup.pxi",
+          "action": "created",
+          "lines": 581
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/cleanup.pxi",
+          "action": "created",
+          "lines": 216
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/cssselect.py",
+          "action": "created",
+          "lines": 102
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/debug.pxi",
+          "action": "created",
+          "lines": 37
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/docloader.pxi",
+          "action": "created",
+          "lines": 180
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/doctestcompare.py",
+          "action": "created",
+          "lines": 489
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/dtd.pxi",
+          "action": "created",
+          "lines": 480
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/etree.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 33666
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/etree.h",
+          "action": "created",
+          "lines": 245
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/etree.pyx",
+          "action": "created",
+          "lines": 3859
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/etree_api.h",
+          "action": "created",
+          "lines": 215
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/extensions.pxi",
+          "action": "created",
+          "lines": 839
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/ElementSoup.py",
+          "action": "created",
+          "lines": 11
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/__init__.py",
+          "action": "created",
+          "lines": 1928
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/_diffcommand.py",
+          "action": "created",
+          "lines": 87
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/_difflib.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 3339
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/_difflib.py",
+          "action": "created",
+          "lines": 2107
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/_html5builder.py",
+          "action": "created",
+          "lines": 101
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/_setmixin.py",
+          "action": "created",
+          "lines": 57
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/builder.py",
+          "action": "created",
+          "lines": 174
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/clean.py",
+          "action": "created",
+          "lines": 22
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/defs.py",
+          "action": "created",
+          "lines": 136
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/diff.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 2182
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/diff.py",
+          "action": "created",
+          "lines": 973
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/formfill.py",
+          "action": "created",
+          "lines": 300
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/html5parser.py",
+          "action": "created",
+          "lines": 261
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/soupparser.py",
+          "action": "created",
+          "lines": 315
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/usedoctest.py",
+          "action": "created",
+          "lines": 14
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/__init__.pxd",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/c14n.pxd",
+          "action": "created",
+          "lines": 26
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/config.pxd",
+          "action": "created",
+          "lines": 4
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/dtdvalid.pxd",
+          "action": "created",
+          "lines": 19
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/etree_defs.h",
+          "action": "created",
+          "lines": 391
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/etreepublic.pxd",
+          "action": "created",
+          "lines": 238
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/extlibs/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/extlibs/libcharset.h",
+          "action": "created",
+          "lines": 46
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/extlibs/localcharset.h",
+          "action": "created",
+          "lines": 138
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/extlibs/zconf.h",
+          "action": "created",
+          "lines": 552
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/extlibs/zlib.h",
+          "action": "created",
+          "lines": 2058
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/htmlparser.pxd",
+          "action": "created",
+          "lines": 57
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libexslt/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libexslt/exslt.h",
+          "action": "created",
+          "lines": 109
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libexslt/exsltconfig.h",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libexslt/exsltexports.h",
+          "action": "created",
+          "lines": 64
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/HTMLparser.h",
+          "action": "created",
+          "lines": 340
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/HTMLtree.h",
+          "action": "created",
+          "lines": 149
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/SAX.h",
+          "action": "created",
+          "lines": 19
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/SAX2.h",
+          "action": "created",
+          "lines": 171
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/c14n.h",
+          "action": "created",
+          "lines": 116
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/catalog.h",
+          "action": "created",
+          "lines": 184
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/chvalid.h",
+          "action": "created",
+          "lines": 231
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/debugXML.h",
+          "action": "created",
+          "lines": 80
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/dict.h",
+          "action": "created",
+          "lines": 83
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/encoding.h",
+          "action": "created",
+          "lines": 308
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/entities.h",
+          "action": "created",
+          "lines": 148
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/globals.h",
+          "action": "created",
+          "lines": 26
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/hash.h",
+          "action": "created",
+          "lines": 252
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/list.h",
+          "action": "created",
+          "lines": 138
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/nanoftp.h",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/nanohttp.h",
+          "action": "created",
+          "lines": 99
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/parser.h",
+          "action": "created",
+          "lines": 1634
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/parserInternals.h",
+          "action": "created",
+          "lines": 592
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/relaxng.h",
+          "action": "created",
+          "lines": 225
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/schemasInternals.h",
+          "action": "created",
+          "lines": 960
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/schematron.h",
+          "action": "created",
+          "lines": 144
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/threads.h",
+          "action": "created",
+          "lines": 82
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/tree.h",
+          "action": "created",
+          "lines": 1327
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/uri.h",
+          "action": "created",
+          "lines": 107
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/valid.h",
+          "action": "created",
+          "lines": 483
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xinclude.h",
+          "action": "created",
+          "lines": 142
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xlink.h",
+          "action": "created",
+          "lines": 194
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlIO.h",
+          "action": "created",
+          "lines": 420
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlautomata.h",
+          "action": "created",
+          "lines": 164
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlerror.h",
+          "action": "created",
+          "lines": 963
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlexports.h",
+          "action": "created",
+          "lines": 97
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlmemory.h",
+          "action": "created",
+          "lines": 189
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlmodule.h",
+          "action": "created",
+          "lines": 62
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlreader.h",
+          "action": "created",
+          "lines": 445
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlregexp.h",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlsave.h",
+          "action": "created",
+          "lines": 112
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlschemas.h",
+          "action": "created",
+          "lines": 255
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlschemastypes.h",
+          "action": "created",
+          "lines": 153
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlstring.h",
+          "action": "created",
+          "lines": 141
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlunicode.h",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlversion.h",
+          "action": "created",
+          "lines": 333
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlwriter.h",
+          "action": "created",
+          "lines": 490
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xpath.h",
+          "action": "created",
+          "lines": 570
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xpathInternals.h",
+          "action": "created",
+          "lines": 640
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xpointer.h",
+          "action": "created",
+          "lines": 49
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/attributes.h",
+          "action": "created",
+          "lines": 40
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/documents.h",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/extensions.h",
+          "action": "created",
+          "lines": 263
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/extra.h",
+          "action": "created",
+          "lines": 73
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/functions.h",
+          "action": "created",
+          "lines": 79
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/imports.h",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/keys.h",
+          "action": "created",
+          "lines": 54
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/namespaces.h",
+          "action": "created",
+          "lines": 69
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/numbersInternals.h",
+          "action": "created",
+          "lines": 74
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/pattern.h",
+          "action": "created",
+          "lines": 85
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/preproc.h",
+          "action": "created",
+          "lines": 44
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/security.h",
+          "action": "created",
+          "lines": 105
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/templates.h",
+          "action": "created",
+          "lines": 78
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/transform.h",
+          "action": "created",
+          "lines": 208
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/variables.h",
+          "action": "created",
+          "lines": 119
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xslt.h",
+          "action": "created",
+          "lines": 111
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xsltInternals.h",
+          "action": "created",
+          "lines": 1996
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xsltconfig.h",
+          "action": "created",
+          "lines": 147
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xsltexports.h",
+          "action": "created",
+          "lines": 65
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xsltlocale.h",
+          "action": "created",
+          "lines": 45
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xsltutils.h",
+          "action": "created",
+          "lines": 344
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/lxml-version.h",
+          "action": "created",
+          "lines": 4
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/relaxng.pxd",
+          "action": "created",
+          "lines": 65
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/schematron.pxd",
+          "action": "created",
+          "lines": 35
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/tree.pxd",
+          "action": "created",
+          "lines": 493
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/uri.pxd",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xinclude.pxd",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xmlerror.pxd",
+          "action": "created",
+          "lines": 861
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xmlparser.pxd",
+          "action": "created",
+          "lines": 319
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xmlschema.pxd",
+          "action": "created",
+          "lines": 36
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xpath.pxd",
+          "action": "created",
+          "lines": 137
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xslt.pxd",
+          "action": "created",
+          "lines": 191
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/__init__.py",
+          "action": "created",
+          "lines": 349
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/rng/iso-schematron.rng",
+          "action": "created",
+          "lines": 710
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/RNG2Schtrn.xsl",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/XSD2Schtrn.xsl",
+          "action": "created",
+          "lines": 78
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_abstract_expand.xsl",
+          "action": "created",
+          "lines": 313
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_dsdl_include.xsl",
+          "action": "created",
+          "lines": 1160
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_schematron_message.xsl",
+          "action": "created",
+          "lines": 55
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_schematron_skeleton_for_xslt1.xsl",
+          "action": "created",
+          "lines": 1797
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_svrl_for_xslt1.xsl",
+          "action": "created",
+          "lines": 589
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/readme.txt",
+          "action": "created",
+          "lines": 85
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/iterparse.pxi",
+          "action": "created",
+          "lines": 439
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/lxml.etree.h",
+          "action": "created",
+          "lines": 245
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/lxml.etree_api.h",
+          "action": "created",
+          "lines": 215
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/nsclasses.pxi",
+          "action": "created",
+          "lines": 282
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/objectify.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 19791
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/objectify.pyx",
+          "action": "created",
+          "lines": 2150
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/objectpath.pxi",
+          "action": "created",
+          "lines": 333
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/parser.pxi",
+          "action": "created",
+          "lines": 2082
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/parsertarget.pxi",
+          "action": "created",
+          "lines": 181
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/proxy.pxi",
+          "action": "created",
+          "lines": 625
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/public-api.pxi",
+          "action": "created",
+          "lines": 179
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/pyclasslookup.py",
+          "action": "created",
+          "lines": 4
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/readonlytree.pxi",
+          "action": "created",
+          "lines": 566
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/relaxng.pxi",
+          "action": "created",
+          "lines": 166
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/sax.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 783
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/sax.py",
+          "action": "created",
+          "lines": 286
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/saxparser.pxi",
+          "action": "created",
+          "lines": 876
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/schematron.pxi",
+          "action": "created",
+          "lines": 174
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/serializer.pxi",
+          "action": "created",
+          "lines": 1850
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/usedoctest.py",
+          "action": "created",
+          "lines": 14
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xinclude.pxi",
+          "action": "created",
+          "lines": 68
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xmlerror.pxi",
+          "action": "created",
+          "lines": 1667
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xmlid.pxi",
+          "action": "created",
+          "lines": 180
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xmlschema.pxi",
+          "action": "created",
+          "lines": 216
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xpath.pxi",
+          "action": "created",
+          "lines": 488
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xslt.pxi",
+          "action": "created",
+          "lines": 960
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xsltext.pxi",
+          "action": "created",
+          "lines": 243
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/METADATA",
+          "action": "created",
+          "lines": 87
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/RECORD",
+          "action": "created",
+          "lines": 206
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/REQUESTED",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/WHEEL",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/licenses/LICENSE.txt",
+          "action": "created",
+          "lines": 32
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/licenses/LICENSES.txt",
+          "action": "created",
+          "lines": 30
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/top_level.txt",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/METADATA",
+          "action": "created",
+          "lines": 533
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/RECORD",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/REQUESTED",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/WHEEL",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/licenses/LICENSE",
+          "action": "created",
+          "lines": 203
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/top_level.txt",
+          "action": "created",
+          "lines": 2
+        }
+      ]
+    },
+    {
+      "step_id": "7.2_env",
+      "step_name": "Setup test environment for Run integration test with 3-iteration mini experiment",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T14:49:24.345Z",
+      "duration_ms": 2167558,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "modified",
+          "lines": 138
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 323
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/__init__.py",
+          "action": "modified",
+          "lines": 114
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes.py",
+          "action": "modified",
+          "lines": 663
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes_1.py",
+          "action": "modified",
+          "lines": 515
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes_3.py",
+          "action": "created",
+          "lines": 245
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime.py",
+          "action": "modified",
+          "lines": 677
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime_5.py",
+          "action": "created",
+          "lines": 768
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi.py",
+          "action": "created",
+          "lines": 650
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_1.py",
+          "action": "created",
+          "lines": 180
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_2.py",
+          "action": "created",
+          "lines": 538
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_3.py",
+          "action": "created",
+          "lines": 400
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_4.py",
+          "action": "created",
+          "lines": 511
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_5.py",
+          "action": "created",
+          "lines": 436
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/write_unit_tests_for_analysis_and_scoring_modules.py",
+          "action": "modified",
+          "lines": 450
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/write_unit_tests_for_analysis_and_scoring_modules_1.py",
+          "action": "created",
+          "lines": 403
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "modified",
+          "lines": 68
+        },
+        {
+          "file": "Scripts/tests/test_7_2.py",
+          "action": "modified",
+          "lines": 1601
+        },
+        {
+          "file": "Scripts/tests/test_7_2_adapter.py",
+          "action": "modified",
+          "lines": 1700
+        },
+        {
+          "file": "Scripts/tests/test_7_2_env.py",
+          "action": "created",
+          "lines": 1130
+        },
+        {
+          "file": "Scripts/tests/test_7_4_env.py",
+          "action": "created",
+          "lines": 581
+        },
+        {
+          "file": "Scripts/tests/test_deviation.py",
+          "action": "modified",
+          "lines": 676
+        },
+        {
+          "file": "Scripts/tests/test_deviation_1.py",
+          "action": "modified",
+          "lines": 427
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/SSL.py",
+          "action": "created",
+          "lines": 3287
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/__init__.py",
+          "action": "created",
+          "lines": 32
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/_util.py",
+          "action": "created",
+          "lines": 130
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/crypto.py",
+          "action": "created",
+          "lines": 2453
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/debug.py",
+          "action": "created",
+          "lines": 41
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/py.typed",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/rand.py",
+          "action": "created",
+          "lines": 51
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/version.py",
+          "action": "created",
+          "lines": 29
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/ElementInclude.py",
+          "action": "created",
+          "lines": 245
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/__init__.py",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/_elementpath.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 911
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/_elementpath.py",
+          "action": "created",
+          "lines": 344
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/apihelpers.pxi",
+          "action": "created",
+          "lines": 1820
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/builder.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 660
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/builder.py",
+          "action": "created",
+          "lines": 244
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/classlookup.pxi",
+          "action": "created",
+          "lines": 581
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/cleanup.pxi",
+          "action": "created",
+          "lines": 216
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/cssselect.py",
+          "action": "created",
+          "lines": 102
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/debug.pxi",
+          "action": "created",
+          "lines": 37
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/docloader.pxi",
+          "action": "created",
+          "lines": 180
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/doctestcompare.py",
+          "action": "created",
+          "lines": 489
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/dtd.pxi",
+          "action": "created",
+          "lines": 480
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/etree.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 33666
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/etree.h",
+          "action": "created",
+          "lines": 245
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/etree.pyx",
+          "action": "created",
+          "lines": 3859
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/etree_api.h",
+          "action": "created",
+          "lines": 215
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/extensions.pxi",
+          "action": "created",
+          "lines": 839
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/ElementSoup.py",
+          "action": "created",
+          "lines": 11
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/__init__.py",
+          "action": "created",
+          "lines": 1928
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/_diffcommand.py",
+          "action": "created",
+          "lines": 87
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/_difflib.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 3339
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/_difflib.py",
+          "action": "created",
+          "lines": 2107
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/_html5builder.py",
+          "action": "created",
+          "lines": 101
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/_setmixin.py",
+          "action": "created",
+          "lines": 57
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/builder.py",
+          "action": "created",
+          "lines": 174
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/clean.py",
+          "action": "created",
+          "lines": 22
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/defs.py",
+          "action": "created",
+          "lines": 136
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/diff.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 2182
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/diff.py",
+          "action": "created",
+          "lines": 973
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/formfill.py",
+          "action": "created",
+          "lines": 300
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/html5parser.py",
+          "action": "created",
+          "lines": 261
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/soupparser.py",
+          "action": "created",
+          "lines": 315
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/usedoctest.py",
+          "action": "created",
+          "lines": 14
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/__init__.pxd",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/c14n.pxd",
+          "action": "created",
+          "lines": 26
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/config.pxd",
+          "action": "created",
+          "lines": 4
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/dtdvalid.pxd",
+          "action": "created",
+          "lines": 19
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/etree_defs.h",
+          "action": "created",
+          "lines": 391
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/etreepublic.pxd",
+          "action": "created",
+          "lines": 238
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/extlibs/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/extlibs/libcharset.h",
+          "action": "created",
+          "lines": 46
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/extlibs/localcharset.h",
+          "action": "created",
+          "lines": 138
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/extlibs/zconf.h",
+          "action": "created",
+          "lines": 552
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/extlibs/zlib.h",
+          "action": "created",
+          "lines": 2058
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/htmlparser.pxd",
+          "action": "created",
+          "lines": 57
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libexslt/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libexslt/exslt.h",
+          "action": "created",
+          "lines": 109
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libexslt/exsltconfig.h",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libexslt/exsltexports.h",
+          "action": "created",
+          "lines": 64
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/HTMLparser.h",
+          "action": "created",
+          "lines": 340
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/HTMLtree.h",
+          "action": "created",
+          "lines": 149
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/SAX.h",
+          "action": "created",
+          "lines": 19
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/SAX2.h",
+          "action": "created",
+          "lines": 171
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/c14n.h",
+          "action": "created",
+          "lines": 116
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/catalog.h",
+          "action": "created",
+          "lines": 184
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/chvalid.h",
+          "action": "created",
+          "lines": 231
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/debugXML.h",
+          "action": "created",
+          "lines": 80
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/dict.h",
+          "action": "created",
+          "lines": 83
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/encoding.h",
+          "action": "created",
+          "lines": 308
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/entities.h",
+          "action": "created",
+          "lines": 148
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/globals.h",
+          "action": "created",
+          "lines": 26
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/hash.h",
+          "action": "created",
+          "lines": 252
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/list.h",
+          "action": "created",
+          "lines": 138
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/nanoftp.h",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/nanohttp.h",
+          "action": "created",
+          "lines": 99
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/parser.h",
+          "action": "created",
+          "lines": 1634
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/parserInternals.h",
+          "action": "created",
+          "lines": 592
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/relaxng.h",
+          "action": "created",
+          "lines": 225
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/schemasInternals.h",
+          "action": "created",
+          "lines": 960
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/schematron.h",
+          "action": "created",
+          "lines": 144
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/threads.h",
+          "action": "created",
+          "lines": 82
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/tree.h",
+          "action": "created",
+          "lines": 1327
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/uri.h",
+          "action": "created",
+          "lines": 107
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/valid.h",
+          "action": "created",
+          "lines": 483
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xinclude.h",
+          "action": "created",
+          "lines": 142
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xlink.h",
+          "action": "created",
+          "lines": 194
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlIO.h",
+          "action": "created",
+          "lines": 420
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlautomata.h",
+          "action": "created",
+          "lines": 164
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlerror.h",
+          "action": "created",
+          "lines": 963
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlexports.h",
+          "action": "created",
+          "lines": 97
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlmemory.h",
+          "action": "created",
+          "lines": 189
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlmodule.h",
+          "action": "created",
+          "lines": 62
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlreader.h",
+          "action": "created",
+          "lines": 445
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlregexp.h",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlsave.h",
+          "action": "created",
+          "lines": 112
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlschemas.h",
+          "action": "created",
+          "lines": 255
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlschemastypes.h",
+          "action": "created",
+          "lines": 153
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlstring.h",
+          "action": "created",
+          "lines": 141
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlunicode.h",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlversion.h",
+          "action": "created",
+          "lines": 333
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlwriter.h",
+          "action": "created",
+          "lines": 490
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xpath.h",
+          "action": "created",
+          "lines": 570
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xpathInternals.h",
+          "action": "created",
+          "lines": 640
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xpointer.h",
+          "action": "created",
+          "lines": 49
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/attributes.h",
+          "action": "created",
+          "lines": 40
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/documents.h",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/extensions.h",
+          "action": "created",
+          "lines": 263
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/extra.h",
+          "action": "created",
+          "lines": 73
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/functions.h",
+          "action": "created",
+          "lines": 79
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/imports.h",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/keys.h",
+          "action": "created",
+          "lines": 54
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/namespaces.h",
+          "action": "created",
+          "lines": 69
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/numbersInternals.h",
+          "action": "created",
+          "lines": 74
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/pattern.h",
+          "action": "created",
+          "lines": 85
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/preproc.h",
+          "action": "created",
+          "lines": 44
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/security.h",
+          "action": "created",
+          "lines": 105
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/templates.h",
+          "action": "created",
+          "lines": 78
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/transform.h",
+          "action": "created",
+          "lines": 208
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/variables.h",
+          "action": "created",
+          "lines": 119
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xslt.h",
+          "action": "created",
+          "lines": 111
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xsltInternals.h",
+          "action": "created",
+          "lines": 1996
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xsltconfig.h",
+          "action": "created",
+          "lines": 147
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xsltexports.h",
+          "action": "created",
+          "lines": 65
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xsltlocale.h",
+          "action": "created",
+          "lines": 45
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xsltutils.h",
+          "action": "created",
+          "lines": 344
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/lxml-version.h",
+          "action": "created",
+          "lines": 4
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/relaxng.pxd",
+          "action": "created",
+          "lines": 65
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/schematron.pxd",
+          "action": "created",
+          "lines": 35
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/tree.pxd",
+          "action": "created",
+          "lines": 493
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/uri.pxd",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xinclude.pxd",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xmlerror.pxd",
+          "action": "created",
+          "lines": 861
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xmlparser.pxd",
+          "action": "created",
+          "lines": 319
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xmlschema.pxd",
+          "action": "created",
+          "lines": 36
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xpath.pxd",
+          "action": "created",
+          "lines": 137
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xslt.pxd",
+          "action": "created",
+          "lines": 191
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/__init__.py",
+          "action": "created",
+          "lines": 349
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/rng/iso-schematron.rng",
+          "action": "created",
+          "lines": 710
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/RNG2Schtrn.xsl",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/XSD2Schtrn.xsl",
+          "action": "created",
+          "lines": 78
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_abstract_expand.xsl",
+          "action": "created",
+          "lines": 313
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_dsdl_include.xsl",
+          "action": "created",
+          "lines": 1160
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_schematron_message.xsl",
+          "action": "created",
+          "lines": 55
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_schematron_skeleton_for_xslt1.xsl",
+          "action": "created",
+          "lines": 1797
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_svrl_for_xslt1.xsl",
+          "action": "created",
+          "lines": 589
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/readme.txt",
+          "action": "created",
+          "lines": 85
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/iterparse.pxi",
+          "action": "created",
+          "lines": 439
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/lxml.etree.h",
+          "action": "created",
+          "lines": 245
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/lxml.etree_api.h",
+          "action": "created",
+          "lines": 215
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/nsclasses.pxi",
+          "action": "created",
+          "lines": 282
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/objectify.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 19791
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/objectify.pyx",
+          "action": "created",
+          "lines": 2150
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/objectpath.pxi",
+          "action": "created",
+          "lines": 333
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/parser.pxi",
+          "action": "created",
+          "lines": 2082
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/parsertarget.pxi",
+          "action": "created",
+          "lines": 181
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/proxy.pxi",
+          "action": "created",
+          "lines": 625
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/public-api.pxi",
+          "action": "created",
+          "lines": 179
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/pyclasslookup.py",
+          "action": "created",
+          "lines": 4
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/readonlytree.pxi",
+          "action": "created",
+          "lines": 566
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/relaxng.pxi",
+          "action": "created",
+          "lines": 166
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/sax.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 783
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/sax.py",
+          "action": "created",
+          "lines": 286
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/saxparser.pxi",
+          "action": "created",
+          "lines": 876
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/schematron.pxi",
+          "action": "created",
+          "lines": 174
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/serializer.pxi",
+          "action": "created",
+          "lines": 1850
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/usedoctest.py",
+          "action": "created",
+          "lines": 14
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xinclude.pxi",
+          "action": "created",
+          "lines": 68
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xmlerror.pxi",
+          "action": "created",
+          "lines": 1667
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xmlid.pxi",
+          "action": "created",
+          "lines": 180
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xmlschema.pxi",
+          "action": "created",
+          "lines": 216
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xpath.pxi",
+          "action": "created",
+          "lines": 488
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xslt.pxi",
+          "action": "created",
+          "lines": 960
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xsltext.pxi",
+          "action": "created",
+          "lines": 243
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/METADATA",
+          "action": "created",
+          "lines": 87
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/RECORD",
+          "action": "created",
+          "lines": 206
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/REQUESTED",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/WHEEL",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/licenses/LICENSE.txt",
+          "action": "created",
+          "lines": 32
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/licenses/LICENSES.txt",
+          "action": "created",
+          "lines": 30
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/top_level.txt",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/METADATA",
+          "action": "created",
+          "lines": 533
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/RECORD",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/REQUESTED",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/WHEEL",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/licenses/LICENSE",
+          "action": "created",
+          "lines": 203
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/top_level.txt",
+          "action": "created",
+          "lines": 2
+        }
+      ]
+    },
+    {
+      "step_id": "7.2_adapter",
+      "step_name": "Create data source adapter for Run integration test with 3-iteration mini experiment",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T14:50:05.285Z",
+      "duration_ms": 2208820,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "modified",
+          "lines": 138
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 323
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/__init__.py",
+          "action": "modified",
+          "lines": 114
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes.py",
+          "action": "modified",
+          "lines": 663
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes_1.py",
+          "action": "modified",
+          "lines": 486
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes_3.py",
+          "action": "created",
+          "lines": 245
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime.py",
+          "action": "modified",
+          "lines": 677
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime_5.py",
+          "action": "created",
+          "lines": 768
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi.py",
+          "action": "created",
+          "lines": 650
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_1.py",
+          "action": "created",
+          "lines": 180
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_2.py",
+          "action": "created",
+          "lines": 538
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_3.py",
+          "action": "created",
+          "lines": 400
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_4.py",
+          "action": "created",
+          "lines": 511
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_5.py",
+          "action": "created",
+          "lines": 436
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/write_unit_tests_for_analysis_and_scoring_modules.py",
+          "action": "modified",
+          "lines": 450
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/write_unit_tests_for_analysis_and_scoring_modules_1.py",
+          "action": "created",
+          "lines": 403
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "modified",
+          "lines": 68
+        },
+        {
+          "file": "Scripts/tests/test_7_2.py",
+          "action": "modified",
+          "lines": 1601
+        },
+        {
+          "file": "Scripts/tests/test_7_2_adapter.py",
+          "action": "modified",
+          "lines": 1700
+        },
+        {
+          "file": "Scripts/tests/test_7_2_env.py",
+          "action": "created",
+          "lines": 1130
+        },
+        {
+          "file": "Scripts/tests/test_7_4_env.py",
+          "action": "created",
+          "lines": 581
+        },
+        {
+          "file": "Scripts/tests/test_deviation.py",
+          "action": "modified",
+          "lines": 676
+        },
+        {
+          "file": "Scripts/tests/test_deviation_1.py",
+          "action": "modified",
+          "lines": 427
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/SSL.py",
+          "action": "created",
+          "lines": 3287
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/__init__.py",
+          "action": "created",
+          "lines": 32
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/_util.py",
+          "action": "created",
+          "lines": 130
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/crypto.py",
+          "action": "created",
+          "lines": 2453
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/debug.py",
+          "action": "created",
+          "lines": 41
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/py.typed",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/rand.py",
+          "action": "created",
+          "lines": 51
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/OpenSSL/version.py",
+          "action": "created",
+          "lines": 29
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/ElementInclude.py",
+          "action": "created",
+          "lines": 245
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/__init__.py",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/_elementpath.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 911
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/_elementpath.py",
+          "action": "created",
+          "lines": 344
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/apihelpers.pxi",
+          "action": "created",
+          "lines": 1820
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/builder.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 660
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/builder.py",
+          "action": "created",
+          "lines": 244
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/classlookup.pxi",
+          "action": "created",
+          "lines": 581
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/cleanup.pxi",
+          "action": "created",
+          "lines": 216
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/cssselect.py",
+          "action": "created",
+          "lines": 102
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/debug.pxi",
+          "action": "created",
+          "lines": 37
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/docloader.pxi",
+          "action": "created",
+          "lines": 180
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/doctestcompare.py",
+          "action": "created",
+          "lines": 489
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/dtd.pxi",
+          "action": "created",
+          "lines": 480
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/etree.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 33666
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/etree.h",
+          "action": "created",
+          "lines": 245
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/etree.pyx",
+          "action": "created",
+          "lines": 3859
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/etree_api.h",
+          "action": "created",
+          "lines": 215
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/extensions.pxi",
+          "action": "created",
+          "lines": 839
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/ElementSoup.py",
+          "action": "created",
+          "lines": 11
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/__init__.py",
+          "action": "created",
+          "lines": 1928
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/_diffcommand.py",
+          "action": "created",
+          "lines": 87
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/_difflib.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 3339
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/_difflib.py",
+          "action": "created",
+          "lines": 2107
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/_html5builder.py",
+          "action": "created",
+          "lines": 101
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/_setmixin.py",
+          "action": "created",
+          "lines": 57
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/builder.py",
+          "action": "created",
+          "lines": 174
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/clean.py",
+          "action": "created",
+          "lines": 22
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/defs.py",
+          "action": "created",
+          "lines": 136
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/diff.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 2182
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/diff.py",
+          "action": "created",
+          "lines": 973
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/formfill.py",
+          "action": "created",
+          "lines": 300
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/html5parser.py",
+          "action": "created",
+          "lines": 261
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/soupparser.py",
+          "action": "created",
+          "lines": 315
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/html/usedoctest.py",
+          "action": "created",
+          "lines": 14
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/__init__.pxd",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/c14n.pxd",
+          "action": "created",
+          "lines": 26
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/config.pxd",
+          "action": "created",
+          "lines": 4
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/dtdvalid.pxd",
+          "action": "created",
+          "lines": 19
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/etree_defs.h",
+          "action": "created",
+          "lines": 391
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/etreepublic.pxd",
+          "action": "created",
+          "lines": 238
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/extlibs/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/extlibs/libcharset.h",
+          "action": "created",
+          "lines": 46
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/extlibs/localcharset.h",
+          "action": "created",
+          "lines": 138
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/extlibs/zconf.h",
+          "action": "created",
+          "lines": 552
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/extlibs/zlib.h",
+          "action": "created",
+          "lines": 2058
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/htmlparser.pxd",
+          "action": "created",
+          "lines": 57
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libexslt/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libexslt/exslt.h",
+          "action": "created",
+          "lines": 109
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libexslt/exsltconfig.h",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libexslt/exsltexports.h",
+          "action": "created",
+          "lines": 64
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/HTMLparser.h",
+          "action": "created",
+          "lines": 340
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/HTMLtree.h",
+          "action": "created",
+          "lines": 149
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/SAX.h",
+          "action": "created",
+          "lines": 19
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/SAX2.h",
+          "action": "created",
+          "lines": 171
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/c14n.h",
+          "action": "created",
+          "lines": 116
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/catalog.h",
+          "action": "created",
+          "lines": 184
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/chvalid.h",
+          "action": "created",
+          "lines": 231
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/debugXML.h",
+          "action": "created",
+          "lines": 80
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/dict.h",
+          "action": "created",
+          "lines": 83
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/encoding.h",
+          "action": "created",
+          "lines": 308
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/entities.h",
+          "action": "created",
+          "lines": 148
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/globals.h",
+          "action": "created",
+          "lines": 26
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/hash.h",
+          "action": "created",
+          "lines": 252
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/list.h",
+          "action": "created",
+          "lines": 138
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/nanoftp.h",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/nanohttp.h",
+          "action": "created",
+          "lines": 99
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/parser.h",
+          "action": "created",
+          "lines": 1634
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/parserInternals.h",
+          "action": "created",
+          "lines": 592
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/relaxng.h",
+          "action": "created",
+          "lines": 225
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/schemasInternals.h",
+          "action": "created",
+          "lines": 960
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/schematron.h",
+          "action": "created",
+          "lines": 144
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/threads.h",
+          "action": "created",
+          "lines": 82
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/tree.h",
+          "action": "created",
+          "lines": 1327
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/uri.h",
+          "action": "created",
+          "lines": 107
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/valid.h",
+          "action": "created",
+          "lines": 483
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xinclude.h",
+          "action": "created",
+          "lines": 142
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xlink.h",
+          "action": "created",
+          "lines": 194
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlIO.h",
+          "action": "created",
+          "lines": 420
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlautomata.h",
+          "action": "created",
+          "lines": 164
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlerror.h",
+          "action": "created",
+          "lines": 963
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlexports.h",
+          "action": "created",
+          "lines": 97
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlmemory.h",
+          "action": "created",
+          "lines": 189
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlmodule.h",
+          "action": "created",
+          "lines": 62
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlreader.h",
+          "action": "created",
+          "lines": 445
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlregexp.h",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlsave.h",
+          "action": "created",
+          "lines": 112
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlschemas.h",
+          "action": "created",
+          "lines": 255
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlschemastypes.h",
+          "action": "created",
+          "lines": 153
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlstring.h",
+          "action": "created",
+          "lines": 141
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlunicode.h",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlversion.h",
+          "action": "created",
+          "lines": 333
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xmlwriter.h",
+          "action": "created",
+          "lines": 490
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xpath.h",
+          "action": "created",
+          "lines": 570
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xpathInternals.h",
+          "action": "created",
+          "lines": 640
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxml/xpointer.h",
+          "action": "created",
+          "lines": 49
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/attributes.h",
+          "action": "created",
+          "lines": 40
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/documents.h",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/extensions.h",
+          "action": "created",
+          "lines": 263
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/extra.h",
+          "action": "created",
+          "lines": 73
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/functions.h",
+          "action": "created",
+          "lines": 79
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/imports.h",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/keys.h",
+          "action": "created",
+          "lines": 54
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/namespaces.h",
+          "action": "created",
+          "lines": 69
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/numbersInternals.h",
+          "action": "created",
+          "lines": 74
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/pattern.h",
+          "action": "created",
+          "lines": 85
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/preproc.h",
+          "action": "created",
+          "lines": 44
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/security.h",
+          "action": "created",
+          "lines": 105
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/templates.h",
+          "action": "created",
+          "lines": 78
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/transform.h",
+          "action": "created",
+          "lines": 208
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/variables.h",
+          "action": "created",
+          "lines": 119
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xslt.h",
+          "action": "created",
+          "lines": 111
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xsltInternals.h",
+          "action": "created",
+          "lines": 1996
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xsltconfig.h",
+          "action": "created",
+          "lines": 147
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xsltexports.h",
+          "action": "created",
+          "lines": 65
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xsltlocale.h",
+          "action": "created",
+          "lines": 45
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/libxslt/xsltutils.h",
+          "action": "created",
+          "lines": 344
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/lxml-version.h",
+          "action": "created",
+          "lines": 4
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/relaxng.pxd",
+          "action": "created",
+          "lines": 65
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/schematron.pxd",
+          "action": "created",
+          "lines": 35
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/tree.pxd",
+          "action": "created",
+          "lines": 493
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/uri.pxd",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xinclude.pxd",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xmlerror.pxd",
+          "action": "created",
+          "lines": 861
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xmlparser.pxd",
+          "action": "created",
+          "lines": 319
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xmlschema.pxd",
+          "action": "created",
+          "lines": 36
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xpath.pxd",
+          "action": "created",
+          "lines": 137
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/includes/xslt.pxd",
+          "action": "created",
+          "lines": 191
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/__init__.py",
+          "action": "created",
+          "lines": 349
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/rng/iso-schematron.rng",
+          "action": "created",
+          "lines": 710
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/RNG2Schtrn.xsl",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/XSD2Schtrn.xsl",
+          "action": "created",
+          "lines": 78
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_abstract_expand.xsl",
+          "action": "created",
+          "lines": 313
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_dsdl_include.xsl",
+          "action": "created",
+          "lines": 1160
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_schematron_message.xsl",
+          "action": "created",
+          "lines": 55
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_schematron_skeleton_for_xslt1.xsl",
+          "action": "created",
+          "lines": 1797
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_svrl_for_xslt1.xsl",
+          "action": "created",
+          "lines": 589
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/readme.txt",
+          "action": "created",
+          "lines": 85
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/iterparse.pxi",
+          "action": "created",
+          "lines": 439
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/lxml.etree.h",
+          "action": "created",
+          "lines": 245
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/lxml.etree_api.h",
+          "action": "created",
+          "lines": 215
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/nsclasses.pxi",
+          "action": "created",
+          "lines": 282
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/objectify.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 19791
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/objectify.pyx",
+          "action": "created",
+          "lines": 2150
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/objectpath.pxi",
+          "action": "created",
+          "lines": 333
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/parser.pxi",
+          "action": "created",
+          "lines": 2082
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/parsertarget.pxi",
+          "action": "created",
+          "lines": 181
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/proxy.pxi",
+          "action": "created",
+          "lines": 625
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/public-api.pxi",
+          "action": "created",
+          "lines": 179
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/pyclasslookup.py",
+          "action": "created",
+          "lines": 4
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/readonlytree.pxi",
+          "action": "created",
+          "lines": 566
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/relaxng.pxi",
+          "action": "created",
+          "lines": 166
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/sax.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 783
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/sax.py",
+          "action": "created",
+          "lines": 286
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/saxparser.pxi",
+          "action": "created",
+          "lines": 876
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/schematron.pxi",
+          "action": "created",
+          "lines": 174
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/serializer.pxi",
+          "action": "created",
+          "lines": 1850
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/usedoctest.py",
+          "action": "created",
+          "lines": 14
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xinclude.pxi",
+          "action": "created",
+          "lines": 68
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xmlerror.pxi",
+          "action": "created",
+          "lines": 1667
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xmlid.pxi",
+          "action": "created",
+          "lines": 180
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xmlschema.pxi",
+          "action": "created",
+          "lines": 216
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xpath.pxi",
+          "action": "created",
+          "lines": 488
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xslt.pxi",
+          "action": "created",
+          "lines": 960
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml/xsltext.pxi",
+          "action": "created",
+          "lines": 243
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/METADATA",
+          "action": "created",
+          "lines": 87
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/RECORD",
+          "action": "created",
+          "lines": 206
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/REQUESTED",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/WHEEL",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/licenses/LICENSE.txt",
+          "action": "created",
+          "lines": 32
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/licenses/LICENSES.txt",
+          "action": "created",
+          "lines": 30
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/lxml-6.0.4.dist-info/top_level.txt",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/METADATA",
+          "action": "created",
+          "lines": 533
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/RECORD",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/REQUESTED",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/WHEEL",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/licenses/LICENSE",
+          "action": "created",
+          "lines": 203
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/pyopenssl-26.0.0.dist-info/top_level.txt",
+          "action": "created",
+          "lines": 2
+        }
+      ]
+    }
+  ]
+}
