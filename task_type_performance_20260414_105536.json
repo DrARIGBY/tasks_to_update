@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-04-14T10:55:36.802Z",
+  "extension_version": "1.17.3",
+  "machine_id": "machine_setjcq",
+  "stats": [
+    {
+      "provider_id": "codex",
+      "model": "codex-mini-latest",
+      "task_type": "coding_simple",
+      "selections": 1,
+      "successes": 1,
+      "failures": 0,
+      "avg_duration_s": 1475.2,
+      "total_duration_ms": 1475189
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-code",
+      "task_type": "coding_complex",
+      "selections": 2,
+      "successes": 1,
+      "failures": 1,
+      "avg_duration_s": 2303.8,
+      "total_duration_ms": 2303770
+    }
+  ]
+}
