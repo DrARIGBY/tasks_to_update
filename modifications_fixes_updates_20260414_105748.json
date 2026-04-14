@@ -1,0 +1,138 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1776164268275_6oxq6y",
+  "generated_at": "2026-04-14T10:57:48.275Z",
+  "extension_version": "1.17.4",
+  "project_name": "Image_Deviation_Monitor",
+  "machine_id": "machine_setjcq",
+  "total_steps": 3,
+  "total_files_changed": 12,
+  "providers_used": [
+    "claude_code"
+  ],
+  "report_type": "extension",
+  "flags": {
+    "has_extension_issues": true,
+    "has_project_issues": false,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "timeout",
+      "scope": "extension",
+      "summary": "CLI execution timed out",
+      "step_id": "4.1_env",
+      "provider": "claude_code",
+      "count": 3
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "4.1_env",
+      "step_name": "Setup test environment for Build multi-metric image sentiment analyzer",
+      "phase_id": 4,
+      "phase_name": "Image Sentiment & Emotion Analysis Engine",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T10:57:43.886Z",
+      "duration_ms": 49083,
+      "success": false,
+      "error": "Claude Code killed (signal SIGTERM) — possible stall or timeout",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    },
+    {
+      "step_id": "4.1_adapter",
+      "step_name": "Create data source adapter for Build multi-metric image sentiment analyzer",
+      "phase_id": 4,
+      "phase_name": "Image Sentiment & Emotion Analysis Engine",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T10:57:44.104Z",
+      "duration_ms": 49520,
+      "success": false,
+      "error": "Claude Code killed (signal SIGTERM) — possible stall or timeout",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    },
+    {
+      "step_id": "4.1",
+      "step_name": "Build multi-metric image sentiment analyzer",
+      "phase_id": 4,
+      "phase_name": "Image Sentiment & Emotion Analysis Engine",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-04-14T10:57:44.313Z",
+      "duration_ms": 49965,
+      "success": false,
+      "error": "Claude Code killed (signal SIGTERM) — possible stall or timeout",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    }
+  ]
+}
