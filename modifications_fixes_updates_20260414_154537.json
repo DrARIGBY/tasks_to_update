@@ -1,0 +1,1388 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1776181537438_hi8rh2",
+  "generated_at": "2026-04-14T15:45:37.435Z",
+  "extension_version": "1.18.0",
+  "project_name": "Image_Deviation_Monitor",
+  "machine_id": "machine_setjcq",
+  "total_steps": 8,
+  "total_files_changed": 248,
+  "providers_used": [
+    "claude_code"
+  ],
+  "report_type": "project",
+  "flags": {
+    "has_extension_issues": false,
+    "has_project_issues": true,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "build_error",
+      "scope": "project",
+      "summary": "Build step failed",
+      "step_id": "7.4",
+      "provider": "claude_code",
+      "count": 3
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "7.4",
+      "step_name": "Setup test environment for Run integration test with 3-iteration mini experiment",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "test",
+      "completed_at": "2026-04-14T15:39:27.327Z",
+      "duration_ms": 1538898,
+      "success": false,
+      "error": "Claude Code exited with code 1: You've hit your limit · resets 3pm (America/New_York)",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/test_results/experiment_config.json",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/test_results/integration_test_report.json",
+          "action": "created",
+          "lines": 86
+        },
+        {
+          "file": "Scripts/test_results/neutral_prompts.json",
+          "action": "created",
+          "lines": 11
+        },
+        {
+          "file": "Scripts/test_results/results/neutral/primary_openai_iter0000.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/reports/integration_test_summary.json",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/test_results/results/results_json/results_test_img_0000.json",
+          "action": "created",
+          "lines": 91
+        },
+        {
+          "file": "Scripts/test_results/results/stage_1/primary_openai_iter0001.png",
+          "action": "created",
+          "lines": 5
+        },
+        {
+          "file": "Scripts/test_results/results/stage_2/primary_openai_iter0002.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/stage_3/primary_openai_iter0003.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/state/state_mini_test.json",
+          "action": "created",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/__init__.py",
+          "action": "modified",
+          "lines": 181
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes.py",
+          "action": "modified",
+          "lines": 601
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes_4.py",
+          "action": "created",
+          "lines": 234
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/data_source_observation_and_column_selection.py",
+          "action": "created",
+          "lines": 658
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/data_source_observation_and_column_selection_1.py",
+          "action": "created",
+          "lines": 674
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi.py",
+          "action": "modified",
+          "lines": 747
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_1.py",
+          "action": "modified",
+          "lines": 394
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_6.py",
+          "action": "created",
+          "lines": 939
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_7.py",
+          "action": "created",
+          "lines": 281
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "modified",
+          "lines": 657
+        },
+        {
+          "file": "Scripts/tests/test_7_2_env.py",
+          "action": "modified",
+          "lines": 1901
+        },
+        {
+          "file": "Scripts/tests/test_7_4.py",
+          "action": "created",
+          "lines": 1078
+        },
+        {
+          "file": "Scripts/tests/test_7_6.py",
+          "action": "created",
+          "lines": 1443
+        },
+        {
+          "file": "Scripts/tests/test_7_6_adapter.py",
+          "action": "created",
+          "lines": 1315
+        },
+        {
+          "file": "Scripts/tests/test_7_6_env.py",
+          "action": "created",
+          "lines": 1224
+        },
+        {
+          "file": "Scripts/tests/test_7_8.py",
+          "action": "created",
+          "lines": 1081
+        },
+        {
+          "file": "Scripts/tests/test_7_99_columns.py",
+          "action": "created",
+          "lines": 856
+        }
+      ]
+    },
+    {
+      "step_id": "7.6_adapter",
+      "step_name": "Create data source adapter for Run integration test with 3-iteration mini experiment",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T15:39:28.472Z",
+      "duration_ms": 1539822,
+      "success": false,
+      "error": "Claude Code exited with code 1: You've hit your limit · resets 3pm (America/New_York)",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/test_results/experiment_config.json",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/test_results/integration_test_report.json",
+          "action": "created",
+          "lines": 86
+        },
+        {
+          "file": "Scripts/test_results/neutral_prompts.json",
+          "action": "created",
+          "lines": 11
+        },
+        {
+          "file": "Scripts/test_results/results/neutral/primary_openai_iter0000.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/reports/integration_test_summary.json",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/test_results/results/results_json/results_test_img_0000.json",
+          "action": "created",
+          "lines": 91
+        },
+        {
+          "file": "Scripts/test_results/results/stage_1/primary_openai_iter0001.png",
+          "action": "created",
+          "lines": 5
+        },
+        {
+          "file": "Scripts/test_results/results/stage_2/primary_openai_iter0002.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/stage_3/primary_openai_iter0003.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/state/state_mini_test.json",
+          "action": "created",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/__init__.py",
+          "action": "modified",
+          "lines": 181
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes.py",
+          "action": "modified",
+          "lines": 601
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes_4.py",
+          "action": "created",
+          "lines": 234
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/data_source_observation_and_column_selection.py",
+          "action": "created",
+          "lines": 658
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/data_source_observation_and_column_selection_1.py",
+          "action": "created",
+          "lines": 674
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi.py",
+          "action": "modified",
+          "lines": 747
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_1.py",
+          "action": "modified",
+          "lines": 394
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_6.py",
+          "action": "created",
+          "lines": 939
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_7.py",
+          "action": "created",
+          "lines": 281
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "modified",
+          "lines": 657
+        },
+        {
+          "file": "Scripts/tests/test_7_2_env.py",
+          "action": "modified",
+          "lines": 1901
+        },
+        {
+          "file": "Scripts/tests/test_7_4.py",
+          "action": "created",
+          "lines": 1078
+        },
+        {
+          "file": "Scripts/tests/test_7_6.py",
+          "action": "created",
+          "lines": 1443
+        },
+        {
+          "file": "Scripts/tests/test_7_6_adapter.py",
+          "action": "created",
+          "lines": 1315
+        },
+        {
+          "file": "Scripts/tests/test_7_6_env.py",
+          "action": "created",
+          "lines": 1224
+        },
+        {
+          "file": "Scripts/tests/test_7_8.py",
+          "action": "created",
+          "lines": 1081
+        },
+        {
+          "file": "Scripts/tests/test_7_99_columns.py",
+          "action": "created",
+          "lines": 856
+        }
+      ]
+    },
+    {
+      "step_id": "7.8",
+      "step_name": "Data source observation & column selection",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "test",
+      "completed_at": "2026-04-14T15:39:39.512Z",
+      "duration_ms": 1549823,
+      "success": false,
+      "error": "Claude Code exited with code 1: You've hit your limit · resets 3pm (America/New_York)",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/test_results/experiment_config.json",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/test_results/integration_test_report.json",
+          "action": "created",
+          "lines": 86
+        },
+        {
+          "file": "Scripts/test_results/neutral_prompts.json",
+          "action": "created",
+          "lines": 11
+        },
+        {
+          "file": "Scripts/test_results/results/neutral/primary_openai_iter0000.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/reports/integration_test_summary.json",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/test_results/results/results_json/results_test_img_0000.json",
+          "action": "created",
+          "lines": 91
+        },
+        {
+          "file": "Scripts/test_results/results/stage_1/primary_openai_iter0001.png",
+          "action": "created",
+          "lines": 5
+        },
+        {
+          "file": "Scripts/test_results/results/stage_2/primary_openai_iter0002.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/stage_3/primary_openai_iter0003.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/state/state_mini_test.json",
+          "action": "created",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/__init__.py",
+          "action": "modified",
+          "lines": 181
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes.py",
+          "action": "modified",
+          "lines": 601
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes_4.py",
+          "action": "created",
+          "lines": 234
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/data_source_observation_and_column_selection.py",
+          "action": "created",
+          "lines": 658
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/data_source_observation_and_column_selection_1.py",
+          "action": "created",
+          "lines": 674
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi.py",
+          "action": "modified",
+          "lines": 747
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_1.py",
+          "action": "modified",
+          "lines": 394
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_6.py",
+          "action": "created",
+          "lines": 939
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_7.py",
+          "action": "created",
+          "lines": 281
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "modified",
+          "lines": 657
+        },
+        {
+          "file": "Scripts/tests/test_7_2_env.py",
+          "action": "modified",
+          "lines": 1901
+        },
+        {
+          "file": "Scripts/tests/test_7_4.py",
+          "action": "created",
+          "lines": 1078
+        },
+        {
+          "file": "Scripts/tests/test_7_6.py",
+          "action": "created",
+          "lines": 1443
+        },
+        {
+          "file": "Scripts/tests/test_7_6_adapter.py",
+          "action": "created",
+          "lines": 1315
+        },
+        {
+          "file": "Scripts/tests/test_7_6_env.py",
+          "action": "created",
+          "lines": 1224
+        },
+        {
+          "file": "Scripts/tests/test_7_8.py",
+          "action": "created",
+          "lines": 1081
+        },
+        {
+          "file": "Scripts/tests/test_7_99_columns.py",
+          "action": "created",
+          "lines": 856
+        }
+      ]
+    },
+    {
+      "step_id": "7.1",
+      "step_name": "Write unit tests for analysis and scoring modules",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "test",
+      "completed_at": "2026-04-14T15:42:01.606Z",
+      "duration_ms": 1691318,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/test_results/experiment_config.json",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/test_results/integration_test_report.json",
+          "action": "created",
+          "lines": 86
+        },
+        {
+          "file": "Scripts/test_results/neutral_prompts.json",
+          "action": "created",
+          "lines": 11
+        },
+        {
+          "file": "Scripts/test_results/results/neutral/primary_openai_iter0000.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/reports/integration_test_summary.json",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/test_results/results/results_json/results_test_img_0000.json",
+          "action": "created",
+          "lines": 91
+        },
+        {
+          "file": "Scripts/test_results/results/stage_1/primary_openai_iter0001.png",
+          "action": "created",
+          "lines": 5
+        },
+        {
+          "file": "Scripts/test_results/results/stage_2/primary_openai_iter0002.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/stage_3/primary_openai_iter0003.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/state/state_mini_test.json",
+          "action": "created",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/__init__.py",
+          "action": "modified",
+          "lines": 181
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes.py",
+          "action": "modified",
+          "lines": 601
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes_4.py",
+          "action": "created",
+          "lines": 234
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/data_source_observation_and_column_selection.py",
+          "action": "created",
+          "lines": 658
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/data_source_observation_and_column_selection_1.py",
+          "action": "created",
+          "lines": 674
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi.py",
+          "action": "modified",
+          "lines": 747
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_1.py",
+          "action": "modified",
+          "lines": 394
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_6.py",
+          "action": "created",
+          "lines": 939
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_7.py",
+          "action": "created",
+          "lines": 281
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "modified",
+          "lines": 657
+        },
+        {
+          "file": "Scripts/tests/test_7_2_env.py",
+          "action": "modified",
+          "lines": 1901
+        },
+        {
+          "file": "Scripts/tests/test_7_4.py",
+          "action": "created",
+          "lines": 1078
+        },
+        {
+          "file": "Scripts/tests/test_7_6.py",
+          "action": "created",
+          "lines": 1443
+        },
+        {
+          "file": "Scripts/tests/test_7_6_adapter.py",
+          "action": "created",
+          "lines": 1315
+        },
+        {
+          "file": "Scripts/tests/test_7_6_env.py",
+          "action": "created",
+          "lines": 1224
+        },
+        {
+          "file": "Scripts/tests/test_7_8.py",
+          "action": "created",
+          "lines": 1081
+        },
+        {
+          "file": "Scripts/tests/test_7_99_columns.py",
+          "action": "created",
+          "lines": 856
+        }
+      ]
+    },
+    {
+      "step_id": "7.6_env",
+      "step_name": "Setup test environment for Run integration test with 3-iteration mini experiment",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T15:43:04.051Z",
+      "duration_ms": 1754711,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/test_results/experiment_config.json",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/test_results/integration_test_report.json",
+          "action": "created",
+          "lines": 86
+        },
+        {
+          "file": "Scripts/test_results/neutral_prompts.json",
+          "action": "created",
+          "lines": 11
+        },
+        {
+          "file": "Scripts/test_results/results/neutral/primary_openai_iter0000.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/reports/integration_test_summary.json",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/test_results/results/results_json/results_test_img_0000.json",
+          "action": "created",
+          "lines": 91
+        },
+        {
+          "file": "Scripts/test_results/results/stage_1/primary_openai_iter0001.png",
+          "action": "created",
+          "lines": 5
+        },
+        {
+          "file": "Scripts/test_results/results/stage_2/primary_openai_iter0002.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/stage_3/primary_openai_iter0003.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/state/state_mini_test.json",
+          "action": "created",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/__init__.py",
+          "action": "modified",
+          "lines": 181
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes.py",
+          "action": "modified",
+          "lines": 601
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes_4.py",
+          "action": "created",
+          "lines": 234
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/data_source_observation_and_column_selection.py",
+          "action": "created",
+          "lines": 658
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/data_source_observation_and_column_selection_1.py",
+          "action": "created",
+          "lines": 674
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi.py",
+          "action": "modified",
+          "lines": 747
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_1.py",
+          "action": "modified",
+          "lines": 394
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_6.py",
+          "action": "created",
+          "lines": 939
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_7.py",
+          "action": "created",
+          "lines": 281
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "modified",
+          "lines": 657
+        },
+        {
+          "file": "Scripts/tests/test_7_2_env.py",
+          "action": "modified",
+          "lines": 1901
+        },
+        {
+          "file": "Scripts/tests/test_7_4.py",
+          "action": "created",
+          "lines": 1078
+        },
+        {
+          "file": "Scripts/tests/test_7_6.py",
+          "action": "created",
+          "lines": 1443
+        },
+        {
+          "file": "Scripts/tests/test_7_6_adapter.py",
+          "action": "created",
+          "lines": 1315
+        },
+        {
+          "file": "Scripts/tests/test_7_6_env.py",
+          "action": "created",
+          "lines": 1224
+        },
+        {
+          "file": "Scripts/tests/test_7_8.py",
+          "action": "created",
+          "lines": 1081
+        },
+        {
+          "file": "Scripts/tests/test_7_99_columns.py",
+          "action": "created",
+          "lines": 856
+        }
+      ]
+    },
+    {
+      "step_id": "7.2_env",
+      "step_name": "Setup test environment for Run integration test with 3-iteration mini experiment",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T15:43:33.259Z",
+      "duration_ms": 1783251,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/test_results/experiment_config.json",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/test_results/integration_test_report.json",
+          "action": "created",
+          "lines": 86
+        },
+        {
+          "file": "Scripts/test_results/neutral_prompts.json",
+          "action": "created",
+          "lines": 11
+        },
+        {
+          "file": "Scripts/test_results/results/neutral/primary_openai_iter0000.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/reports/integration_test_summary.json",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/test_results/results/results_json/results_test_img_0000.json",
+          "action": "created",
+          "lines": 91
+        },
+        {
+          "file": "Scripts/test_results/results/stage_1/primary_openai_iter0001.png",
+          "action": "created",
+          "lines": 5
+        },
+        {
+          "file": "Scripts/test_results/results/stage_2/primary_openai_iter0002.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/stage_3/primary_openai_iter0003.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/state/state_mini_test.json",
+          "action": "created",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/__init__.py",
+          "action": "modified",
+          "lines": 181
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes.py",
+          "action": "modified",
+          "lines": 601
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes_4.py",
+          "action": "created",
+          "lines": 234
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/data_source_observation_and_column_selection.py",
+          "action": "created",
+          "lines": 658
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/data_source_observation_and_column_selection_1.py",
+          "action": "created",
+          "lines": 674
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi.py",
+          "action": "modified",
+          "lines": 747
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_1.py",
+          "action": "modified",
+          "lines": 394
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_6.py",
+          "action": "created",
+          "lines": 939
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_7.py",
+          "action": "created",
+          "lines": 281
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "modified",
+          "lines": 657
+        },
+        {
+          "file": "Scripts/tests/test_7_2_env.py",
+          "action": "modified",
+          "lines": 1901
+        },
+        {
+          "file": "Scripts/tests/test_7_4.py",
+          "action": "created",
+          "lines": 1078
+        },
+        {
+          "file": "Scripts/tests/test_7_6.py",
+          "action": "created",
+          "lines": 1443
+        },
+        {
+          "file": "Scripts/tests/test_7_6_adapter.py",
+          "action": "created",
+          "lines": 1315
+        },
+        {
+          "file": "Scripts/tests/test_7_6_env.py",
+          "action": "created",
+          "lines": 1224
+        },
+        {
+          "file": "Scripts/tests/test_7_8.py",
+          "action": "created",
+          "lines": 1081
+        },
+        {
+          "file": "Scripts/tests/test_7_99_columns.py",
+          "action": "created",
+          "lines": 856
+        }
+      ]
+    },
+    {
+      "step_id": "7.6",
+      "step_name": "Run integration test with 3-iteration mini experiment",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "test",
+      "completed_at": "2026-04-14T15:43:38.412Z",
+      "duration_ms": 1788857,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/test_results/experiment_config.json",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/test_results/integration_test_report.json",
+          "action": "created",
+          "lines": 86
+        },
+        {
+          "file": "Scripts/test_results/neutral_prompts.json",
+          "action": "created",
+          "lines": 11
+        },
+        {
+          "file": "Scripts/test_results/results/neutral/primary_openai_iter0000.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/reports/integration_test_summary.json",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/test_results/results/results_json/results_test_img_0000.json",
+          "action": "created",
+          "lines": 91
+        },
+        {
+          "file": "Scripts/test_results/results/stage_1/primary_openai_iter0001.png",
+          "action": "created",
+          "lines": 5
+        },
+        {
+          "file": "Scripts/test_results/results/stage_2/primary_openai_iter0002.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/stage_3/primary_openai_iter0003.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/state/state_mini_test.json",
+          "action": "created",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/__init__.py",
+          "action": "modified",
+          "lines": 181
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes.py",
+          "action": "modified",
+          "lines": 601
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes_4.py",
+          "action": "created",
+          "lines": 234
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/data_source_observation_and_column_selection.py",
+          "action": "created",
+          "lines": 658
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/data_source_observation_and_column_selection_1.py",
+          "action": "created",
+          "lines": 674
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi.py",
+          "action": "modified",
+          "lines": 747
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_1.py",
+          "action": "modified",
+          "lines": 394
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_6.py",
+          "action": "created",
+          "lines": 939
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_7.py",
+          "action": "created",
+          "lines": 281
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "modified",
+          "lines": 657
+        },
+        {
+          "file": "Scripts/tests/test_7_2_env.py",
+          "action": "modified",
+          "lines": 1901
+        },
+        {
+          "file": "Scripts/tests/test_7_4.py",
+          "action": "created",
+          "lines": 1078
+        },
+        {
+          "file": "Scripts/tests/test_7_6.py",
+          "action": "created",
+          "lines": 1443
+        },
+        {
+          "file": "Scripts/tests/test_7_6_adapter.py",
+          "action": "created",
+          "lines": 1315
+        },
+        {
+          "file": "Scripts/tests/test_7_6_env.py",
+          "action": "created",
+          "lines": 1224
+        },
+        {
+          "file": "Scripts/tests/test_7_8.py",
+          "action": "created",
+          "lines": 1081
+        },
+        {
+          "file": "Scripts/tests/test_7_99_columns.py",
+          "action": "created",
+          "lines": 856
+        }
+      ]
+    },
+    {
+      "step_id": "7.99_columns",
+      "step_name": "Data source observation & column selection",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T15:45:04.924Z",
+      "duration_ms": 1875925,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/test_results/experiment_config.json",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/test_results/integration_test_report.json",
+          "action": "created",
+          "lines": 86
+        },
+        {
+          "file": "Scripts/test_results/neutral_prompts.json",
+          "action": "created",
+          "lines": 11
+        },
+        {
+          "file": "Scripts/test_results/results/neutral/primary_openai_iter0000.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/reports/integration_test_summary.json",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/test_results/results/results_json/results_test_img_0000.json",
+          "action": "created",
+          "lines": 91
+        },
+        {
+          "file": "Scripts/test_results/results/stage_1/primary_openai_iter0001.png",
+          "action": "created",
+          "lines": 5
+        },
+        {
+          "file": "Scripts/test_results/results/stage_2/primary_openai_iter0002.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/stage_3/primary_openai_iter0003.png",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_results/results/state/state_mini_test.json",
+          "action": "created",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/__init__.py",
+          "action": "modified",
+          "lines": 181
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes.py",
+          "action": "modified",
+          "lines": 601
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/create_data_source_adapter_for_run_integration_tes_4.py",
+          "action": "created",
+          "lines": 234
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/data_source_observation_and_column_selection.py",
+          "action": "created",
+          "lines": 658
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/data_source_observation_and_column_selection_1.py",
+          "action": "created",
+          "lines": 674
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi.py",
+          "action": "modified",
+          "lines": 747
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_1.py",
+          "action": "modified",
+          "lines": 394
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_6.py",
+          "action": "created",
+          "lines": 939
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/setup_test_environment_for_run_integration_test_wi_7.py",
+          "action": "created",
+          "lines": 281
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "modified",
+          "lines": 657
+        },
+        {
+          "file": "Scripts/tests/test_7_2_env.py",
+          "action": "modified",
+          "lines": 1901
+        },
+        {
+          "file": "Scripts/tests/test_7_4.py",
+          "action": "created",
+          "lines": 1078
+        },
+        {
+          "file": "Scripts/tests/test_7_6.py",
+          "action": "created",
+          "lines": 1443
+        },
+        {
+          "file": "Scripts/tests/test_7_6_adapter.py",
+          "action": "created",
+          "lines": 1315
+        },
+        {
+          "file": "Scripts/tests/test_7_6_env.py",
+          "action": "created",
+          "lines": 1224
+        },
+        {
+          "file": "Scripts/tests/test_7_8.py",
+          "action": "created",
+          "lines": 1081
+        },
+        {
+          "file": "Scripts/tests/test_7_99_columns.py",
+          "action": "created",
+          "lines": 856
+        }
+      ]
+    }
+  ]
+}
