@@ -1,0 +1,157 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1776169565522_d6h1us",
+  "generated_at": "2026-04-14T12:26:05.522Z",
+  "extension_version": "1.17.4",
+  "project_name": "Image_Deviation_Monitor",
+  "machine_id": "machine_setjcq",
+  "total_steps": 3,
+  "total_files_changed": 18,
+  "providers_used": [
+    "codex",
+    "claude_code"
+  ],
+  "report_type": "project",
+  "flags": {
+    "has_extension_issues": false,
+    "has_project_issues": false,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [],
+  "steps": [
+    {
+      "step_id": "5.2",
+      "step_name": "Implement random image selection for next iteration",
+      "phase_id": 5,
+      "phase_name": "Experiment Orchestration Loop",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "coding_simple",
+      "completed_at": "2026-04-14T12:18:04.453Z",
+      "duration_ms": 1594464,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/experiment_orchestration_loop/__init__.py",
+          "action": "modified",
+          "lines": 112
+        },
+        {
+          "file": "Scripts/experiment_orchestration_loop/build_main_experiment_orchestrator.py",
+          "action": "modified",
+          "lines": 595
+        },
+        {
+          "file": "Scripts/src/orchestrator/__init__.py",
+          "action": "created",
+          "lines": 45
+        },
+        {
+          "file": "Scripts/src/orchestrator/experiment_runner.py",
+          "action": "created",
+          "lines": 548
+        },
+        {
+          "file": "Scripts/src/orchestrator/state.py",
+          "action": "created",
+          "lines": 340
+        },
+        {
+          "file": "Scripts/tests/test_5_1.py",
+          "action": "modified",
+          "lines": 1720
+        }
+      ]
+    },
+    {
+      "step_id": "5.3",
+      "step_name": "Add logging, progress tracking, and error recovery",
+      "phase_id": 5,
+      "phase_name": "Experiment Orchestration Loop",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "coding_simple",
+      "completed_at": "2026-04-14T12:18:06.231Z",
+      "duration_ms": 1596435,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/experiment_orchestration_loop/__init__.py",
+          "action": "modified",
+          "lines": 112
+        },
+        {
+          "file": "Scripts/experiment_orchestration_loop/build_main_experiment_orchestrator.py",
+          "action": "modified",
+          "lines": 595
+        },
+        {
+          "file": "Scripts/src/orchestrator/__init__.py",
+          "action": "created",
+          "lines": 45
+        },
+        {
+          "file": "Scripts/src/orchestrator/experiment_runner.py",
+          "action": "created",
+          "lines": 548
+        },
+        {
+          "file": "Scripts/src/orchestrator/state.py",
+          "action": "created",
+          "lines": 340
+        },
+        {
+          "file": "Scripts/tests/test_5_1.py",
+          "action": "modified",
+          "lines": 1720
+        }
+      ]
+    },
+    {
+      "step_id": "5.1",
+      "step_name": "Build main experiment orchestrator",
+      "phase_id": 5,
+      "phase_name": "Experiment Orchestration Loop",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-04-14T12:26:05.005Z",
+      "duration_ms": 2074694,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/experiment_orchestration_loop/__init__.py",
+          "action": "modified",
+          "lines": 112
+        },
+        {
+          "file": "Scripts/experiment_orchestration_loop/build_main_experiment_orchestrator.py",
+          "action": "modified",
+          "lines": 595
+        },
+        {
+          "file": "Scripts/src/orchestrator/__init__.py",
+          "action": "created",
+          "lines": 45
+        },
+        {
+          "file": "Scripts/src/orchestrator/experiment_runner.py",
+          "action": "created",
+          "lines": 548
+        },
+        {
+          "file": "Scripts/src/orchestrator/state.py",
+          "action": "created",
+          "lines": 340
+        },
+        {
+          "file": "Scripts/tests/test_5_1.py",
+          "action": "modified",
+          "lines": 1720
+        }
+      ]
+    }
+  ]
+}
