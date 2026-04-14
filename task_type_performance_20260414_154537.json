@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-04-14T15:45:37.440Z",
+  "extension_version": "1.18.0",
+  "machine_id": "machine_setjcq",
+  "stats": [
+    {
+      "provider_id": "claude_code",
+      "model": "claude-code",
+      "task_type": "test",
+      "selections": 4,
+      "successes": 2,
+      "failures": 2,
+      "avg_duration_s": 1740.1,
+      "total_duration_ms": 3480175
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-code",
+      "task_type": "unknown",
+      "selections": 4,
+      "successes": 3,
+      "failures": 1,
+      "avg_duration_s": 1804.6,
+      "total_duration_ms": 5413887
+    }
+  ]
+}
