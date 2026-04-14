@@ -1,0 +1,586 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1776174939354_iode9s",
+  "generated_at": "2026-04-14T13:55:39.353Z",
+  "extension_version": "1.17.5",
+  "project_name": "Image_Deviation_Monitor",
+  "machine_id": "machine_setjcq",
+  "total_steps": 4,
+  "total_files_changed": 99,
+  "providers_used": [
+    "claude_code"
+  ],
+  "report_type": "extension",
+  "flags": {
+    "has_extension_issues": true,
+    "has_project_issues": false,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "timeout",
+      "scope": "extension",
+      "summary": "CLI execution timed out",
+      "step_id": "7.1",
+      "provider": "claude_code",
+      "count": 2
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "7.1",
+      "step_name": "Write unit tests for analysis and scoring modules",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "test",
+      "completed_at": "2026-04-14T13:32:16.675Z",
+      "duration_ms": 900068,
+      "success": false,
+      "error": "Claude Code CLI timed out after 900s (no output received)",
+      "file_changes": [
+        {
+          "file": "Scripts/report_generation_and_visualization/__init__.py",
+          "action": "modified",
+          "lines": 30
+        },
+        {
+          "file": "Scripts/report_generation_and_visualization/create_a4_pdf_report_with_image_grids_and_analysis.py",
+          "action": "modified",
+          "lines": 314
+        },
+        {
+          "file": "Scripts/report_generation_and_visualization/create_a4_pdf_report_with_image_grids_and_analysis_1.py",
+          "action": "created",
+          "lines": 656
+        },
+        {
+          "file": "Scripts/report_generation_and_visualization/create_a4_pdf_report_with_image_grids_and_analysis_2.py",
+          "action": "created",
+          "lines": 637
+        },
+        {
+          "file": "Scripts/report_generation_and_visualization/create_a4_pdf_report_with_image_grids_and_analysis_3.py",
+          "action": "created",
+          "lines": 678
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 288
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/__init__.py",
+          "action": "modified",
+          "lines": 72
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime.py",
+          "action": "modified",
+          "lines": 506
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime_3.py",
+          "action": "created",
+          "lines": 304
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime_4.py",
+          "action": "created",
+          "lines": 420
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/write_unit_tests_for_analysis_and_scoring_modules.py",
+          "action": "modified",
+          "lines": 576
+        },
+        {
+          "file": "Scripts/tests/conftest.py",
+          "action": "modified",
+          "lines": 387
+        },
+        {
+          "file": "Scripts/tests/test_6_2.py",
+          "action": "created",
+          "lines": 988
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "modified",
+          "lines": 66
+        },
+        {
+          "file": "Scripts/tests/test_7_2.py",
+          "action": "modified",
+          "lines": 704
+        },
+        {
+          "file": "Scripts/tests/test_7_2_adapter.py",
+          "action": "modified",
+          "lines": 1152
+        },
+        {
+          "file": "Scripts/tests/test_deviation.py",
+          "action": "modified",
+          "lines": 674
+        },
+        {
+          "file": "Scripts/tests/test_deviation_1.py",
+          "action": "created",
+          "lines": 205
+        },
+        {
+          "file": "Scripts/tests/test_prompts.py",
+          "action": "modified",
+          "lines": 644
+        },
+        {
+          "file": "Scripts/tests/test_tracker.py",
+          "action": "modified",
+          "lines": 668
+        }
+      ]
+    },
+    {
+      "step_id": "7.2",
+      "step_name": "Run integration test with 3-iteration mini experiment",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "test",
+      "completed_at": "2026-04-14T13:48:47.435Z",
+      "duration_ms": 1890353,
+      "success": false,
+      "error": "Claude Code killed (signal SIGTERM) — possible stall or timeout",
+      "file_changes": [
+        {
+          "file": "Scripts/report_generation_and_visualization/__init__.py",
+          "action": "modified",
+          "lines": 30
+        },
+        {
+          "file": "Scripts/report_generation_and_visualization/create_a4_pdf_report_with_image_grids_and_analysis.py",
+          "action": "modified",
+          "lines": 314
+        },
+        {
+          "file": "Scripts/report_generation_and_visualization/create_a4_pdf_report_with_image_grids_and_analysis_1.py",
+          "action": "created",
+          "lines": 656
+        },
+        {
+          "file": "Scripts/report_generation_and_visualization/create_a4_pdf_report_with_image_grids_and_analysis_2.py",
+          "action": "created",
+          "lines": 637
+        },
+        {
+          "file": "Scripts/report_generation_and_visualization/create_a4_pdf_report_with_image_grids_and_analysis_3.py",
+          "action": "created",
+          "lines": 678
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "modified",
+          "lines": 129
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 288
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/__init__.py",
+          "action": "modified",
+          "lines": 72
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime.py",
+          "action": "modified",
+          "lines": 530
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime_3.py",
+          "action": "created",
+          "lines": 304
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime_4.py",
+          "action": "created",
+          "lines": 420
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/write_unit_tests_for_analysis_and_scoring_modules.py",
+          "action": "modified",
+          "lines": 576
+        },
+        {
+          "file": "Scripts/tests/conftest.py",
+          "action": "modified",
+          "lines": 387
+        },
+        {
+          "file": "Scripts/tests/test_6_2.py",
+          "action": "created",
+          "lines": 988
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "modified",
+          "lines": 66
+        },
+        {
+          "file": "Scripts/tests/test_7_2.py",
+          "action": "modified",
+          "lines": 704
+        },
+        {
+          "file": "Scripts/tests/test_7_2_adapter.py",
+          "action": "modified",
+          "lines": 1152
+        },
+        {
+          "file": "Scripts/tests/test_deviation.py",
+          "action": "modified",
+          "lines": 674
+        },
+        {
+          "file": "Scripts/tests/test_deviation_1.py",
+          "action": "created",
+          "lines": 205
+        },
+        {
+          "file": "Scripts/tests/test_prompts.py",
+          "action": "modified",
+          "lines": 644
+        },
+        {
+          "file": "Scripts/tests/test_tracker.py",
+          "action": "modified",
+          "lines": 668
+        }
+      ]
+    },
+    {
+      "step_id": "6.2",
+      "step_name": "Create A4 PDF report with image grids and analysis",
+      "phase_id": 6,
+      "phase_name": "Report Generation & Visualization",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "report",
+      "completed_at": "2026-04-14T13:50:38.228Z",
+      "duration_ms": 2001922,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/report_generation_and_visualization/__init__.py",
+          "action": "modified",
+          "lines": 30
+        },
+        {
+          "file": "Scripts/report_generation_and_visualization/create_a4_pdf_report_with_image_grids_and_analysis.py",
+          "action": "modified",
+          "lines": 314
+        },
+        {
+          "file": "Scripts/report_generation_and_visualization/create_a4_pdf_report_with_image_grids_and_analysis_1.py",
+          "action": "created",
+          "lines": 656
+        },
+        {
+          "file": "Scripts/report_generation_and_visualization/create_a4_pdf_report_with_image_grids_and_analysis_2.py",
+          "action": "created",
+          "lines": 637
+        },
+        {
+          "file": "Scripts/report_generation_and_visualization/create_a4_pdf_report_with_image_grids_and_analysis_3.py",
+          "action": "created",
+          "lines": 678
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "modified",
+          "lines": 129
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 288
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/__init__.py",
+          "action": "modified",
+          "lines": 72
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime.py",
+          "action": "modified",
+          "lines": 530
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime_3.py",
+          "action": "created",
+          "lines": 304
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime_4.py",
+          "action": "created",
+          "lines": 420
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/write_unit_tests_for_analysis_and_scoring_modules.py",
+          "action": "modified",
+          "lines": 576
+        },
+        {
+          "file": "Scripts/tests/conftest.py",
+          "action": "modified",
+          "lines": 387
+        },
+        {
+          "file": "Scripts/tests/test_6_2.py",
+          "action": "created",
+          "lines": 988
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "modified",
+          "lines": 66
+        },
+        {
+          "file": "Scripts/tests/test_7_2.py",
+          "action": "modified",
+          "lines": 704
+        },
+        {
+          "file": "Scripts/tests/test_7_2_adapter.py",
+          "action": "modified",
+          "lines": 1152
+        },
+        {
+          "file": "Scripts/tests/test_deviation.py",
+          "action": "modified",
+          "lines": 674
+        },
+        {
+          "file": "Scripts/tests/test_deviation_1.py",
+          "action": "created",
+          "lines": 205
+        },
+        {
+          "file": "Scripts/tests/test_prompts.py",
+          "action": "modified",
+          "lines": 644
+        },
+        {
+          "file": "Scripts/tests/test_tracker.py",
+          "action": "modified",
+          "lines": 668
+        }
+      ]
+    },
+    {
+      "step_id": "7.2_adapter",
+      "step_name": "Create data source adapter for Run integration test with 3-iteration mini experiment",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T13:55:27.560Z",
+      "duration_ms": 2290723,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/report_generation_and_visualization/__init__.py",
+          "action": "modified",
+          "lines": 30
+        },
+        {
+          "file": "Scripts/report_generation_and_visualization/create_a4_pdf_report_with_image_grids_and_analysis.py",
+          "action": "modified",
+          "lines": 314
+        },
+        {
+          "file": "Scripts/report_generation_and_visualization/create_a4_pdf_report_with_image_grids_and_analysis_1.py",
+          "action": "created",
+          "lines": 656
+        },
+        {
+          "file": "Scripts/report_generation_and_visualization/create_a4_pdf_report_with_image_grids_and_analysis_2.py",
+          "action": "created",
+          "lines": 637
+        },
+        {
+          "file": "Scripts/report_generation_and_visualization/create_a4_pdf_report_with_image_grids_and_analysis_3.py",
+          "action": "created",
+          "lines": 678
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "modified",
+          "lines": 129
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 288
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/__init__.py",
+          "action": "modified",
+          "lines": 72
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime.py",
+          "action": "modified",
+          "lines": 530
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime_3.py",
+          "action": "created",
+          "lines": 304
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/run_integration_test_with_3iteration_mini_experime_4.py",
+          "action": "created",
+          "lines": 420
+        },
+        {
+          "file": "Scripts/testing_validation_and_cli_entry_point/write_unit_tests_for_analysis_and_scoring_modules.py",
+          "action": "modified",
+          "lines": 576
+        },
+        {
+          "file": "Scripts/tests/conftest.py",
+          "action": "modified",
+          "lines": 387
+        },
+        {
+          "file": "Scripts/tests/test_6_2.py",
+          "action": "created",
+          "lines": 988
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "modified",
+          "lines": 66
+        },
+        {
+          "file": "Scripts/tests/test_7_2.py",
+          "action": "modified",
+          "lines": 704
+        },
+        {
+          "file": "Scripts/tests/test_7_2_adapter.py",
+          "action": "modified",
+          "lines": 1152
+        },
+        {
+          "file": "Scripts/tests/test_deviation.py",
+          "action": "modified",
+          "lines": 674
+        },
+        {
+          "file": "Scripts/tests/test_deviation_1.py",
+          "action": "created",
+          "lines": 205
+        },
+        {
+          "file": "Scripts/tests/test_prompts.py",
+          "action": "modified",
+          "lines": 644
+        },
+        {
+          "file": "Scripts/tests/test_tracker.py",
+          "action": "modified",
+          "lines": 668
+        }
+      ]
+    }
+  ]
+}
