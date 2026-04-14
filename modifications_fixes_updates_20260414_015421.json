@@ -1,0 +1,363 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1776131661682_44qjob",
+  "generated_at": "2026-04-14T01:54:21.681Z",
+  "extension_version": "1.16.12",
+  "project_name": "Image_Deviation_Monitor",
+  "machine_id": "machine_setjcq",
+  "total_steps": 6,
+  "total_files_changed": 48,
+  "providers_used": [
+    "claude_code"
+  ],
+  "report_type": "extension",
+  "flags": {
+    "has_extension_issues": true,
+    "has_project_issues": false,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "timeout",
+      "scope": "extension",
+      "summary": "CLI execution timed out",
+      "step_id": "3.1_env",
+      "provider": "claude_code",
+      "count": 6
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "3.1_env",
+      "step_name": "Setup test environment for Build image generation service with 720x720 output",
+      "phase_id": 3,
+      "phase_name": "Image Generation & Storage Pipeline",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T01:52:29.010Z",
+      "duration_ms": 120235,
+      "success": false,
+      "error": "Claude Code killed (signal SIGTERM) — possible stall or timeout",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    },
+    {
+      "step_id": "3.1_adapter",
+      "step_name": "Create data source adapter for Build image generation service with 720x720 output",
+      "phase_id": 3,
+      "phase_name": "Image Generation & Storage Pipeline",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T01:52:29.491Z",
+      "duration_ms": 120262,
+      "success": false,
+      "error": "Claude Code killed (signal SIGTERM) — possible stall or timeout",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    },
+    {
+      "step_id": "3.1",
+      "step_name": "Build image generation service with 720x720 output",
+      "phase_id": 3,
+      "phase_name": "Image Generation & Storage Pipeline",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-04-14T01:52:29.710Z",
+      "duration_ms": 120691,
+      "success": false,
+      "error": "Claude Code killed (signal SIGTERM) — possible stall or timeout",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    },
+    {
+      "step_id": "4.1_adapter",
+      "step_name": "Create data source adapter for Build multi-metric image sentiment analyzer",
+      "phase_id": 4,
+      "phase_name": "Image Sentiment & Emotion Analysis Engine",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T01:54:21.224Z",
+      "duration_ms": 107048,
+      "success": false,
+      "error": "Claude Code killed (signal SIGTERM) — possible stall or timeout",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/huggingface_clip_embeddings.json",
+          "action": "created",
+          "lines": 25
+        },
+        {
+          "file": "Scripts/test_env/api_responses/huggingface_models_list.json",
+          "action": "created",
+          "lines": 35
+        },
+        {
+          "file": "Scripts/test_env/api_responses/huggingface_sentiment_negative.json",
+          "action": "created",
+          "lines": 28
+        },
+        {
+          "file": "Scripts/test_env/api_responses/huggingface_sentiment_neutral.json",
+          "action": "created",
+          "lines": 28
+        },
+        {
+          "file": "Scripts/test_env/api_responses/huggingface_sentiment_positive.json",
+          "action": "created",
+          "lines": 28
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/openai_vision_analysis.json",
+          "action": "created",
+          "lines": 22
+        },
+        {
+          "file": "Scripts/test_env/api_responses/openai_vision_negative.json",
+          "action": "created",
+          "lines": 22
+        },
+        {
+          "file": "Scripts/test_env/api_responses/openai_vision_positive.json",
+          "action": "created",
+          "lines": 22
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    },
+    {
+      "step_id": "4.1",
+      "step_name": "Build multi-metric image sentiment analyzer",
+      "phase_id": 4,
+      "phase_name": "Image Sentiment & Emotion Analysis Engine",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-04-14T01:54:21.457Z",
+      "duration_ms": 107099,
+      "success": false,
+      "error": "Claude Code killed (signal SIGTERM) — possible stall or timeout",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/huggingface_clip_embeddings.json",
+          "action": "created",
+          "lines": 25
+        },
+        {
+          "file": "Scripts/test_env/api_responses/huggingface_models_list.json",
+          "action": "created",
+          "lines": 35
+        },
+        {
+          "file": "Scripts/test_env/api_responses/huggingface_sentiment_negative.json",
+          "action": "created",
+          "lines": 28
+        },
+        {
+          "file": "Scripts/test_env/api_responses/huggingface_sentiment_neutral.json",
+          "action": "created",
+          "lines": 28
+        },
+        {
+          "file": "Scripts/test_env/api_responses/huggingface_sentiment_positive.json",
+          "action": "created",
+          "lines": 28
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/openai_vision_analysis.json",
+          "action": "created",
+          "lines": 22
+        },
+        {
+          "file": "Scripts/test_env/api_responses/openai_vision_negative.json",
+          "action": "created",
+          "lines": 22
+        },
+        {
+          "file": "Scripts/test_env/api_responses/openai_vision_positive.json",
+          "action": "created",
+          "lines": 22
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    },
+    {
+      "step_id": "4.1_env",
+      "step_name": "Setup test environment for Build multi-metric image sentiment analyzer",
+      "phase_id": 4,
+      "phase_name": "Image Sentiment & Emotion Analysis Engine",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T01:54:21.678Z",
+      "duration_ms": 107766,
+      "success": false,
+      "error": "Claude Code killed (signal SIGTERM) — possible stall or timeout",
+      "file_changes": [
+        {
+          "file": "Scripts/test_env/api_responses/huggingface_clip_embeddings.json",
+          "action": "created",
+          "lines": 25
+        },
+        {
+          "file": "Scripts/test_env/api_responses/huggingface_models_list.json",
+          "action": "created",
+          "lines": 35
+        },
+        {
+          "file": "Scripts/test_env/api_responses/huggingface_sentiment_negative.json",
+          "action": "created",
+          "lines": 28
+        },
+        {
+          "file": "Scripts/test_env/api_responses/huggingface_sentiment_neutral.json",
+          "action": "created",
+          "lines": 28
+        },
+        {
+          "file": "Scripts/test_env/api_responses/huggingface_sentiment_positive.json",
+          "action": "created",
+          "lines": 28
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/openai_vision_analysis.json",
+          "action": "created",
+          "lines": 22
+        },
+        {
+          "file": "Scripts/test_env/api_responses/openai_vision_negative.json",
+          "action": "created",
+          "lines": 22
+        },
+        {
+          "file": "Scripts/test_env/api_responses/openai_vision_positive.json",
+          "action": "created",
+          "lines": 22
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    }
+  ]
+}
