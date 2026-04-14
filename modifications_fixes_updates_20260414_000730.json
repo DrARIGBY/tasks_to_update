@@ -1,0 +1,126 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1776125250766_ukt0ly",
+  "generated_at": "2026-04-14T00:07:30.766Z",
+  "extension_version": "1.14.0",
+  "project_name": "Image_Deviation_Monitor",
+  "machine_id": "machine_setjcq",
+  "total_steps": 3,
+  "total_files_changed": 12,
+  "providers_used": [
+    "claude_code",
+    "codex"
+  ],
+  "report_type": "project",
+  "flags": {
+    "has_extension_issues": false,
+    "has_project_issues": false,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [],
+  "steps": [
+    {
+      "step_id": "1.2_adapter",
+      "step_name": "Create data source adapter for Build LLM provider abstraction and model selector",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T00:03:28.051Z",
+      "duration_ms": 440486,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/__init__.py",
+          "action": "modified",
+          "lines": 62
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/create_data_source_adapter_for_build_llm_provider_.py",
+          "action": "modified",
+          "lines": 478
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_llm_provider_abst.py",
+          "action": "created",
+          "lines": 261
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_llm_provider_abst_1.py",
+          "action": "created",
+          "lines": 636
+        },
+        {
+          "file": "Scripts/tests/test_1_2_adapter.py",
+          "action": "modified",
+          "lines": 653
+        },
+        {
+          "file": "Scripts/tests/test_1_2_env.py",
+          "action": "created",
+          "lines": 418
+        }
+      ]
+    },
+    {
+      "step_id": "1.2_env",
+      "step_name": "Setup test environment for Build LLM provider abstraction and model selector",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-04-14T00:06:38.560Z",
+      "duration_ms": 631020,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/__init__.py",
+          "action": "modified",
+          "lines": 62
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/create_data_source_adapter_for_build_llm_provider_.py",
+          "action": "modified",
+          "lines": 478
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_llm_provider_abst.py",
+          "action": "created",
+          "lines": 261
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_llm_provider_abst_1.py",
+          "action": "created",
+          "lines": 636
+        },
+        {
+          "file": "Scripts/tests/test_1_2_adapter.py",
+          "action": "modified",
+          "lines": 653
+        },
+        {
+          "file": "Scripts/tests/test_1_2_env.py",
+          "action": "created",
+          "lines": 418
+        }
+      ]
+    },
+    {
+      "step_id": "3.2",
+      "step_name": "Implement image storage with naming and metadata",
+      "phase_id": 3,
+      "phase_name": "Image Generation & Storage Pipeline",
+      "provider_id": "codex",
+      "provider_model": "codex-mini-latest",
+      "task_type": "coding_simple",
+      "completed_at": "2026-04-14T00:07:30.753Z",
+      "duration_ms": 48628,
+      "success": true,
+      "file_changes": []
+    }
+  ]
+}
