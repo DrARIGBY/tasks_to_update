@@ -1,0 +1,167 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1780685909685_kn3n1p",
+  "generated_at": "2026-06-05T18:58:29.684Z",
+  "extension_version": "2.1.2",
+  "project_name": "Debugging_Rebuilding_Fixing",
+  "machine_id": "machine_setjcq",
+  "total_steps": 2,
+  "total_files_changed": 20,
+  "providers_used": [
+    "claude_code"
+  ],
+  "report_type": "extension",
+  "flags": {
+    "has_extension_issues": true,
+    "has_project_issues": false,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "timeout",
+      "scope": "extension",
+      "summary": "Provider process timed out or was killed",
+      "step_id": "1.3_adapter",
+      "provider": "claude_code",
+      "count": 1
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "1.1",
+      "step_name": "Define requirements and Streamlit UX spec",
+      "phase_id": 1,
+      "phase_name": "Planning & Setup",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "plan",
+      "completed_at": "2026-06-05T18:50:29.570Z",
+      "duration_ms": 506204,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/.env.example",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/doc-coauthoring/SKILL.md",
+          "action": "created",
+          "lines": 376
+        },
+        {
+          "file": "Scripts/_skills/doc-coauthoring/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/configs/planning_config.yaml",
+          "action": "created",
+          "lines": 114
+        },
+        {
+          "file": "Scripts/planning_and_setup/__init__.py",
+          "action": "created",
+          "lines": 18
+        },
+        {
+          "file": "Scripts/planning_and_setup/define_requirements_and_streamlit_ux_spec.py",
+          "action": "created",
+          "lines": 223
+        },
+        {
+          "file": "Scripts/planning_and_setup/define_requirements_and_streamlit_ux_spec_1.py",
+          "action": "created",
+          "lines": 230
+        },
+        {
+          "file": "Scripts/planning_and_setup/define_requirements_and_streamlit_ux_spec_2.py",
+          "action": "created",
+          "lines": 283
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/tests/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/test_1_1.py",
+          "action": "created",
+          "lines": 272
+        }
+      ]
+    },
+    {
+      "step_id": "1.3_adapter",
+      "step_name": "Create data source adapter for Design subscription auth and Ollama discovery strategy",
+      "phase_id": 1,
+      "phase_name": "Planning & Setup",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "unknown",
+      "completed_at": "2026-06-05T18:58:28.973Z",
+      "duration_ms": 479268,
+      "success": false,
+      "error": "Claude Code killed (signal SIGTERM) — possible stall or timeout",
+      "file_changes": [
+        {
+          "file": "Scripts/planning_and_setup/__init__.py",
+          "action": "modified",
+          "lines": 30
+        },
+        {
+          "file": "Scripts/planning_and_setup/create_data_source_adapter_for_design_subscription.py",
+          "action": "created",
+          "lines": 352
+        },
+        {
+          "file": "Scripts/src/__init__.py",
+          "action": "created",
+          "lines": 35
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "created",
+          "lines": 673
+        },
+        {
+          "file": "Scripts/test_env/README.md",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/test_env/models.json",
+          "action": "created",
+          "lines": 53
+        },
+        {
+          "file": "Scripts/test_env/providers.json",
+          "action": "created",
+          "lines": 31
+        },
+        {
+          "file": "Scripts/tests/test_1_3_adapter.py",
+          "action": "created",
+          "lines": 443
+        }
+      ]
+    }
+  ]
+}
