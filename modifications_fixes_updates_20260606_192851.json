@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1780774131836_zozvjf",
+  "generated_at": "2026-06-06T19:28:51.835Z",
+  "extension_version": "2.6.13",
+  "project_name": "Debugging_Rebuilding_Fixing",
+  "machine_id": "machine_setjcq",
+  "total_steps": 1,
+  "total_files_changed": 3,
+  "providers_used": [
+    "claude_code"
+  ],
+  "report_type": "extension",
+  "flags": {
+    "has_extension_issues": true,
+    "has_project_issues": false,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "timeout",
+      "scope": "extension",
+      "summary": "Provider process timed out or was killed",
+      "step_id": "1.1",
+      "provider": "claude_code",
+      "count": 1
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "1.1",
+      "step_name": "Initialize Streamlit project structure",
+      "phase_id": 1,
+      "phase_name": "Project Scaffolding & Subscription Provider Setup",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_simple",
+      "completed_at": "2026-06-06T19:28:51.824Z",
+      "duration_ms": 1161211,
+      "success": false,
+      "error": "PTY build timed out after 900s",
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/internal-comms/SKILL.md",
+          "action": "created",
+          "lines": 33
+        },
+        {
+          "file": "Scripts/_skills/internal-comms/__init__.py",
+          "action": "created",
+          "lines": 2
+        }
+      ]
+    }
+  ]
+}
