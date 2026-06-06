@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-06-06T19:28:51.840Z",
+  "extension_version": "2.6.13",
+  "machine_id": "machine_setjcq",
+  "stats": [
+    {
+      "provider_id": "claude_code",
+      "model": "claude-code",
+      "task_type": "coding_simple",
+      "selections": 1,
+      "successes": 0,
+      "failures": 1,
+      "avg_duration_s": 0,
+      "total_duration_ms": 0
+    }
+  ]
+}
