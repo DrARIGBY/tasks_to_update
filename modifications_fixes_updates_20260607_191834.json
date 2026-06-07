@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1780859914077_416vgy",
+  "generated_at": "2026-06-07T19:18:34.076Z",
+  "extension_version": "2.6.22",
+  "project_name": "Debugging_Rebuilding_Fixing",
+  "machine_id": "machine_setjcq",
+  "total_steps": 2,
+  "total_files_changed": 0,
+  "providers_used": [
+    "claude_code"
+  ],
+  "report_type": "extension",
+  "flags": {
+    "has_extension_issues": true,
+    "has_project_issues": false,
+    "was_cancelled": false,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "timeout",
+      "scope": "extension",
+      "summary": "Provider process timed out or was killed",
+      "step_id": "1.2_env",
+      "provider": "claude_code",
+      "count": 2
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "1.2_env",
+      "step_name": "Setup test environment for Build subscription provider abstraction layer",
+      "phase_id": 1,
+      "phase_name": "Project Scaffolding & Subscription Provider Setup",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-06-07T19:18:33.332Z",
+      "duration_ms": 900157,
+      "success": false,
+      "error": "PTY build timed out after 900s",
+      "file_changes": []
+    },
+    {
+      "step_id": "1.2_adapter",
+      "step_name": "Create data source adapter for Build subscription provider abstraction layer",
+      "phase_id": 1,
+      "phase_name": "Project Scaffolding & Subscription Provider Setup",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-06-07T19:18:33.347Z",
+      "duration_ms": 900151,
+      "success": false,
+      "error": "PTY build timed out after 900s",
+      "file_changes": []
+    }
+  ]
+}
