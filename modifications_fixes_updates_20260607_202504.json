@@ -1,0 +1,318 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1780863904684_dcoay2",
+  "generated_at": "2026-06-07T20:25:04.684Z",
+  "extension_version": "2.6.24",
+  "project_name": "Debugging_Rebuilding_Fixing",
+  "machine_id": "machine_setjcq",
+  "total_steps": 4,
+  "total_files_changed": 34,
+  "providers_used": [
+    "claude_code"
+  ],
+  "report_type": "extension",
+  "flags": {
+    "has_extension_issues": true,
+    "has_project_issues": false,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "timeout",
+      "scope": "extension",
+      "summary": "Provider process timed out or was killed",
+      "step_id": "1.2_env",
+      "provider": "claude_code",
+      "count": 4
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "1.2_env",
+      "step_name": "Setup test environment for Build subscription provider abstraction layer",
+      "phase_id": 1,
+      "phase_name": "Project Scaffolding & Subscription Provider Setup",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-06-07T20:10:02.572Z",
+      "duration_ms": 900088,
+      "success": false,
+      "error": "PTY build timed out after 900s",
+      "file_changes": [
+        {
+          "file": "Scripts/project_scaffolding_and_subscription_provider_setu/__init__.py",
+          "action": "modified",
+          "lines": 52
+        },
+        {
+          "file": "Scripts/project_scaffolding_and_subscription_provider_setu/create_data_source_adapter_for_build_subscription_.py",
+          "action": "created",
+          "lines": 210
+        },
+        {
+          "file": "Scripts/project_scaffolding_and_subscription_provider_setu/setup_test_environment_for_build_subscription_prov.py",
+          "action": "created",
+          "lines": 617
+        },
+        {
+          "file": "Scripts/project_scaffolding_and_subscription_provider_setu/setup_test_environment_for_build_subscription_prov_1.py",
+          "action": "created",
+          "lines": 512
+        },
+        {
+          "file": "Scripts/project_scaffolding_and_subscription_provider_setu/setup_test_environment_for_build_subscription_prov_2.py",
+          "action": "created",
+          "lines": 252
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 352
+        },
+        {
+          "file": "Scripts/tests/test_1_2_adapter.py",
+          "action": "created",
+          "lines": 268
+        },
+        {
+          "file": "Scripts/tests/test_1_2_env.py",
+          "action": "created",
+          "lines": 277
+        }
+      ]
+    },
+    {
+      "step_id": "1.2_adapter",
+      "step_name": "Create data source adapter for Build subscription provider abstraction layer",
+      "phase_id": 1,
+      "phase_name": "Project Scaffolding & Subscription Provider Setup",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-06-07T20:10:02.591Z",
+      "duration_ms": 900083,
+      "success": false,
+      "error": "PTY build timed out after 900s",
+      "file_changes": [
+        {
+          "file": "Scripts/project_scaffolding_and_subscription_provider_setu/__init__.py",
+          "action": "modified",
+          "lines": 52
+        },
+        {
+          "file": "Scripts/project_scaffolding_and_subscription_provider_setu/create_data_source_adapter_for_build_subscription_.py",
+          "action": "created",
+          "lines": 210
+        },
+        {
+          "file": "Scripts/project_scaffolding_and_subscription_provider_setu/setup_test_environment_for_build_subscription_prov.py",
+          "action": "created",
+          "lines": 617
+        },
+        {
+          "file": "Scripts/project_scaffolding_and_subscription_provider_setu/setup_test_environment_for_build_subscription_prov_1.py",
+          "action": "created",
+          "lines": 512
+        },
+        {
+          "file": "Scripts/project_scaffolding_and_subscription_provider_setu/setup_test_environment_for_build_subscription_prov_2.py",
+          "action": "created",
+          "lines": 252
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 352
+        },
+        {
+          "file": "Scripts/tests/test_1_2_adapter.py",
+          "action": "created",
+          "lines": 268
+        },
+        {
+          "file": "Scripts/tests/test_1_2_env.py",
+          "action": "created",
+          "lines": 277
+        }
+      ]
+    },
+    {
+      "step_id": "7.1",
+      "step_name": "Chapter writer agent per completed section",
+      "phase_id": 7,
+      "phase_name": "LaTeX Chapter Writer Per Section",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "report",
+      "completed_at": "2026-06-07T20:25:04.120Z",
+      "duration_ms": 900076,
+      "success": false,
+      "error": "PTY build timed out after 900s",
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/document_creator/SKILL.md",
+          "action": "created",
+          "lines": 497
+        },
+        {
+          "file": "Scripts/_skills/document_creator/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/document_creator/format_output.json",
+          "action": "created",
+          "lines": 284
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/corrections_handler.py",
+          "action": "created",
+          "lines": 543
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/document_orchestrator.py",
+          "action": "created",
+          "lines": 452
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/docx_builder.py",
+          "action": "created",
+          "lines": 477
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/latex_builder.py",
+          "action": "created",
+          "lines": 666
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/pptx_builder.py",
+          "action": "created",
+          "lines": 481
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/requirements.txt",
+          "action": "created",
+          "lines": 21
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/source_tracker.py",
+          "action": "created",
+          "lines": 413
+        },
+        {
+          "file": "Scripts/_skills/document_creator/templates/latex/academic.tex",
+          "action": "created",
+          "lines": 109
+        },
+        {
+          "file": "Scripts/_skills/document_creator/templates/latex/minimal.tex",
+          "action": "created",
+          "lines": 59
+        },
+        {
+          "file": "Scripts/_skills/document_creator/templates/latex/report.tex",
+          "action": "created",
+          "lines": 109
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/SKILL.md",
+          "action": "created",
+          "lines": 250
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/scripts/analyzer.py",
+          "action": "created",
+          "lines": 400
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/scripts/compiler.py",
+          "action": "created",
+          "lines": 250
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/scripts/generator.py",
+          "action": "created",
+          "lines": 739
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/scripts/integrator.py",
+          "action": "created",
+          "lines": 246
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/scripts/pipeline.py",
+          "action": "created",
+          "lines": 406
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/scripts/requirements.txt",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/latex_chapter_writer_per_section/__init__.py",
+          "action": "created",
+          "lines": 31
+        },
+        {
+          "file": "Scripts/latex_chapter_writer_per_section/chapter_writer_agent_per_completed_section.py",
+          "action": "created",
+          "lines": 905
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "created",
+          "lines": 373
+        }
+      ]
+    },
+    {
+      "step_id": "7.2",
+      "step_name": "Chapter ordering by functional usage",
+      "phase_id": 7,
+      "phase_name": "LaTeX Chapter Writer Per Section",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "analyze",
+      "completed_at": "2026-06-07T20:25:04.140Z",
+      "duration_ms": 900049,
+      "success": false,
+      "error": "PTY build timed out after 900s",
+      "file_changes": [
+        {
+          "file": "Scripts/latex_chapter_writer_per_section/__init__.py",
+          "action": "created",
+          "lines": 31
+        },
+        {
+          "file": "Scripts/latex_chapter_writer_per_section/chapter_writer_agent_per_completed_section.py",
+          "action": "created",
+          "lines": 905
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "created",
+          "lines": 373
+        }
+      ]
+    }
+  ]
+}
