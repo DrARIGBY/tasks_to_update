@@ -1,0 +1,406 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1780871500538_thown8",
+  "generated_at": "2026-06-07T22:31:40.535Z",
+  "extension_version": "2.6.24",
+  "project_name": "Debugging_Rebuilding_Fixing",
+  "machine_id": "machine_setjcq",
+  "total_steps": 8,
+  "total_files_changed": 17,
+  "providers_used": [
+    "claude_code",
+    "codex"
+  ],
+  "report_type": "extension",
+  "flags": {
+    "has_extension_issues": true,
+    "has_project_issues": false,
+    "was_cancelled": false,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "timeout",
+      "scope": "extension",
+      "summary": "Provider process timed out or was killed",
+      "step_id": "5.2",
+      "provider": "claude_code",
+      "count": 1
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "4.2",
+      "step_name": "Implement self-built tool generator",
+      "phase_id": 4,
+      "phase_name": "Skill & Tool Framework for Agents",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-06-07T21:57:19.607Z",
+      "duration_ms": 275461,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/tests/test_3_2.py",
+          "action": "modified",
+          "lines": 306
+        }
+      ]
+    },
+    {
+      "step_id": "3.2",
+      "step_name": "Task-to-model routing engine",
+      "phase_id": 3,
+      "phase_name": "Agentic Planner: Break ToDo into Tasks",
+      "provider_id": "codex",
+      "provider_model": "default",
+      "task_type": "coding_simple",
+      "completed_at": "2026-06-07T22:03:22.386Z",
+      "duration_ms": 658863,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/agentic_planner_break_todo_into_tasks/plan_review_ui_with_editable_assignments.py",
+          "action": "modified",
+          "lines": 264
+        },
+        {
+          "file": "Scripts/sitecustomize.py",
+          "action": "created",
+          "lines": 19
+        },
+        {
+          "file": "Scripts/tests/test_3_2.py",
+          "action": "modified",
+          "lines": 306
+        }
+      ]
+    },
+    {
+      "step_id": "3.3",
+      "step_name": "Plan review UI with editable assignments",
+      "phase_id": 3,
+      "phase_name": "Agentic Planner: Break ToDo into Tasks",
+      "provider_id": "codex",
+      "provider_model": "default",
+      "task_type": "coding_simple",
+      "completed_at": "2026-06-07T22:04:16.932Z",
+      "duration_ms": 667678,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/agentic_planner_break_todo_into_tasks/plan_review_ui_with_editable_assignments.py",
+          "action": "modified",
+          "lines": 264
+        },
+        {
+          "file": "Scripts/sitecustomize.py",
+          "action": "created",
+          "lines": 19
+        },
+        {
+          "file": "Scripts/tests/test_3_2.py",
+          "action": "modified",
+          "lines": 306
+        }
+      ]
+    },
+    {
+      "step_id": "3.2",
+      "step_name": "Task-to-model routing engine",
+      "phase_id": 3,
+      "phase_name": "Agentic Planner: Break ToDo into Tasks",
+      "provider_id": "codex",
+      "provider_model": "default",
+      "task_type": "coding_simple",
+      "completed_at": "2026-06-07T22:06:27.823Z",
+      "duration_ms": 798559,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/agentic_planner_break_todo_into_tasks/plan_review_ui_with_editable_assignments.py",
+          "action": "modified",
+          "lines": 264
+        },
+        {
+          "file": "Scripts/sitecustomize.py",
+          "action": "created",
+          "lines": 19
+        },
+        {
+          "file": "Scripts/tests/test_3_2.py",
+          "action": "modified",
+          "lines": 306
+        }
+      ]
+    },
+    {
+      "step_id": "4.2",
+      "step_name": "Implement self-built tool generator",
+      "phase_id": 4,
+      "phase_name": "Skill & Tool Framework for Agents",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-06-07T22:11:46.544Z",
+      "duration_ms": 313973,
+      "success": true,
+      "file_changes": []
+    },
+    {
+      "step_id": "5.2",
+      "step_name": "Per-sub-task validation gate",
+      "phase_id": 5,
+      "phase_name": "Linear Execution: Solve ToDo Sub-Tasks",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "validate",
+      "completed_at": "2026-06-07T22:26:47.610Z",
+      "duration_ms": 900070,
+      "success": false,
+      "error": "Claude Code CLI timed out after 900s (no output received)",
+      "file_changes": [
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/__init__.py",
+          "action": "created",
+          "lines": 168
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/build_linear_subtask_executor.py",
+          "action": "created",
+          "lines": 184
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/build_linear_subtask_executor_1.py",
+          "action": "created",
+          "lines": 758
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/build_linear_subtask_executor_2.py",
+          "action": "created",
+          "lines": 805
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/build_linear_subtask_executor_3.py",
+          "action": "created",
+          "lines": 562
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate.py",
+          "action": "created",
+          "lines": 608
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate_1.py",
+          "action": "created",
+          "lines": 686
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate_2.py",
+          "action": "created",
+          "lines": 848
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate_3.py",
+          "action": "created",
+          "lines": 236
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate_4.py",
+          "action": "created",
+          "lines": 177
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate_5.py",
+          "action": "created",
+          "lines": 254
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/streamlit_live_progress_dashboard.py",
+          "action": "created",
+          "lines": 372
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/streamlit_live_progress_dashboard_1.py",
+          "action": "created",
+          "lines": 581
+        },
+        {
+          "file": "Scripts/tests/test_5_3.py",
+          "action": "created",
+          "lines": 345
+        }
+      ]
+    },
+    {
+      "step_id": "5.1",
+      "step_name": "Build linear sub-task executor",
+      "phase_id": 5,
+      "phase_name": "Linear Execution: Solve ToDo Sub-Tasks",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-06-07T22:29:29.771Z",
+      "duration_ms": 1062108,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/__init__.py",
+          "action": "created",
+          "lines": 168
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/build_linear_subtask_executor.py",
+          "action": "created",
+          "lines": 235
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/build_linear_subtask_executor_1.py",
+          "action": "created",
+          "lines": 758
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/build_linear_subtask_executor_2.py",
+          "action": "created",
+          "lines": 805
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/build_linear_subtask_executor_3.py",
+          "action": "created",
+          "lines": 562
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate.py",
+          "action": "created",
+          "lines": 608
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate_1.py",
+          "action": "created",
+          "lines": 686
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate_2.py",
+          "action": "created",
+          "lines": 848
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate_3.py",
+          "action": "created",
+          "lines": 236
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate_4.py",
+          "action": "created",
+          "lines": 177
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate_5.py",
+          "action": "created",
+          "lines": 254
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/streamlit_live_progress_dashboard.py",
+          "action": "created",
+          "lines": 395
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/streamlit_live_progress_dashboard_1.py",
+          "action": "created",
+          "lines": 581
+        },
+        {
+          "file": "Scripts/tests/test_5_3.py",
+          "action": "created",
+          "lines": 345
+        }
+      ]
+    },
+    {
+      "step_id": "5.3",
+      "step_name": "Streamlit live progress dashboard",
+      "phase_id": 5,
+      "phase_name": "Linear Execution: Solve ToDo Sub-Tasks",
+      "provider_id": "codex",
+      "provider_model": "default",
+      "task_type": "coding_simple",
+      "completed_at": "2026-06-07T22:31:35.520Z",
+      "duration_ms": 1187170,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/__init__.py",
+          "action": "created",
+          "lines": 168
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/build_linear_subtask_executor.py",
+          "action": "created",
+          "lines": 235
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/build_linear_subtask_executor_1.py",
+          "action": "created",
+          "lines": 758
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/build_linear_subtask_executor_2.py",
+          "action": "created",
+          "lines": 805
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/build_linear_subtask_executor_3.py",
+          "action": "created",
+          "lines": 562
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate.py",
+          "action": "created",
+          "lines": 608
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate_1.py",
+          "action": "created",
+          "lines": 686
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate_2.py",
+          "action": "created",
+          "lines": 848
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate_3.py",
+          "action": "created",
+          "lines": 236
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate_4.py",
+          "action": "created",
+          "lines": 177
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/persubtask_validation_gate_5.py",
+          "action": "created",
+          "lines": 254
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/streamlit_live_progress_dashboard.py",
+          "action": "created",
+          "lines": 448
+        },
+        {
+          "file": "Scripts/linear_execution_solve_todo_subtasks/streamlit_live_progress_dashboard_1.py",
+          "action": "created",
+          "lines": 581
+        },
+        {
+          "file": "Scripts/tests/test_5_3.py",
+          "action": "created",
+          "lines": 345
+        }
+      ]
+    }
+  ]
+}
