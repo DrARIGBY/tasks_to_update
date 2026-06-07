@@ -1,0 +1,123 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1780854332940_ajt7vc",
+  "generated_at": "2026-06-07T17:45:32.939Z",
+  "extension_version": "2.6.15",
+  "project_name": "Debugging_Rebuilding_Fixing",
+  "machine_id": "machine_setjcq",
+  "total_steps": 1,
+  "total_files_changed": 17,
+  "providers_used": [
+    "codex"
+  ],
+  "report_type": "project",
+  "flags": {
+    "has_extension_issues": false,
+    "has_project_issues": false,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [],
+  "steps": [
+    {
+      "step_id": "1.1",
+      "step_name": "Initialize Streamlit project structure",
+      "phase_id": 1,
+      "phase_name": "Project Scaffolding & Subscription Provider Setup",
+      "provider_id": "codex",
+      "provider_model": "default",
+      "task_type": "coding_simple",
+      "completed_at": "2026-06-07T17:45:32.646Z",
+      "duration_ms": 668357,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/.env.example",
+          "action": "created",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/agents/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/app.py",
+          "action": "created",
+          "lines": 39
+        },
+        {
+          "file": "Scripts/config/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/config/project_contract.json",
+          "action": "created",
+          "lines": 14
+        },
+        {
+          "file": "Scripts/config/project_skeleton_manifest.json",
+          "action": "created",
+          "lines": 231
+        },
+        {
+          "file": "Scripts/project_scaffolding_and_subscription_provider_setu/__init__.py",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/project_scaffolding_and_subscription_provider_setu/initialize_streamlit_project_structure.py",
+          "action": "created",
+          "lines": 500
+        },
+        {
+          "file": "Scripts/providers/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/reports/.gitkeep",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/reports/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/reqs.txt",
+          "action": "created",
+          "lines": 15
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "created",
+          "lines": 15
+        },
+        {
+          "file": "Scripts/skills/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/test_1_1.py",
+          "action": "created",
+          "lines": 90
+        },
+        {
+          "file": "Scripts/uploads/.gitkeep",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/workspaces/.gitkeep",
+          "action": "created",
+          "lines": 2
+        }
+      ]
+    }
+  ]
+}
