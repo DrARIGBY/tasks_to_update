@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-06-08T00:58:00.434Z",
+  "extension_version": "2.6.24",
+  "machine_id": "machine_setjcq",
+  "stats": [
+    {
+      "provider_id": "codex",
+      "model": "default",
+      "task_type": "coding_simple",
+      "selections": 2,
+      "successes": 2,
+      "failures": 0,
+      "avg_duration_s": 732.1,
+      "total_duration_ms": 1464174
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-code",
+      "task_type": "coding_complex",
+      "selections": 4,
+      "successes": 3,
+      "failures": 1,
+      "avg_duration_s": 1358.6,
+      "total_duration_ms": 4075785
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-code",
+      "task_type": "validate",
+      "selections": 4,
+      "successes": 4,
+      "failures": 0,
+      "avg_duration_s": 2282.2,
+      "total_duration_ms": 9128615
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-code",
+      "task_type": "report",
+      "selections": 7,
+      "successes": 7,
+      "failures": 0,
+      "avg_duration_s": 1676,
+      "total_duration_ms": 11731771
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-code",
+      "task_type": "analyze",
+      "selections": 3,
+      "successes": 3,
+      "failures": 0,
+      "avg_duration_s": 1323.5,
+      "total_duration_ms": 3970470
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-code",
+      "task_type": "test",
+      "selections": 2,
+      "successes": 2,
+      "failures": 0,
+      "avg_duration_s": 805.7,
+      "total_duration_ms": 1611479
+    }
+  ]
+}
