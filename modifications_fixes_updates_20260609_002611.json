@@ -1,0 +1,257 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1780964771761_2cvnjs",
+  "generated_at": "2026-06-09T00:26:11.760Z",
+  "extension_version": "2.6.36",
+  "project_name": "RESUMEEEE",
+  "machine_id": "machine_setjcq",
+  "total_steps": 3,
+  "total_files_changed": 18,
+  "providers_used": [
+    "claude_code",
+    "codex"
+  ],
+  "report_type": "extension",
+  "flags": {
+    "has_extension_issues": true,
+    "has_project_issues": false,
+    "was_cancelled": false,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "timeout",
+      "scope": "extension",
+      "summary": "Provider process timed out or was killed",
+      "step_id": "3.2",
+      "provider": "claude_code",
+      "count": 1
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "2.3",
+      "step_name": "Extract sections and entities from user corpus",
+      "phase_id": 2,
+      "phase_name": "Document Ingestion & Library",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-06-09T00:06:38.463Z",
+      "duration_ms": 1081932,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/xlsx/SKILL.md",
+          "action": "created",
+          "lines": 289
+        },
+        {
+          "file": "Scripts/_skills/xlsx/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/document_ingestion_and_library/__init__.py",
+          "action": "modified",
+          "lines": 255
+        },
+        {
+          "file": "Scripts/document_ingestion_and_library/extract_sections_and_entities_from_user_corpus.py",
+          "action": "modified",
+          "lines": 696
+        },
+        {
+          "file": "Scripts/document_ingestion_and_library/extract_sections_and_entities_from_user_corpus_1.py",
+          "action": "created",
+          "lines": 485
+        },
+        {
+          "file": "Scripts/document_ingestion_and_library/extract_sections_and_entities_from_user_corpus_2.py",
+          "action": "created",
+          "lines": 395
+        },
+        {
+          "file": "Scripts/document_ingestion_and_library/extract_sections_and_entities_from_user_corpus_3.py",
+          "action": "created",
+          "lines": 402
+        },
+        {
+          "file": "Scripts/document_ingestion_and_library/implement_local_document_library_with_metadata.py",
+          "action": "created",
+          "lines": 107
+        },
+        {
+          "file": "Scripts/document_ingestion_and_library/implement_local_document_library_with_metadata_1.py",
+          "action": "created",
+          "lines": 626
+        },
+        {
+          "file": "Scripts/document_ingestion_and_library/implement_local_document_library_with_metadata_2.py",
+          "action": "created",
+          "lines": 414
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_db_setup.py",
+          "action": "created",
+          "lines": 179
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/tests/test_2_2.py",
+          "action": "created",
+          "lines": 240
+        },
+        {
+          "file": "Scripts/tests/test_2_3.py",
+          "action": "created",
+          "lines": 743
+        }
+      ]
+    },
+    {
+      "step_id": "2.2",
+      "step_name": "Implement local document library with metadata",
+      "phase_id": 2,
+      "phase_name": "Document Ingestion & Library",
+      "provider_id": "codex",
+      "provider_model": "default",
+      "task_type": "coding_simple",
+      "completed_at": "2026-06-09T00:08:42.968Z",
+      "duration_ms": 1206225,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/xlsx/SKILL.md",
+          "action": "created",
+          "lines": 289
+        },
+        {
+          "file": "Scripts/_skills/xlsx/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/document_ingestion_and_library/__init__.py",
+          "action": "modified",
+          "lines": 255
+        },
+        {
+          "file": "Scripts/document_ingestion_and_library/extract_sections_and_entities_from_user_corpus.py",
+          "action": "modified",
+          "lines": 696
+        },
+        {
+          "file": "Scripts/document_ingestion_and_library/extract_sections_and_entities_from_user_corpus_1.py",
+          "action": "created",
+          "lines": 485
+        },
+        {
+          "file": "Scripts/document_ingestion_and_library/extract_sections_and_entities_from_user_corpus_2.py",
+          "action": "created",
+          "lines": 395
+        },
+        {
+          "file": "Scripts/document_ingestion_and_library/extract_sections_and_entities_from_user_corpus_3.py",
+          "action": "created",
+          "lines": 402
+        },
+        {
+          "file": "Scripts/document_ingestion_and_library/implement_local_document_library_with_metadata.py",
+          "action": "created",
+          "lines": 107
+        },
+        {
+          "file": "Scripts/document_ingestion_and_library/implement_local_document_library_with_metadata_1.py",
+          "action": "created",
+          "lines": 626
+        },
+        {
+          "file": "Scripts/document_ingestion_and_library/implement_local_document_library_with_metadata_2.py",
+          "action": "created",
+          "lines": 414
+        },
+        {
+          "file": "Scripts/test_env/test_db_setup.py",
+          "action": "created",
+          "lines": 179
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/tests/test_2_2.py",
+          "action": "created",
+          "lines": 240
+        },
+        {
+          "file": "Scripts/tests/test_2_3.py",
+          "action": "created",
+          "lines": 743
+        }
+      ]
+    },
+    {
+      "step_id": "3.2",
+      "step_name": "Extract LinkedIn profile/company data",
+      "phase_id": 3,
+      "phase_name": "Target Intelligence Gathering",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-06-09T00:26:05.913Z",
+      "duration_ms": 1039385,
+      "success": false,
+      "error": "PTY build timed out after 900s",
+      "file_changes": [
+        {
+          "file": "Scripts/target_intelligence_gathering/extract_linkedin_profilecompany_data.py",
+          "action": "created",
+          "lines": 831
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 34
+        }
+      ]
+    }
+  ]
+}
