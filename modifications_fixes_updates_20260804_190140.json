@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1785870100711_hl2p8f",
+  "generated_at": "2026-08-04T19:01:40.711Z",
+  "extension_version": "2.6.41",
+  "project_name": "THE_Tester",
+  "machine_id": "machine_6x2hk",
+  "total_steps": 2,
+  "total_files_changed": 0,
+  "providers_used": [
+    "claude_code"
+  ],
+  "report_type": "extension",
+  "flags": {
+    "has_extension_issues": true,
+    "has_project_issues": false,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "timeout",
+      "scope": "extension",
+      "summary": "Provider process timed out or was killed",
+      "step_id": "7.14",
+      "provider": "claude_code",
+      "count": 2
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "7.14",
+      "step_name": "Data source observation & column selection",
+      "phase_id": 7,
+      "phase_name": "Independent Four-Tier Extension Test Harness",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "test",
+      "completed_at": "2026-08-04T19:01:39.998Z",
+      "duration_ms": 15933,
+      "success": false,
+      "error": "Claude Code killed (signal SIGTERM) — possible stall or timeout",
+      "file_changes": []
+    },
+    {
+      "step_id": "7.8",
+      "step_name": "Phase-level runner (multi-step flows: plan → build phase → verify artifacts)",
+      "phase_id": 7,
+      "phase_name": "Independent Four-Tier Extension Test Harness",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "test",
+      "completed_at": "2026-08-04T19:01:40.018Z",
+      "duration_ms": 15901,
+      "success": false,
+      "error": "Claude Code killed (signal SIGTERM) — possible stall or timeout",
+      "file_changes": []
+    }
+  ]
+}
