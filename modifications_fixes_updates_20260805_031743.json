@@ -1,0 +1,2302 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1785899863205_q7juvd",
+  "generated_at": "2026-08-05T03:17:43.204Z",
+  "extension_version": "2.6.48",
+  "project_name": "Image_Deviation_Monitor",
+  "machine_id": "machine_6x2hk",
+  "total_steps": 15,
+  "total_files_changed": 119,
+  "providers_used": [
+    "claude_code",
+    "codex"
+  ],
+  "report_type": "mixed",
+  "flags": {
+    "has_extension_issues": true,
+    "has_project_issues": true,
+    "was_cancelled": false,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "build_error",
+      "scope": "project",
+      "summary": "Build step failed",
+      "step_id": "1.9",
+      "provider": "claude_code",
+      "count": 10
+    },
+    {
+      "category": "timeout",
+      "scope": "extension",
+      "summary": "Provider process timed out or was killed",
+      "step_id": "5.4",
+      "provider": "claude_code",
+      "count": 5
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "1.9",
+      "step_name": "Setup test environment for Build diffusion model provider (Stable Diffusion / HF / Replicate)",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-04T23:12:33.873Z",
+      "duration_ms": 1278292,
+      "success": false,
+      "error": "Fix loop exhausted (2/2) — 259 validation error(s) remain. First: Import \"streamlit\" failed in Scripts/app/streamlit_app.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/config/experiment_config.json",
+          "action": "modified",
+          "lines": 44
+        },
+        {
+          "file": "Scripts/experiment_orchestration_loop/config_loader.py",
+          "action": "modified",
+          "lines": 508
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/create_data_source_adapter_for_build_diffusion_mod.py",
+          "action": "modified",
+          "lines": 190
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/extend_experiment_configuration_schema_for_diffusi.py",
+          "action": "modified",
+          "lines": 435
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_diffusion_model_p.py",
+          "action": "modified",
+          "lines": 844
+        },
+        {
+          "file": "Scripts/src/config_loader.py",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/tests/test_1_11_adapter.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/tests/test_1_12.py",
+          "action": "created",
+          "lines": 184
+        }
+      ]
+    },
+    {
+      "step_id": "1.11_env",
+      "step_name": "Setup test environment for Build diffusion model provider (Stable Diffusion / HF / Replicate)",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-04T23:12:46.976Z",
+      "duration_ms": 1292042,
+      "success": false,
+      "error": "Fix loop exhausted (2/2) — 259 validation error(s) remain. First: Import \"streamlit\" failed in Scripts/app/streamlit_app.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/config/experiment_config.json",
+          "action": "modified",
+          "lines": 44
+        },
+        {
+          "file": "Scripts/experiment_orchestration_loop/config_loader.py",
+          "action": "modified",
+          "lines": 508
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/create_data_source_adapter_for_build_diffusion_mod.py",
+          "action": "modified",
+          "lines": 190
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/extend_experiment_configuration_schema_for_diffusi.py",
+          "action": "modified",
+          "lines": 435
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_diffusion_model_p.py",
+          "action": "modified",
+          "lines": 844
+        },
+        {
+          "file": "Scripts/src/config_loader.py",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/tests/test_1_11_adapter.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/tests/test_1_12.py",
+          "action": "created",
+          "lines": 184
+        }
+      ]
+    },
+    {
+      "step_id": "1.11_adapter",
+      "step_name": "Create data source adapter for Build diffusion model provider (Stable Diffusion / HF / Replicate)",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-04T23:13:41.919Z",
+      "duration_ms": 1347223,
+      "success": false,
+      "error": "Fix loop exhausted (2/2) — 259 validation error(s) remain. First: Import \"streamlit\" failed in Scripts/app/streamlit_app.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/config/experiment_config.json",
+          "action": "modified",
+          "lines": 44
+        },
+        {
+          "file": "Scripts/experiment_orchestration_loop/config_loader.py",
+          "action": "modified",
+          "lines": 508
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/create_data_source_adapter_for_build_diffusion_mod.py",
+          "action": "modified",
+          "lines": 190
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/extend_experiment_configuration_schema_for_diffusi.py",
+          "action": "modified",
+          "lines": 435
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_diffusion_model_p.py",
+          "action": "modified",
+          "lines": 844
+        },
+        {
+          "file": "Scripts/src/config_loader.py",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/tests/test_1_11_adapter.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/tests/test_1_12.py",
+          "action": "created",
+          "lines": 184
+        }
+      ]
+    },
+    {
+      "step_id": "1.12",
+      "step_name": "Extend experiment configuration schema for diffusion mode",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.2",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-04T23:19:06.709Z",
+      "duration_ms": 1670661,
+      "success": false,
+      "error": "Fix loop exhausted (2/2) — 259 validation error(s) remain. First: Import \"streamlit\" failed in Scripts/app/streamlit_app.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/config/experiment_config.json",
+          "action": "modified",
+          "lines": 44
+        },
+        {
+          "file": "Scripts/experiment_orchestration_loop/config_loader.py",
+          "action": "modified",
+          "lines": 508
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/create_data_source_adapter_for_build_diffusion_mod.py",
+          "action": "modified",
+          "lines": 190
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/extend_experiment_configuration_schema_for_diffusi.py",
+          "action": "modified",
+          "lines": 435
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_diffusion_model_p.py",
+          "action": "modified",
+          "lines": 844
+        },
+        {
+          "file": "Scripts/src/config_loader.py",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/tests/test_1_11_adapter.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/tests/test_1_12.py",
+          "action": "created",
+          "lines": 184
+        }
+      ]
+    },
+    {
+      "step_id": "2.5",
+      "step_name": "Data adapter: prepare followup_examples",
+      "phase_id": 2,
+      "phase_name": "Neutral Prompt Generation Engine",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.2",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-04T23:44:14.551Z",
+      "duration_ms": 1501512,
+      "success": false,
+      "error": "Fix loop exhausted (2/2) — 259 validation error(s) remain. First: Import \"streamlit\" failed in Scripts/app/streamlit_app.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/neutral_prompt_generation_engine/__init__.py",
+          "action": "modified",
+          "lines": 61
+        },
+        {
+          "file": "Scripts/neutral_prompt_generation_engine/data_adapter_prepare_followupexamples.py",
+          "action": "created",
+          "lines": 412
+        },
+        {
+          "file": "Scripts/tests/test_2_5.py",
+          "action": "created",
+          "lines": 122
+        }
+      ]
+    },
+    {
+      "step_id": "3.7",
+      "step_name": "Create data source adapter for Extend image generation service to route diffusion requests",
+      "phase_id": 3,
+      "phase_name": "Image Generation & Storage Pipeline",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-05T00:05:51.028Z",
+      "duration_ms": 1294418,
+      "success": false,
+      "error": "Fix loop exhausted (2/2) — 259 validation error(s) remain. First: Import \"streamlit\" failed in Scripts/app/streamlit_app.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/image_generation_and_storage_pipeline/__init__.py",
+          "action": "modified",
+          "lines": 170
+        },
+        {
+          "file": "Scripts/image_generation_and_storage_pipeline/create_data_source_adapter_for_extend_image_genera.py",
+          "action": "created",
+          "lines": 194
+        },
+        {
+          "file": "Scripts/image_generation_and_storage_pipeline/setup_test_environment_for_extend_image_generation.py",
+          "action": "created",
+          "lines": 631
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 598
+        },
+        {
+          "file": "Scripts/tests/test_3_6.py",
+          "action": "created",
+          "lines": 208
+        },
+        {
+          "file": "Scripts/tests/test_3_7.py",
+          "action": "created",
+          "lines": 132
+        },
+        {
+          "file": "Scripts/tests/test_3_8_adapter.py",
+          "action": "created",
+          "lines": 156
+        }
+      ]
+    },
+    {
+      "step_id": "3.8_adapter",
+      "step_name": "Create data source adapter for Extend image generation service to route diffusion requests",
+      "phase_id": 3,
+      "phase_name": "Image Generation & Storage Pipeline",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-05T00:07:25.252Z",
+      "duration_ms": 1388946,
+      "success": false,
+      "error": "Fix loop exhausted (2/2) — 259 validation error(s) remain. First: Import \"streamlit\" failed in Scripts/app/streamlit_app.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/image_generation_and_storage_pipeline/__init__.py",
+          "action": "modified",
+          "lines": 170
+        },
+        {
+          "file": "Scripts/image_generation_and_storage_pipeline/create_data_source_adapter_for_extend_image_genera.py",
+          "action": "created",
+          "lines": 194
+        },
+        {
+          "file": "Scripts/image_generation_and_storage_pipeline/setup_test_environment_for_extend_image_generation.py",
+          "action": "created",
+          "lines": 631
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 598
+        },
+        {
+          "file": "Scripts/tests/test_3_6.py",
+          "action": "created",
+          "lines": 208
+        },
+        {
+          "file": "Scripts/tests/test_3_7.py",
+          "action": "created",
+          "lines": 132
+        },
+        {
+          "file": "Scripts/tests/test_3_8_adapter.py",
+          "action": "created",
+          "lines": 156
+        }
+      ]
+    },
+    {
+      "step_id": "3.6",
+      "step_name": "Setup test environment for Extend image generation service to route diffusion requests",
+      "phase_id": 3,
+      "phase_name": "Image Generation & Storage Pipeline",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-05T00:07:48.005Z",
+      "duration_ms": 1411093,
+      "success": false,
+      "error": "Fix loop exhausted (2/2) — 259 validation error(s) remain. First: Import \"streamlit\" failed in Scripts/app/streamlit_app.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/image_generation_and_storage_pipeline/__init__.py",
+          "action": "modified",
+          "lines": 170
+        },
+        {
+          "file": "Scripts/image_generation_and_storage_pipeline/create_data_source_adapter_for_extend_image_genera.py",
+          "action": "created",
+          "lines": 194
+        },
+        {
+          "file": "Scripts/image_generation_and_storage_pipeline/setup_test_environment_for_extend_image_generation.py",
+          "action": "created",
+          "lines": 631
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 598
+        },
+        {
+          "file": "Scripts/tests/test_3_6.py",
+          "action": "created",
+          "lines": 208
+        },
+        {
+          "file": "Scripts/tests/test_3_7.py",
+          "action": "created",
+          "lines": 132
+        },
+        {
+          "file": "Scripts/tests/test_3_8_adapter.py",
+          "action": "created",
+          "lines": 156
+        }
+      ]
+    },
+    {
+      "step_id": "3.8_env",
+      "step_name": "Setup test environment for Extend image generation service to route diffusion requests",
+      "phase_id": 3,
+      "phase_name": "Image Generation & Storage Pipeline",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-05T00:28:30.526Z",
+      "duration_ms": 1241644,
+      "success": false,
+      "error": "Fix loop exhausted (2/2) — 259 validation error(s) remain. First: Import \"streamlit\" failed in Scripts/app/streamlit_app.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/image_generation_and_storage_pipeline/setup_test_environment_for_extend_image_generation.py",
+          "action": "modified",
+          "lines": 673
+        },
+        {
+          "file": "Scripts/tests/test_3_8_env.py",
+          "action": "created",
+          "lines": 244
+        }
+      ]
+    },
+    {
+      "step_id": "4.6",
+      "step_name": "Data adapter: prepare neutral_baseline_scores",
+      "phase_id": 4,
+      "phase_name": "Image Sentiment & Emotion Analysis Engine",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.2",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-05T00:55:04.281Z",
+      "duration_ms": 1586869,
+      "success": false,
+      "error": "Fix loop exhausted (2/2) — 259 validation error(s) remain. First: Import \"streamlit\" failed in Scripts/app/streamlit_app.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/simplifier/SKILL.md",
+          "action": "created",
+          "lines": 344
+        },
+        {
+          "file": "Scripts/_skills/simplifier/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/simplifier/format_output.json",
+          "action": "created",
+          "lines": 478
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/content_parser.py",
+          "action": "created",
+          "lines": 617
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/equation_analyzer.py",
+          "action": "created",
+          "lines": 397
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/latex_generator.py",
+          "action": "created",
+          "lines": 509
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/requirements.txt",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/simplifier_orchestrator.py",
+          "action": "created",
+          "lines": 452
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/table_analyzer.py",
+          "action": "created",
+          "lines": 497
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/web_research.py",
+          "action": "created",
+          "lines": 326
+        },
+        {
+          "file": "Scripts/image_sentiment_and_emotion_analysis_engine/__init__.py",
+          "action": "modified",
+          "lines": 170
+        },
+        {
+          "file": "Scripts/image_sentiment_and_emotion_analysis_engine/data_adapter_prepare_neutralbaselinescores.py",
+          "action": "created",
+          "lines": 619
+        },
+        {
+          "file": "Scripts/tests/test_4_6.py",
+          "action": "created",
+          "lines": 167
+        }
+      ]
+    },
+    {
+      "step_id": "5.4",
+      "step_name": "Extend orchestrator for diffusion iteration loop",
+      "phase_id": 5,
+      "phase_name": "Experiment Orchestration Loop",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-05T02:35:17.535Z",
+      "duration_ms": 6007775,
+      "success": false,
+      "error": "Claude Code CLI timed out after 900s (no output received)",
+      "file_changes": [
+        {
+          "file": "Scripts/experiment_orchestration_loop/__init__.py",
+          "action": "modified",
+          "lines": 133
+        },
+        {
+          "file": "Scripts/experiment_orchestration_loop/extend_orchestrator_for_diffusion_iteration_loop.py",
+          "action": "created",
+          "lines": 421
+        },
+        {
+          "file": "Scripts/tests/test_5_4.py",
+          "action": "created",
+          "lines": 235
+        }
+      ]
+    },
+    {
+      "step_id": "7.7",
+      "step_name": "Data source observation & column selection",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "test",
+      "completed_at": "2026-08-05T03:01:52.952Z",
+      "duration_ms": 1593381,
+      "success": false,
+      "error": "Claude Code CLI timed out after 900s (no output received)",
+      "file_changes": [
+        {
+          "file": "Scripts/src/data_source_config.json",
+          "action": "modified",
+          "lines": 749
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/StringMatcher.py",
+          "action": "created",
+          "lines": 75
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/__init__.py",
+          "action": "created",
+          "lines": 551
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/__init__.pyi",
+          "action": "created",
+          "lines": 88
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/levenshtein_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 3403
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/py.typed",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/METADATA",
+          "action": "created",
+          "lines": 85
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/RECORD",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/WHEEL",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/licenses/COPYING",
+          "action": "created",
+          "lines": 341
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/COPYING",
+          "action": "created",
+          "lines": 341
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/METADATA",
+          "action": "created",
+          "lines": 88
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/RECORD",
+          "action": "created",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/REQUESTED",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/WHEEL",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/top_level.txt",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/__init__.py",
+          "action": "created",
+          "lines": 34
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/__init__.pyi",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/__pyinstaller/__init__.py",
+          "action": "created",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/__pyinstaller/test_rapidfuzz_packaging.py",
+          "action": "created",
+          "lines": 38
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/_common_py.py",
+          "action": "created",
+          "lines": 74
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/_feature_detector.py",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/_utils.py",
+          "action": "created",
+          "lines": 89
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/DamerauLevenshtein.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/DamerauLevenshtein.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/DamerauLevenshtein_py.py",
+          "action": "created",
+          "lines": 234
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Hamming.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Hamming.pyi",
+          "action": "created",
+          "lines": 114
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Hamming_py.py",
+          "action": "created",
+          "lines": 323
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Indel.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Indel.pyi",
+          "action": "created",
+          "lines": 106
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Indel_py.py",
+          "action": "created",
+          "lines": 359
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Jaro.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Jaro.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/JaroWinkler.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/JaroWinkler.pyi",
+          "action": "created",
+          "lines": 84
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/JaroWinkler_py.py",
+          "action": "created",
+          "lines": 236
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Jaro_py.py",
+          "action": "created",
+          "lines": 256
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/LCSseq.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/LCSseq.pyi",
+          "action": "created",
+          "lines": 106
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/LCSseq_py.py",
+          "action": "created",
+          "lines": 427
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Levenshtein.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Levenshtein.pyi",
+          "action": "created",
+          "lines": 132
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Levenshtein_py.py",
+          "action": "created",
+          "lines": 572
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/OSA.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/OSA.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/OSA_py.py",
+          "action": "created",
+          "lines": 233
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Postfix.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Postfix.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Postfix_py.py",
+          "action": "created",
+          "lines": 183
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Prefix.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Prefix.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Prefix_py.py",
+          "action": "created",
+          "lines": 183
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/__init__.py",
+          "action": "created",
+          "lines": 38
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/__init__.pyi",
+          "action": "created",
+          "lines": 26
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/_initialize.py",
+          "action": "created",
+          "lines": 110
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/_initialize.pyi",
+          "action": "created",
+          "lines": 134
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/_initialize_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 1391
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/_initialize_py.py",
+          "action": "created",
+          "lines": 885
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/metrics_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 15407
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/metrics_py.py",
+          "action": "created",
+          "lines": 300
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/fuzz.py",
+          "action": "created",
+          "lines": 162
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/fuzz.pyi",
+          "action": "created",
+          "lines": 190
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/fuzz_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 12676
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/fuzz_py.py",
+          "action": "created",
+          "lines": 878
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process.py",
+          "action": "created",
+          "lines": 96
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process.pyi",
+          "action": "created",
+          "lines": 432
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process_cpp.py",
+          "action": "created",
+          "lines": 126
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process_cpp_impl.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 2638
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process_py.py",
+          "action": "created",
+          "lines": 680
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/py.typed",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/utils.py",
+          "action": "created",
+          "lines": 66
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/utils.pyi",
+          "action": "created",
+          "lines": 12
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/utils_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 366
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/utils_py.py",
+          "action": "created",
+          "lines": 33
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/METADATA",
+          "action": "created",
+          "lines": 270
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/RECORD",
+          "action": "created",
+          "lines": 103
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/WHEEL",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/entry_points.txt",
+          "action": "created",
+          "lines": 5
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/licenses/LICENSE",
+          "action": "created",
+          "lines": 22
+        }
+      ]
+    },
+    {
+      "step_id": "7.9",
+      "step_name": "Data source observation & column selection",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "analyze",
+      "completed_at": "2026-08-05T03:01:53.369Z",
+      "duration_ms": 1593662,
+      "success": false,
+      "error": "Claude Code CLI timed out after 900s (no output received)",
+      "file_changes": [
+        {
+          "file": "Scripts/src/data_source_config.json",
+          "action": "modified",
+          "lines": 749
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/StringMatcher.py",
+          "action": "created",
+          "lines": 75
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/__init__.py",
+          "action": "created",
+          "lines": 551
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/__init__.pyi",
+          "action": "created",
+          "lines": 88
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/levenshtein_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 3403
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/py.typed",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/METADATA",
+          "action": "created",
+          "lines": 85
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/RECORD",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/WHEEL",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/licenses/COPYING",
+          "action": "created",
+          "lines": 341
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/COPYING",
+          "action": "created",
+          "lines": 341
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/METADATA",
+          "action": "created",
+          "lines": 88
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/RECORD",
+          "action": "created",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/REQUESTED",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/WHEEL",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/top_level.txt",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/__init__.py",
+          "action": "created",
+          "lines": 34
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/__init__.pyi",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/__pyinstaller/__init__.py",
+          "action": "created",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/__pyinstaller/test_rapidfuzz_packaging.py",
+          "action": "created",
+          "lines": 38
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/_common_py.py",
+          "action": "created",
+          "lines": 74
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/_feature_detector.py",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/_utils.py",
+          "action": "created",
+          "lines": 89
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/DamerauLevenshtein.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/DamerauLevenshtein.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/DamerauLevenshtein_py.py",
+          "action": "created",
+          "lines": 234
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Hamming.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Hamming.pyi",
+          "action": "created",
+          "lines": 114
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Hamming_py.py",
+          "action": "created",
+          "lines": 323
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Indel.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Indel.pyi",
+          "action": "created",
+          "lines": 106
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Indel_py.py",
+          "action": "created",
+          "lines": 359
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Jaro.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Jaro.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/JaroWinkler.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/JaroWinkler.pyi",
+          "action": "created",
+          "lines": 84
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/JaroWinkler_py.py",
+          "action": "created",
+          "lines": 236
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Jaro_py.py",
+          "action": "created",
+          "lines": 256
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/LCSseq.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/LCSseq.pyi",
+          "action": "created",
+          "lines": 106
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/LCSseq_py.py",
+          "action": "created",
+          "lines": 427
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Levenshtein.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Levenshtein.pyi",
+          "action": "created",
+          "lines": 132
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Levenshtein_py.py",
+          "action": "created",
+          "lines": 572
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/OSA.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/OSA.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/OSA_py.py",
+          "action": "created",
+          "lines": 233
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Postfix.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Postfix.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Postfix_py.py",
+          "action": "created",
+          "lines": 183
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Prefix.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Prefix.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Prefix_py.py",
+          "action": "created",
+          "lines": 183
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/__init__.py",
+          "action": "created",
+          "lines": 38
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/__init__.pyi",
+          "action": "created",
+          "lines": 26
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/_initialize.py",
+          "action": "created",
+          "lines": 110
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/_initialize.pyi",
+          "action": "created",
+          "lines": 134
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/_initialize_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 1391
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/_initialize_py.py",
+          "action": "created",
+          "lines": 885
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/metrics_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 15407
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/metrics_py.py",
+          "action": "created",
+          "lines": 300
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/fuzz.py",
+          "action": "created",
+          "lines": 162
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/fuzz.pyi",
+          "action": "created",
+          "lines": 190
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/fuzz_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 12676
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/fuzz_py.py",
+          "action": "created",
+          "lines": 878
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process.py",
+          "action": "created",
+          "lines": 96
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process.pyi",
+          "action": "created",
+          "lines": 432
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process_cpp.py",
+          "action": "created",
+          "lines": 126
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process_cpp_impl.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 2638
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process_py.py",
+          "action": "created",
+          "lines": 680
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/py.typed",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/utils.py",
+          "action": "created",
+          "lines": 66
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/utils.pyi",
+          "action": "created",
+          "lines": 12
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/utils_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 366
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/utils_py.py",
+          "action": "created",
+          "lines": 33
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/METADATA",
+          "action": "created",
+          "lines": 270
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/RECORD",
+          "action": "created",
+          "lines": 103
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/WHEEL",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/entry_points.txt",
+          "action": "created",
+          "lines": 5
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/licenses/LICENSE",
+          "action": "created",
+          "lines": 22
+        }
+      ]
+    },
+    {
+      "step_id": "7.99_columns",
+      "step_name": "Data source observation & column selection",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "analyze",
+      "completed_at": "2026-08-05T03:01:53.704Z",
+      "duration_ms": 1593575,
+      "success": false,
+      "error": "Claude Code CLI timed out after 900s (no output received)",
+      "file_changes": [
+        {
+          "file": "Scripts/src/data_source_config.json",
+          "action": "modified",
+          "lines": 749
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/StringMatcher.py",
+          "action": "created",
+          "lines": 75
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/__init__.py",
+          "action": "created",
+          "lines": 551
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/__init__.pyi",
+          "action": "created",
+          "lines": 88
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/levenshtein_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 3403
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/py.typed",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/METADATA",
+          "action": "created",
+          "lines": 85
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/RECORD",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/WHEEL",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/licenses/COPYING",
+          "action": "created",
+          "lines": 341
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/COPYING",
+          "action": "created",
+          "lines": 341
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/METADATA",
+          "action": "created",
+          "lines": 88
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/RECORD",
+          "action": "created",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/REQUESTED",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/WHEEL",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/top_level.txt",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/__init__.py",
+          "action": "created",
+          "lines": 34
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/__init__.pyi",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/__pyinstaller/__init__.py",
+          "action": "created",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/__pyinstaller/test_rapidfuzz_packaging.py",
+          "action": "created",
+          "lines": 38
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/_common_py.py",
+          "action": "created",
+          "lines": 74
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/_feature_detector.py",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/_utils.py",
+          "action": "created",
+          "lines": 89
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/DamerauLevenshtein.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/DamerauLevenshtein.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/DamerauLevenshtein_py.py",
+          "action": "created",
+          "lines": 234
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Hamming.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Hamming.pyi",
+          "action": "created",
+          "lines": 114
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Hamming_py.py",
+          "action": "created",
+          "lines": 323
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Indel.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Indel.pyi",
+          "action": "created",
+          "lines": 106
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Indel_py.py",
+          "action": "created",
+          "lines": 359
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Jaro.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Jaro.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/JaroWinkler.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/JaroWinkler.pyi",
+          "action": "created",
+          "lines": 84
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/JaroWinkler_py.py",
+          "action": "created",
+          "lines": 236
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Jaro_py.py",
+          "action": "created",
+          "lines": 256
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/LCSseq.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/LCSseq.pyi",
+          "action": "created",
+          "lines": 106
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/LCSseq_py.py",
+          "action": "created",
+          "lines": 427
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Levenshtein.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Levenshtein.pyi",
+          "action": "created",
+          "lines": 132
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Levenshtein_py.py",
+          "action": "created",
+          "lines": 572
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/OSA.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/OSA.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/OSA_py.py",
+          "action": "created",
+          "lines": 233
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Postfix.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Postfix.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Postfix_py.py",
+          "action": "created",
+          "lines": 183
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Prefix.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Prefix.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Prefix_py.py",
+          "action": "created",
+          "lines": 183
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/__init__.py",
+          "action": "created",
+          "lines": 38
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/__init__.pyi",
+          "action": "created",
+          "lines": 26
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/_initialize.py",
+          "action": "created",
+          "lines": 110
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/_initialize.pyi",
+          "action": "created",
+          "lines": 134
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/_initialize_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 1391
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/_initialize_py.py",
+          "action": "created",
+          "lines": 885
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/metrics_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 15407
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/metrics_py.py",
+          "action": "created",
+          "lines": 300
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/fuzz.py",
+          "action": "created",
+          "lines": 162
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/fuzz.pyi",
+          "action": "created",
+          "lines": 190
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/fuzz_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 12676
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/fuzz_py.py",
+          "action": "created",
+          "lines": 878
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process.py",
+          "action": "created",
+          "lines": 96
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process.pyi",
+          "action": "created",
+          "lines": 432
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process_cpp.py",
+          "action": "created",
+          "lines": 126
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process_cpp_impl.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 2638
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process_py.py",
+          "action": "created",
+          "lines": 680
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/py.typed",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/utils.py",
+          "action": "created",
+          "lines": 66
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/utils.pyi",
+          "action": "created",
+          "lines": 12
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/utils_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 366
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/utils_py.py",
+          "action": "created",
+          "lines": 33
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/METADATA",
+          "action": "created",
+          "lines": 270
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/RECORD",
+          "action": "created",
+          "lines": 103
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/WHEEL",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/entry_points.txt",
+          "action": "created",
+          "lines": 5
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/licenses/LICENSE",
+          "action": "created",
+          "lines": 22
+        }
+      ]
+    },
+    {
+      "step_id": "7.8",
+      "step_name": "Add --mode diffusion CLI flag and wire through pipeline",
+      "phase_id": 7,
+      "phase_name": "Testing, Validation & CLI Entry Point",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.2",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-05T03:01:54.039Z",
+      "duration_ms": 1593328,
+      "success": false,
+      "error": "Codex CLI timed out after 900s (657 chars captured)",
+      "file_changes": [
+        {
+          "file": "Scripts/src/data_source_config.json",
+          "action": "modified",
+          "lines": 749
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/StringMatcher.py",
+          "action": "created",
+          "lines": 75
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/__init__.py",
+          "action": "created",
+          "lines": 551
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/__init__.pyi",
+          "action": "created",
+          "lines": 88
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/levenshtein_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 3403
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/Levenshtein/py.typed",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/METADATA",
+          "action": "created",
+          "lines": 85
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/RECORD",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/WHEEL",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/levenshtein-0.27.1.dist-info/licenses/COPYING",
+          "action": "created",
+          "lines": 341
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/COPYING",
+          "action": "created",
+          "lines": 341
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/METADATA",
+          "action": "created",
+          "lines": 88
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/RECORD",
+          "action": "created",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/REQUESTED",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/WHEEL",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/python_levenshtein-0.27.1.dist-info/top_level.txt",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/__init__.py",
+          "action": "created",
+          "lines": 34
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/__init__.pyi",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/__pyinstaller/__init__.py",
+          "action": "created",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/__pyinstaller/test_rapidfuzz_packaging.py",
+          "action": "created",
+          "lines": 38
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/_common_py.py",
+          "action": "created",
+          "lines": 74
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/_feature_detector.py",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/_utils.py",
+          "action": "created",
+          "lines": 89
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/DamerauLevenshtein.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/DamerauLevenshtein.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/DamerauLevenshtein_py.py",
+          "action": "created",
+          "lines": 234
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Hamming.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Hamming.pyi",
+          "action": "created",
+          "lines": 114
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Hamming_py.py",
+          "action": "created",
+          "lines": 323
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Indel.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Indel.pyi",
+          "action": "created",
+          "lines": 106
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Indel_py.py",
+          "action": "created",
+          "lines": 359
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Jaro.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Jaro.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/JaroWinkler.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/JaroWinkler.pyi",
+          "action": "created",
+          "lines": 84
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/JaroWinkler_py.py",
+          "action": "created",
+          "lines": 236
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Jaro_py.py",
+          "action": "created",
+          "lines": 256
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/LCSseq.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/LCSseq.pyi",
+          "action": "created",
+          "lines": 106
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/LCSseq_py.py",
+          "action": "created",
+          "lines": 427
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Levenshtein.py",
+          "action": "created",
+          "lines": 117
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Levenshtein.pyi",
+          "action": "created",
+          "lines": 132
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Levenshtein_py.py",
+          "action": "created",
+          "lines": 572
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/OSA.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/OSA.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/OSA_py.py",
+          "action": "created",
+          "lines": 233
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Postfix.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Postfix.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Postfix_py.py",
+          "action": "created",
+          "lines": 183
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Prefix.py",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Prefix.pyi",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/Prefix_py.py",
+          "action": "created",
+          "lines": 183
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/__init__.py",
+          "action": "created",
+          "lines": 38
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/__init__.pyi",
+          "action": "created",
+          "lines": 26
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/_initialize.py",
+          "action": "created",
+          "lines": 110
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/_initialize.pyi",
+          "action": "created",
+          "lines": 134
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/_initialize_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 1391
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/_initialize_py.py",
+          "action": "created",
+          "lines": 885
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/metrics_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 15407
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/distance/metrics_py.py",
+          "action": "created",
+          "lines": 300
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/fuzz.py",
+          "action": "created",
+          "lines": 162
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/fuzz.pyi",
+          "action": "created",
+          "lines": 190
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/fuzz_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 12676
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/fuzz_py.py",
+          "action": "created",
+          "lines": 878
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process.py",
+          "action": "created",
+          "lines": 96
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process.pyi",
+          "action": "created",
+          "lines": 432
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process_cpp.py",
+          "action": "created",
+          "lines": 126
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process_cpp_impl.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 2638
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/process_py.py",
+          "action": "created",
+          "lines": 680
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/py.typed",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/utils.py",
+          "action": "created",
+          "lines": 66
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/utils.pyi",
+          "action": "created",
+          "lines": 12
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/utils_cpp.cpython-39-darwin.so",
+          "action": "created",
+          "lines": 366
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz/utils_py.py",
+          "action": "created",
+          "lines": 33
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/INSTALLER",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/METADATA",
+          "action": "created",
+          "lines": 270
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/RECORD",
+          "action": "created",
+          "lines": 103
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/WHEEL",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/entry_points.txt",
+          "action": "created",
+          "lines": 5
+        },
+        {
+          "file": "Scripts/venv/lib/python3.9/site-packages/rapidfuzz-3.13.0.dist-info/licenses/LICENSE",
+          "action": "created",
+          "lines": 22
+        }
+      ]
+    }
+  ]
+}
