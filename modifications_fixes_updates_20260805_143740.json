@@ -1,0 +1,227 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1785940660278_11x5b0",
+  "generated_at": "2026-08-05T14:37:40.277Z",
+  "extension_version": "2.6.49",
+  "project_name": "Image_Deviation_Monitor",
+  "machine_id": "machine_6x2hk",
+  "total_steps": 4,
+  "total_files_changed": 8,
+  "providers_used": [
+    "claude_code",
+    "codex"
+  ],
+  "report_type": "project",
+  "flags": {
+    "has_extension_issues": false,
+    "has_project_issues": true,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "test_failure",
+      "scope": "project",
+      "summary": "Test failure",
+      "step_id": "1.9",
+      "provider": "claude_code",
+      "count": 3
+    },
+    {
+      "category": "build_error",
+      "scope": "project",
+      "summary": "Build step failed",
+      "step_id": "1.11_adapter",
+      "provider": "claude_code",
+      "count": 1
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "1.9",
+      "step_name": "Setup test environment for Build diffusion model provider (Stable Diffusion / HF / Replicate)",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-05T14:34:33.734Z",
+      "duration_ms": 120449,
+      "success": false,
+      "error": "Fix loop exhausted (2/2) — 1 validation error(s) remain. First: Import \"pytest\" failed in Scripts/tests/test_1_9.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 779
+        }
+      ]
+    },
+    {
+      "step_id": "1.11_env",
+      "step_name": "Setup test environment for Build diffusion model provider (Stable Diffusion / HF / Replicate)",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-05T14:37:23.936Z",
+      "duration_ms": 289775,
+      "success": false,
+      "error": "Fix loop exhausted (2/2) — 1 validation error(s) remain. First: Import \"pytest\" failed in Scripts/tests/test_1_11_env.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/experiment_orchestration_loop/config_loader.py",
+          "action": "modified",
+          "lines": 570
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/__init__.py",
+          "action": "modified",
+          "lines": 208
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/create_data_source_adapter_for_build_diffusion_mod.py",
+          "action": "modified",
+          "lines": 176
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/extend_experiment_configuration_schema_for_diffusi.py",
+          "action": "modified",
+          "lines": 522
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_diffusion_model_p.py",
+          "action": "modified",
+          "lines": 400
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 779
+        },
+        {
+          "file": "Scripts/tests/test_1_11_adapter.py",
+          "action": "modified",
+          "lines": 170
+        },
+        {
+          "file": "Scripts/tests/test_1_11_env.py",
+          "action": "created",
+          "lines": 84
+        }
+      ]
+    },
+    {
+      "step_id": "1.11_adapter",
+      "step_name": "Create data source adapter for Build diffusion model provider (Stable Diffusion / HF / Replicate)",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-05T14:37:31.309Z",
+      "duration_ms": 297633,
+      "success": false,
+      "error": "Claude Code exited with code null: ",
+      "file_changes": [
+        {
+          "file": "Scripts/experiment_orchestration_loop/config_loader.py",
+          "action": "modified",
+          "lines": 570
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/__init__.py",
+          "action": "modified",
+          "lines": 208
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/create_data_source_adapter_for_build_diffusion_mod.py",
+          "action": "modified",
+          "lines": 176
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/extend_experiment_configuration_schema_for_diffusi.py",
+          "action": "modified",
+          "lines": 522
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_diffusion_model_p.py",
+          "action": "modified",
+          "lines": 400
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 779
+        },
+        {
+          "file": "Scripts/tests/test_1_11_adapter.py",
+          "action": "modified",
+          "lines": 170
+        },
+        {
+          "file": "Scripts/tests/test_1_11_env.py",
+          "action": "created",
+          "lines": 84
+        }
+      ]
+    },
+    {
+      "step_id": "1.12",
+      "step_name": "Extend experiment configuration schema for diffusion mode",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.2",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-05T14:37:34.126Z",
+      "duration_ms": 299194,
+      "success": false,
+      "error": "Fix loop exhausted (2/2) — 1 validation error(s) remain. First: Import \"pytest\" failed in Scripts/tests/test_1_12.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/experiment_orchestration_loop/config_loader.py",
+          "action": "modified",
+          "lines": 570
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/__init__.py",
+          "action": "modified",
+          "lines": 208
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/create_data_source_adapter_for_build_diffusion_mod.py",
+          "action": "modified",
+          "lines": 176
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/extend_experiment_configuration_schema_for_diffusi.py",
+          "action": "modified",
+          "lines": 522
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_diffusion_model_p.py",
+          "action": "modified",
+          "lines": 400
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 779
+        },
+        {
+          "file": "Scripts/tests/test_1_11_adapter.py",
+          "action": "modified",
+          "lines": 170
+        },
+        {
+          "file": "Scripts/tests/test_1_11_env.py",
+          "action": "created",
+          "lines": 84
+        }
+      ]
+    }
+  ]
+}
