@@ -1,0 +1,353 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1785860843407_bhuoxx",
+  "generated_at": "2026-08-04T16:27:23.406Z",
+  "extension_version": "2.6.38",
+  "project_name": "Image_Deviation_Monitor",
+  "machine_id": "machine_6x2hk",
+  "total_steps": 4,
+  "total_files_changed": 15,
+  "providers_used": [
+    "claude_code"
+  ],
+  "report_type": "project",
+  "flags": {
+    "has_extension_issues": false,
+    "has_project_issues": true,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "build_error",
+      "scope": "project",
+      "summary": "Build step failed",
+      "step_id": "1.9",
+      "provider": "claude_code",
+      "count": 4
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "1.9",
+      "step_name": "Extend experiment configuration schema for diffusion mode",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-04T16:24:34.236Z",
+      "duration_ms": 593063,
+      "success": false,
+      "error": "Fix loop exhausted (1/2) — 259 validation error(s) remain. First: Import \"streamlit\" failed in Scripts/app/streamlit_app.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/__init__.py",
+          "action": "modified",
+          "lines": 192
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/build_diffusion_model_provider_stable_diffusion_hf.py",
+          "action": "created",
+          "lines": 100
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/data_adapter_prepare_experimentspec.py",
+          "action": "created",
+          "lines": 433
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/extend_experiment_configuration_schema_for_diffusi.py",
+          "action": "created",
+          "lines": 431
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_diffusion_model_p.py",
+          "action": "created",
+          "lines": 846
+        },
+        {
+          "file": "Scripts/src/providers/diffusion_provider.py",
+          "action": "created",
+          "lines": 554
+        },
+        {
+          "file": "Scripts/src/providers/factory.py",
+          "action": "modified",
+          "lines": 344
+        },
+        {
+          "file": "Scripts/tests/test_1_6.py",
+          "action": "created",
+          "lines": 205
+        },
+        {
+          "file": "Scripts/tests/test_1_8.py",
+          "action": "created",
+          "lines": 242
+        },
+        {
+          "file": "Scripts/tests/test_1_8_env.py",
+          "action": "created",
+          "lines": 166
+        },
+        {
+          "file": "Scripts/tests/test_1_9.py",
+          "action": "created",
+          "lines": 357
+        }
+      ]
+    },
+    {
+      "step_id": "1.8_env",
+      "step_name": "Setup test environment for Build diffusion model provider (Stable Diffusion / HF / Replicate)",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-04T16:25:18.719Z",
+      "duration_ms": 638856,
+      "success": false,
+      "error": "Fix loop exhausted (1/2) — 259 validation error(s) remain. First: Import \"streamlit\" failed in Scripts/app/streamlit_app.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/__init__.py",
+          "action": "modified",
+          "lines": 192
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/build_diffusion_model_provider_stable_diffusion_hf.py",
+          "action": "created",
+          "lines": 100
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/data_adapter_prepare_experimentspec.py",
+          "action": "created",
+          "lines": 433
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/extend_experiment_configuration_schema_for_diffusi.py",
+          "action": "created",
+          "lines": 431
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_diffusion_model_p.py",
+          "action": "created",
+          "lines": 846
+        },
+        {
+          "file": "Scripts/src/providers/diffusion_provider.py",
+          "action": "created",
+          "lines": 554
+        },
+        {
+          "file": "Scripts/src/providers/factory.py",
+          "action": "modified",
+          "lines": 344
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 48
+        },
+        {
+          "file": "Scripts/tests/test_1_6.py",
+          "action": "created",
+          "lines": 205
+        },
+        {
+          "file": "Scripts/tests/test_1_8.py",
+          "action": "created",
+          "lines": 242
+        },
+        {
+          "file": "Scripts/tests/test_1_8_env.py",
+          "action": "created",
+          "lines": 166
+        },
+        {
+          "file": "Scripts/tests/test_1_9.py",
+          "action": "created",
+          "lines": 357
+        }
+      ]
+    },
+    {
+      "step_id": "1.8",
+      "step_name": "Build diffusion model provider (Stable Diffusion / HF / Replicate)",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-04T16:25:59.082Z",
+      "duration_ms": 678783,
+      "success": false,
+      "error": "Fix loop exhausted (1/2) — 260 validation error(s) remain. First: Import \"streamlit\" failed in Scripts/app/streamlit_app.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/__init__.py",
+          "action": "modified",
+          "lines": 192
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/build_diffusion_model_provider_stable_diffusion_hf.py",
+          "action": "created",
+          "lines": 100
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/data_adapter_prepare_experimentspec.py",
+          "action": "created",
+          "lines": 433
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/extend_experiment_configuration_schema_for_diffusi.py",
+          "action": "created",
+          "lines": 431
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_diffusion_model_p.py",
+          "action": "created",
+          "lines": 846
+        },
+        {
+          "file": "Scripts/src/providers/diffusion_provider.py",
+          "action": "created",
+          "lines": 554
+        },
+        {
+          "file": "Scripts/src/providers/factory.py",
+          "action": "modified",
+          "lines": 344
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 48
+        },
+        {
+          "file": "Scripts/tests/test_1_6.py",
+          "action": "created",
+          "lines": 205
+        },
+        {
+          "file": "Scripts/tests/test_1_8.py",
+          "action": "created",
+          "lines": 242
+        },
+        {
+          "file": "Scripts/tests/test_1_8_env.py",
+          "action": "created",
+          "lines": 166
+        },
+        {
+          "file": "Scripts/tests/test_1_9.py",
+          "action": "created",
+          "lines": 357
+        }
+      ]
+    },
+    {
+      "step_id": "1.6",
+      "step_name": "Data adapter: prepare experiment_spec",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-code",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-04T16:27:18.532Z",
+      "duration_ms": 756988,
+      "success": false,
+      "error": "Fix loop exhausted (1/2) — 259 validation error(s) remain. First: Import \"streamlit\" failed in Scripts/app/streamlit_app.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/__init__.py",
+          "action": "modified",
+          "lines": 192
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/build_diffusion_model_provider_stable_diffusion_hf.py",
+          "action": "created",
+          "lines": 100
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/data_adapter_prepare_experimentspec.py",
+          "action": "created",
+          "lines": 433
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/extend_experiment_configuration_schema_for_diffusi.py",
+          "action": "created",
+          "lines": 431
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_diffusion_model_p.py",
+          "action": "created",
+          "lines": 846
+        },
+        {
+          "file": "Scripts/src/providers/diffusion_provider.py",
+          "action": "created",
+          "lines": 554
+        },
+        {
+          "file": "Scripts/src/providers/factory.py",
+          "action": "modified",
+          "lines": 344
+        },
+        {
+          "file": "Scripts/tests/test_1_6.py",
+          "action": "created",
+          "lines": 205
+        },
+        {
+          "file": "Scripts/tests/test_1_8.py",
+          "action": "created",
+          "lines": 242
+        },
+        {
+          "file": "Scripts/tests/test_1_8_env.py",
+          "action": "created",
+          "lines": 166
+        },
+        {
+          "file": "Scripts/tests/test_1_9.py",
+          "action": "created",
+          "lines": 357
+        }
+      ]
+    }
+  ]
+}
