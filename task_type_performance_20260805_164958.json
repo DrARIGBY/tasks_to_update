@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-05T16:49:58.593Z",
+  "extension_version": "2.6.51",
+  "machine_id": "machine_6x2hk",
+  "stats": [
+    {
+      "provider_id": "claude_code",
+      "model": "claude-opus-4-7",
+      "task_type": "coding_complex",
+      "selections": 3,
+      "successes": 0,
+      "failures": 3,
+      "avg_duration_s": 0,
+      "total_duration_ms": 0
+    }
+  ]
+}
