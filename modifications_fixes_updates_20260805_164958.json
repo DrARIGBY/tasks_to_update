@@ -1,0 +1,111 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1785948598592_x2t7zw",
+  "generated_at": "2026-08-05T16:49:58.591Z",
+  "extension_version": "2.6.51",
+  "project_name": "Image_Deviation_Monitor",
+  "machine_id": "machine_6x2hk",
+  "total_steps": 3,
+  "total_files_changed": 2,
+  "providers_used": [
+    "claude_code"
+  ],
+  "report_type": "mixed",
+  "flags": {
+    "has_extension_issues": true,
+    "has_project_issues": true,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "build_error",
+      "scope": "project",
+      "summary": "Build step failed",
+      "step_id": "1.11_env",
+      "provider": "claude_code",
+      "count": 2
+    },
+    {
+      "category": "timeout",
+      "scope": "extension",
+      "summary": "Provider process timed out or was killed",
+      "step_id": "1.9",
+      "provider": "claude_code",
+      "count": 1
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "1.11_env",
+      "step_name": "Setup test environment for Build diffusion model provider (Stable Diffusion / HF / Replicate)",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-05T16:49:28.413Z",
+      "duration_ms": 46472,
+      "success": false,
+      "error": "Missing 1 declared output(s) — first: test_env_for_step_1_11",
+      "file_changes": [
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_diffusion_model_p.py",
+          "action": "modified",
+          "lines": 419
+        }
+      ]
+    },
+    {
+      "step_id": "1.11_adapter",
+      "step_name": "Create data source adapter for Build diffusion model provider (Stable Diffusion / HF / Replicate)",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-05T16:49:43.095Z",
+      "duration_ms": 61605,
+      "success": false,
+      "error": "Missing 1 declared output(s) — first: data_source_adapter_for_step_1_11",
+      "file_changes": [
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/__init__.py",
+          "action": "modified",
+          "lines": 212
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_diffusion_model_p.py",
+          "action": "modified",
+          "lines": 419
+        }
+      ]
+    },
+    {
+      "step_id": "1.9",
+      "step_name": "Setup test environment for Build diffusion model provider (Stable Diffusion / HF / Replicate)",
+      "phase_id": 1,
+      "phase_name": "Project Setup & LLM Provider Configuration",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-05T16:49:52.736Z",
+      "duration_ms": 70215,
+      "success": false,
+      "error": "Claude Code killed (signal SIGTERM) — Cancelled by user (Stop clicked)",
+      "file_changes": [
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/__init__.py",
+          "action": "modified",
+          "lines": 212
+        },
+        {
+          "file": "Scripts/project_setup_and_llm_provider_configuration/setup_test_environment_for_build_diffusion_model_p.py",
+          "action": "modified",
+          "lines": 419
+        }
+      ]
+    }
+  ]
+}
