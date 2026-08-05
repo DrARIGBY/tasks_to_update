@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-05T16:24:25.783Z",
+  "extension_version": "2.6.50",
+  "machine_id": "machine_6x2hk",
+  "stats": [
+    {
+      "provider_id": "codex",
+      "model": "gpt-5.2",
+      "task_type": "coding_simple",
+      "selections": 1,
+      "successes": 1,
+      "failures": 0,
+      "avg_duration_s": 194.6,
+      "total_duration_ms": 194590
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-opus-4-7",
+      "task_type": "coding_complex",
+      "selections": 6,
+      "successes": 0,
+      "failures": 6,
+      "avg_duration_s": 0,
+      "total_duration_ms": 0
+    }
+  ]
+}
