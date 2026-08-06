@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-06T20:25:02.886Z",
+  "extension_version": "3.0.1",
+  "machine_id": "machine_6x2hk",
+  "stats": [
+    {
+      "provider_id": "claude_code",
+      "model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "selections": 25,
+      "successes": 18,
+      "failures": 7,
+      "avg_duration_s": 1320.6,
+      "total_duration_ms": 23770431
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-opus-5",
+      "task_type": "analyze",
+      "selections": 2,
+      "successes": 2,
+      "failures": 0,
+      "avg_duration_s": 1077.2,
+      "total_duration_ms": 2154458
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-opus-5",
+      "task_type": "map_graph",
+      "selections": 1,
+      "successes": 1,
+      "failures": 0,
+      "avg_duration_s": 1662.9,
+      "total_duration_ms": 1662865
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-opus-4-7",
+      "task_type": "report",
+      "selections": 1,
+      "successes": 1,
+      "failures": 0,
+      "avg_duration_s": 643.3,
+      "total_duration_ms": 643279
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-opus-5",
+      "task_type": "test",
+      "selections": 1,
+      "successes": 1,
+      "failures": 0,
+      "avg_duration_s": 2402.8,
+      "total_duration_ms": 2402848
+    }
+  ]
+}
