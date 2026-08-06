@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-06T23:35:32.334Z",
+  "extension_version": "3.0.1",
+  "machine_id": "machine_6x2hk",
+  "stats": [
+    {
+      "provider_id": "anthropic",
+      "model": "claude-opus-4-6",
+      "task_type": "validate",
+      "selections": 2,
+      "successes": 0,
+      "failures": 2,
+      "avg_duration_s": 0,
+      "total_duration_ms": 0
+    },
+    {
+      "provider_id": "anthropic",
+      "model": "claude-haiku-4-5-20251001",
+      "task_type": "coding_simple",
+      "selections": 1,
+      "successes": 1,
+      "failures": 0,
+      "avg_duration_s": 552.5,
+      "total_duration_ms": 552542
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "selections": 5,
+      "successes": 0,
+      "failures": 5,
+      "avg_duration_s": 0,
+      "total_duration_ms": 0
+    }
+  ]
+}
