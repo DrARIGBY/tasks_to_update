@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-06T12:34:11.239Z",
+  "extension_version": "2.6.54",
+  "machine_id": "machine_6x2hk",
+  "stats": [
+    {
+      "provider_id": "claude_code",
+      "model": "claude-opus-4-7",
+      "task_type": "coding_simple",
+      "selections": 2,
+      "successes": 2,
+      "failures": 0,
+      "avg_duration_s": 338.2,
+      "total_duration_ms": 676463
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "selections": 6,
+      "successes": 1,
+      "failures": 5,
+      "avg_duration_s": 147.9,
+      "total_duration_ms": 147922
+    }
+  ]
+}
