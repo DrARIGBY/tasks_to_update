@@ -1,0 +1,680 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1786032756975_ecso9y",
+  "generated_at": "2026-08-06T16:12:36.974Z",
+  "extension_version": "3.0.1",
+  "project_name": "Govini_Entity_Resolution",
+  "machine_id": "machine_6x2hk",
+  "total_steps": 3,
+  "total_files_changed": 63,
+  "providers_used": [
+    "claude_code"
+  ],
+  "report_type": "project",
+  "flags": {
+    "has_extension_issues": false,
+    "has_project_issues": true,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "build_error",
+      "scope": "project",
+      "summary": "Build step failed",
+      "step_id": "10.1",
+      "provider": "claude_code",
+      "count": 1
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "1.1",
+      "step_name": "Ingest and summarise the assessment spec",
+      "phase_id": 1,
+      "phase_name": "Spec Grounding & Task Inventory",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "analyze",
+      "completed_at": "2026-08-06T16:07:11.872Z",
+      "duration_ms": 821109,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/__init__.py",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/_skills/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/SKILL.md",
+          "action": "created",
+          "lines": 409
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/scripts/citation_validator.py",
+          "action": "created",
+          "lines": 488
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/scripts/code_searcher.py",
+          "action": "created",
+          "lines": 428
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/scripts/external_resolver.py",
+          "action": "created",
+          "lines": 409
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/scripts/issue_parser.py",
+          "action": "created",
+          "lines": 325
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/scripts/pipeline.py",
+          "action": "created",
+          "lines": 753
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/scripts/requirements.txt",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/_skills/csv-output-contract/SKILL.md",
+          "action": "created",
+          "lines": 109
+        },
+        {
+          "file": "Scripts/_skills/csv-output-contract/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/_skills/csv-output-contract/scripts/__init__.py",
+          "action": "created",
+          "lines": 75
+        },
+        {
+          "file": "Scripts/_skills/csv-output-contract/scripts/column_contract.py",
+          "action": "created",
+          "lines": 373
+        },
+        {
+          "file": "Scripts/_skills/csv-output-contract/scripts/contract_markdown.py",
+          "action": "created",
+          "lines": 217
+        },
+        {
+          "file": "Scripts/_skills/csv-output-contract/scripts/module_loader.py",
+          "action": "created",
+          "lines": 154
+        },
+        {
+          "file": "Scripts/_skills/csv-output-contract/scripts/requirements.txt",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/_skills/csv-output-contract/scripts/row_validation.py",
+          "action": "created",
+          "lines": 350
+        },
+        {
+          "file": "Scripts/_skills/doc-coauthoring/SKILL.md",
+          "action": "created",
+          "lines": 376
+        },
+        {
+          "file": "Scripts/_skills/doc-coauthoring/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/schema-contract-kit/SKILL.md",
+          "action": "created",
+          "lines": 70
+        },
+        {
+          "file": "Scripts/_skills/schema-contract-kit/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/_skills/schema-contract-kit/scripts/__init__.py",
+          "action": "created",
+          "lines": 79
+        },
+        {
+          "file": "Scripts/_skills/schema-contract-kit/scripts/field_fallback.py",
+          "action": "created",
+          "lines": 365
+        },
+        {
+          "file": "Scripts/_skills/schema-contract-kit/scripts/json_schema_export.py",
+          "action": "created",
+          "lines": 134
+        },
+        {
+          "file": "Scripts/_skills/schema-contract-kit/scripts/schema_docs.py",
+          "action": "created",
+          "lines": 207
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/SKILL.md",
+          "action": "created",
+          "lines": 394
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/format_output.json",
+          "action": "created",
+          "lines": 226
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/references/skill_categories.json",
+          "action": "created",
+          "lines": 106
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/references/task_types.json",
+          "action": "created",
+          "lines": 173
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/scripts/performance_tracker.py",
+          "action": "created",
+          "lines": 465
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/scripts/requirements.txt",
+          "action": "created",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/scripts/secretary_orchestrator.py",
+          "action": "created",
+          "lines": 578
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/scripts/skill_analyzer.py",
+          "action": "created",
+          "lines": 407
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/scripts/skill_organizer.py",
+          "action": "created",
+          "lines": 420
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/scripts/task_mapper.py",
+          "action": "created",
+          "lines": 527
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/templates/task_template.json",
+          "action": "created",
+          "lines": 33
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "created",
+          "lines": 19
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/__init__.py",
+          "action": "created",
+          "lines": 82
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/config.py",
+          "action": "created",
+          "lines": 356
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/ingest_and_summarise_the_assessment_spec.py",
+          "action": "created",
+          "lines": 392
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/ingest_and_summarise_the_assessment_spec_1.py",
+          "action": "created",
+          "lines": 207
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/ingest_and_summarise_the_assessment_spec_2.py",
+          "action": "created",
+          "lines": 315
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/ingest_and_summarise_the_assessment_spec_3.py",
+          "action": "created",
+          "lines": 330
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/lock_the_output_contract_1.py",
+          "action": "created",
+          "lines": 323
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/lock_the_output_contract_2.py",
+          "action": "created",
+          "lines": 535
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/skill_loader.py",
+          "action": "created",
+          "lines": 140
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/spec_requirements_data.py",
+          "action": "created",
+          "lines": 221
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/write_the_task_inventory_alltasksmd.py",
+          "action": "created",
+          "lines": 634
+        },
+        {
+          "file": "Scripts/tests/conftest.py",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/tests/data/1_1_spec_summary.json",
+          "action": "created",
+          "lines": 864
+        },
+        {
+          "file": "Scripts/tests/test_1_1.py",
+          "action": "created",
+          "lines": 225
+        },
+        {
+          "file": "Scripts/tests/test_1_1_functions.py",
+          "action": "created",
+          "lines": 393
+        },
+        {
+          "file": "Scripts/tests/test_1_2.py",
+          "action": "created",
+          "lines": 221
+        },
+        {
+          "file": "Scripts/tests/test_1_2_functions.py",
+          "action": "created",
+          "lines": 384
+        }
+      ]
+    },
+    {
+      "step_id": "1.3",
+      "step_name": "Lock the output contract",
+      "phase_id": 1,
+      "phase_name": "Spec Grounding & Task Inventory",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "plan",
+      "completed_at": "2026-08-06T16:11:13.449Z",
+      "duration_ms": 1062717,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/.env.example",
+          "action": "created",
+          "lines": 21
+        },
+        {
+          "file": "Scripts/__init__.py",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/_skills/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/SKILL.md",
+          "action": "created",
+          "lines": 409
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/scripts/citation_validator.py",
+          "action": "created",
+          "lines": 488
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/scripts/code_searcher.py",
+          "action": "created",
+          "lines": 428
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/scripts/external_resolver.py",
+          "action": "created",
+          "lines": 409
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/scripts/issue_parser.py",
+          "action": "created",
+          "lines": 325
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/scripts/pipeline.py",
+          "action": "created",
+          "lines": 753
+        },
+        {
+          "file": "Scripts/_skills/correction-resolver/scripts/requirements.txt",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/_skills/csv-output-contract/SKILL.md",
+          "action": "created",
+          "lines": 109
+        },
+        {
+          "file": "Scripts/_skills/csv-output-contract/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/_skills/csv-output-contract/scripts/__init__.py",
+          "action": "created",
+          "lines": 75
+        },
+        {
+          "file": "Scripts/_skills/csv-output-contract/scripts/column_contract.py",
+          "action": "created",
+          "lines": 373
+        },
+        {
+          "file": "Scripts/_skills/csv-output-contract/scripts/contract_markdown.py",
+          "action": "created",
+          "lines": 217
+        },
+        {
+          "file": "Scripts/_skills/csv-output-contract/scripts/module_loader.py",
+          "action": "created",
+          "lines": 154
+        },
+        {
+          "file": "Scripts/_skills/csv-output-contract/scripts/requirements.txt",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/_skills/csv-output-contract/scripts/row_validation.py",
+          "action": "created",
+          "lines": 350
+        },
+        {
+          "file": "Scripts/_skills/doc-coauthoring/SKILL.md",
+          "action": "created",
+          "lines": 376
+        },
+        {
+          "file": "Scripts/_skills/doc-coauthoring/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/schema-contract-kit/SKILL.md",
+          "action": "created",
+          "lines": 70
+        },
+        {
+          "file": "Scripts/_skills/schema-contract-kit/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/_skills/schema-contract-kit/scripts/__init__.py",
+          "action": "created",
+          "lines": 79
+        },
+        {
+          "file": "Scripts/_skills/schema-contract-kit/scripts/field_fallback.py",
+          "action": "created",
+          "lines": 365
+        },
+        {
+          "file": "Scripts/_skills/schema-contract-kit/scripts/json_schema_export.py",
+          "action": "created",
+          "lines": 134
+        },
+        {
+          "file": "Scripts/_skills/schema-contract-kit/scripts/schema_docs.py",
+          "action": "created",
+          "lines": 207
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/SKILL.md",
+          "action": "created",
+          "lines": 394
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/format_output.json",
+          "action": "created",
+          "lines": 226
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/references/skill_categories.json",
+          "action": "created",
+          "lines": 106
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/references/task_types.json",
+          "action": "created",
+          "lines": 173
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/scripts/performance_tracker.py",
+          "action": "created",
+          "lines": 465
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/scripts/requirements.txt",
+          "action": "created",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/scripts/secretary_orchestrator.py",
+          "action": "created",
+          "lines": 578
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/scripts/skill_analyzer.py",
+          "action": "created",
+          "lines": 407
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/scripts/skill_organizer.py",
+          "action": "created",
+          "lines": 420
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/scripts/task_mapper.py",
+          "action": "created",
+          "lines": 527
+        },
+        {
+          "file": "Scripts/_skills/secretary-skill/templates/task_template.json",
+          "action": "created",
+          "lines": 33
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "created",
+          "lines": 25
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/__init__.py",
+          "action": "created",
+          "lines": 149
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/config.py",
+          "action": "created",
+          "lines": 356
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/ingest_and_summarise_the_assessment_spec.py",
+          "action": "created",
+          "lines": 392
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/ingest_and_summarise_the_assessment_spec_1.py",
+          "action": "created",
+          "lines": 207
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/ingest_and_summarise_the_assessment_spec_2.py",
+          "action": "created",
+          "lines": 315
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/ingest_and_summarise_the_assessment_spec_3.py",
+          "action": "created",
+          "lines": 330
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/lock_the_output_contract.py",
+          "action": "created",
+          "lines": 607
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/lock_the_output_contract_1.py",
+          "action": "created",
+          "lines": 323
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/lock_the_output_contract_2.py",
+          "action": "created",
+          "lines": 535
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/skill_loader.py",
+          "action": "created",
+          "lines": 140
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/spec_requirements_data.py",
+          "action": "created",
+          "lines": 221
+        },
+        {
+          "file": "Scripts/spec_grounding_and_task_inventory/write_the_task_inventory_alltasksmd.py",
+          "action": "created",
+          "lines": 634
+        },
+        {
+          "file": "Scripts/tests/conftest.py",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/tests/data/1_1_spec_summary.json",
+          "action": "created",
+          "lines": 864
+        },
+        {
+          "file": "Scripts/tests/data/1_3_output_contract.json",
+          "action": "created",
+          "lines": 207
+        },
+        {
+          "file": "Scripts/tests/test_1_1.py",
+          "action": "created",
+          "lines": 225
+        },
+        {
+          "file": "Scripts/tests/test_1_1_functions.py",
+          "action": "created",
+          "lines": 393
+        },
+        {
+          "file": "Scripts/tests/test_1_2.py",
+          "action": "created",
+          "lines": 221
+        },
+        {
+          "file": "Scripts/tests/test_1_2_functions.py",
+          "action": "created",
+          "lines": 384
+        },
+        {
+          "file": "Scripts/tests/test_1_3.py",
+          "action": "created",
+          "lines": 209
+        },
+        {
+          "file": "Scripts/tests/test_1_3_functions.py",
+          "action": "created",
+          "lines": 304
+        }
+      ]
+    },
+    {
+      "step_id": "10.1",
+      "step_name": "End-to-end run instructions",
+      "phase_id": 10,
+      "phase_name": "Runtime, Type & Performance Guards",
+      "provider_id": "claude_code",
+      "provider_model": "claude-sonnet-5",
+      "task_type": "report",
+      "completed_at": "2026-08-06T16:11:16.906Z",
+      "duration_ms": 17,
+      "success": false,
+      "error": "Cannot read properties of undefined (reading 'map')",
+      "file_changes": []
+    }
+  ]
+}
