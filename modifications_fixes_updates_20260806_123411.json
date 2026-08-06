@@ -1,0 +1,823 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1786019651238_ce279p",
+  "generated_at": "2026-08-06T12:34:11.236Z",
+  "extension_version": "2.6.54",
+  "project_name": "BUILD_ME_A_TWIN",
+  "machine_id": "machine_6x2hk",
+  "total_steps": 8,
+  "total_files_changed": 48,
+  "providers_used": [
+    "claude_code"
+  ],
+  "report_type": "mixed",
+  "flags": {
+    "has_extension_issues": true,
+    "has_project_issues": true,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "timeout",
+      "scope": "extension",
+      "summary": "Provider process timed out or was killed",
+      "step_id": "1.4",
+      "provider": "claude_code",
+      "count": 2
+    },
+    {
+      "category": "build_error",
+      "scope": "project",
+      "summary": "Build step failed",
+      "step_id": "2.4",
+      "provider": "claude_code",
+      "count": 3
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "1.1",
+      "step_name": "Scaffold project, venv and central path/config module",
+      "phase_id": 1,
+      "phase_name": "Foundation, Contracts & Privacy Core",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-06T12:21:59.045Z",
+      "duration_ms": 337120,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/.env.example",
+          "action": "created",
+          "lines": 29
+        },
+        {
+          "file": "Scripts/__init__.py",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/__init__.py",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/build_settings_secrets_and_externalservice_registr.py",
+          "action": "created",
+          "lines": 689
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__1.py",
+          "action": "created",
+          "lines": 378
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__2.py",
+          "action": "created",
+          "lines": 400
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__3.py",
+          "action": "created",
+          "lines": 197
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__4.py",
+          "action": "created",
+          "lines": 288
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__5.py",
+          "action": "created",
+          "lines": 328
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/scaffold_project_venv_and_central_pathconfig_modul.py",
+          "action": "created",
+          "lines": 442
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "created",
+          "lines": 30
+        },
+        {
+          "file": "Scripts/tests/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/tests/conftest.py",
+          "action": "created",
+          "lines": 11
+        },
+        {
+          "file": "Scripts/tests/test_1_1.py",
+          "action": "created",
+          "lines": 423
+        },
+        {
+          "file": "Scripts/tests/test_1_3.py",
+          "action": "created",
+          "lines": 441
+        },
+        {
+          "file": "Scripts/twin_core/__init__.py",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/twin_core/paths.py",
+          "action": "created",
+          "lines": 344
+        }
+      ]
+    },
+    {
+      "step_id": "1.3",
+      "step_name": "Build settings, secrets and external-service registry",
+      "phase_id": 1,
+      "phase_name": "Foundation, Contracts & Privacy Core",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-06T12:22:01.270Z",
+      "duration_ms": 339343,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/.env.example",
+          "action": "created",
+          "lines": 29
+        },
+        {
+          "file": "Scripts/__init__.py",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/__init__.py",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/build_settings_secrets_and_externalservice_registr.py",
+          "action": "created",
+          "lines": 689
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__1.py",
+          "action": "created",
+          "lines": 378
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__2.py",
+          "action": "created",
+          "lines": 400
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__3.py",
+          "action": "created",
+          "lines": 197
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__4.py",
+          "action": "created",
+          "lines": 288
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__5.py",
+          "action": "created",
+          "lines": 328
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/scaffold_project_venv_and_central_pathconfig_modul.py",
+          "action": "created",
+          "lines": 442
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "created",
+          "lines": 30
+        },
+        {
+          "file": "Scripts/tests/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/tests/conftest.py",
+          "action": "created",
+          "lines": 11
+        },
+        {
+          "file": "Scripts/tests/test_1_1.py",
+          "action": "created",
+          "lines": 423
+        },
+        {
+          "file": "Scripts/tests/test_1_3.py",
+          "action": "created",
+          "lines": 441
+        },
+        {
+          "file": "Scripts/twin_core/__init__.py",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/twin_core/paths.py",
+          "action": "created",
+          "lines": 344
+        }
+      ]
+    },
+    {
+      "step_id": "1.4",
+      "step_name": "Implement PHI de-identification, access control and audit logging",
+      "phase_id": 1,
+      "phase_name": "Foundation, Contracts & Privacy Core",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-06T12:31:21.961Z",
+      "duration_ms": 900075,
+      "success": false,
+      "error": "PTY build timed out after 900s",
+      "file_changes": [
+        {
+          "file": "Scripts/.env.example",
+          "action": "created",
+          "lines": 29
+        },
+        {
+          "file": "Scripts/__init__.py",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/__init__.py",
+          "action": "created",
+          "lines": 192
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/build_settings_secrets_and_externalservice_registr.py",
+          "action": "created",
+          "lines": 689
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and_.py",
+          "action": "created",
+          "lines": 524
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__1.py",
+          "action": "created",
+          "lines": 407
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__2.py",
+          "action": "created",
+          "lines": 400
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__3.py",
+          "action": "created",
+          "lines": 197
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__4.py",
+          "action": "created",
+          "lines": 288
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__5.py",
+          "action": "created",
+          "lines": 328
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__6.py",
+          "action": "created",
+          "lines": 271
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/scaffold_project_venv_and_central_pathconfig_modul.py",
+          "action": "created",
+          "lines": 442
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "created",
+          "lines": 30
+        },
+        {
+          "file": "Scripts/tests/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/tests/conftest.py",
+          "action": "created",
+          "lines": 11
+        },
+        {
+          "file": "Scripts/tests/test_1_1.py",
+          "action": "created",
+          "lines": 423
+        },
+        {
+          "file": "Scripts/tests/test_1_3.py",
+          "action": "created",
+          "lines": 441
+        },
+        {
+          "file": "Scripts/twin_core/__init__.py",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/twin_core/paths.py",
+          "action": "created",
+          "lines": 344
+        }
+      ]
+    },
+    {
+      "step_id": "1.2",
+      "step_name": "Define domain schemas for med_stuff, treatments, signs, conditions, records and alerts",
+      "phase_id": 1,
+      "phase_name": "Foundation, Contracts & Privacy Core",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-06T12:31:21.969Z",
+      "duration_ms": 900063,
+      "success": false,
+      "error": "PTY build timed out after 900s",
+      "file_changes": [
+        {
+          "file": "Scripts/.env.example",
+          "action": "created",
+          "lines": 29
+        },
+        {
+          "file": "Scripts/__init__.py",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/__init__.py",
+          "action": "created",
+          "lines": 192
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/build_settings_secrets_and_externalservice_registr.py",
+          "action": "created",
+          "lines": 689
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and_.py",
+          "action": "created",
+          "lines": 524
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__1.py",
+          "action": "created",
+          "lines": 407
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__2.py",
+          "action": "created",
+          "lines": 400
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__3.py",
+          "action": "created",
+          "lines": 197
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__4.py",
+          "action": "created",
+          "lines": 288
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__5.py",
+          "action": "created",
+          "lines": 328
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/implement_phi_deidentification_access_control_and__6.py",
+          "action": "created",
+          "lines": 271
+        },
+        {
+          "file": "Scripts/foundation_contracts_and_privacy_core/scaffold_project_venv_and_central_pathconfig_modul.py",
+          "action": "created",
+          "lines": 442
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "created",
+          "lines": 30
+        },
+        {
+          "file": "Scripts/tests/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/tests/conftest.py",
+          "action": "created",
+          "lines": 11
+        },
+        {
+          "file": "Scripts/tests/test_1_1.py",
+          "action": "created",
+          "lines": 423
+        },
+        {
+          "file": "Scripts/tests/test_1_3.py",
+          "action": "created",
+          "lines": 441
+        },
+        {
+          "file": "Scripts/twin_core/__init__.py",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/twin_core/paths.py",
+          "action": "created",
+          "lines": 344
+        }
+      ]
+    },
+    {
+      "step_id": "2.2",
+      "step_name": "PDF ingestion and extraction pipeline",
+      "phase_id": 2,
+      "phase_name": "Knowledge Acquisition — Local med_stuff Library",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-06T12:33:53.329Z",
+      "duration_ms": 147922,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/pdf-etl/SKILL.md",
+          "action": "created",
+          "lines": 177
+        },
+        {
+          "file": "Scripts/_skills/pdf-etl/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/SKILL.md",
+          "action": "created",
+          "lines": 523
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/format_output.json",
+          "action": "created",
+          "lines": 570
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/content_scraper.py",
+          "action": "created",
+          "lines": 671
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/debug_wikipedia_structure.py",
+          "action": "created",
+          "lines": 61
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/equation_cleaner.py",
+          "action": "created",
+          "lines": 286
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/link_filter.py",
+          "action": "created",
+          "lines": 353
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/pdf_generator.py",
+          "action": "created",
+          "lines": 700
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/pipeline_orchestrator.py",
+          "action": "created",
+          "lines": 378
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/reference_extractor.py",
+          "action": "created",
+          "lines": 270
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/requirements.txt",
+          "action": "created",
+          "lines": 4
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/structure_analyzer.py",
+          "action": "created",
+          "lines": 453
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/url_folder_manager.py",
+          "action": "created",
+          "lines": 239
+        }
+      ]
+    },
+    {
+      "step_id": "2.4",
+      "step_name": "Entity normalisation, synonym resolution and relationship linking",
+      "phase_id": 2,
+      "phase_name": "Knowledge Acquisition — Local med_stuff Library",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-06T12:34:11.143Z",
+      "duration_ms": 165712,
+      "success": false,
+      "error": "Claude PTY exited prematurely (code=143, signal=0)",
+      "file_changes": [
+        {
+          "file": "Scripts/knowledge_acquisition_local_medstuff_library/configurable_web_research_and_scraping_engine_1.py",
+          "action": "created",
+          "lines": 479
+        }
+      ]
+    },
+    {
+      "step_id": "2.1",
+      "step_name": "Build the local knowledge library store",
+      "phase_id": 2,
+      "phase_name": "Knowledge Acquisition — Local med_stuff Library",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-06T12:34:11.195Z",
+      "duration_ms": 165806,
+      "success": false,
+      "error": "Claude PTY exited prematurely (code=143, signal=0)",
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/SKILL.md",
+          "action": "created",
+          "lines": 395
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/references/output_schema.json",
+          "action": "created",
+          "lines": 434
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/column_matcher.py",
+          "action": "created",
+          "lines": 374
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/data_extractor.py",
+          "action": "created",
+          "lines": 429
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/graph_generator.py",
+          "action": "created",
+          "lines": 545
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/graph_pipeline.py",
+          "action": "created",
+          "lines": 440
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/id_identifier.py",
+          "action": "created",
+          "lines": 370
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/id_mapper.py",
+          "action": "created",
+          "lines": 434
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/requirements.txt",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/_skills/pdf-etl/SKILL.md",
+          "action": "created",
+          "lines": 177
+        },
+        {
+          "file": "Scripts/_skills/pdf-etl/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/SKILL.md",
+          "action": "created",
+          "lines": 523
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/format_output.json",
+          "action": "created",
+          "lines": 570
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/content_scraper.py",
+          "action": "created",
+          "lines": 671
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/debug_wikipedia_structure.py",
+          "action": "created",
+          "lines": 61
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/equation_cleaner.py",
+          "action": "created",
+          "lines": 286
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/link_filter.py",
+          "action": "created",
+          "lines": 353
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/pdf_generator.py",
+          "action": "created",
+          "lines": 700
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/pipeline_orchestrator.py",
+          "action": "created",
+          "lines": 378
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/reference_extractor.py",
+          "action": "created",
+          "lines": 270
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/requirements.txt",
+          "action": "created",
+          "lines": 4
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/structure_analyzer.py",
+          "action": "created",
+          "lines": 453
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/url_folder_manager.py",
+          "action": "created",
+          "lines": 239
+        },
+        {
+          "file": "Scripts/knowledge_acquisition_local_medstuff_library/configurable_web_research_and_scraping_engine_1.py",
+          "action": "created",
+          "lines": 479
+        }
+      ]
+    },
+    {
+      "step_id": "2.3",
+      "step_name": "Configurable web research and scraping engine",
+      "phase_id": 2,
+      "phase_name": "Knowledge Acquisition — Local med_stuff Library",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-06T12:34:11.234Z",
+      "duration_ms": 165819,
+      "success": false,
+      "error": "Claude PTY exited prematurely (code=143, signal=0)",
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/web-scrapper/SKILL.md",
+          "action": "created",
+          "lines": 523
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/format_output.json",
+          "action": "created",
+          "lines": 570
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/content_scraper.py",
+          "action": "created",
+          "lines": 671
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/debug_wikipedia_structure.py",
+          "action": "created",
+          "lines": 61
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/equation_cleaner.py",
+          "action": "created",
+          "lines": 286
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/link_filter.py",
+          "action": "created",
+          "lines": 353
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/pdf_generator.py",
+          "action": "created",
+          "lines": 700
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/pipeline_orchestrator.py",
+          "action": "created",
+          "lines": 378
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/reference_extractor.py",
+          "action": "created",
+          "lines": 270
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/requirements.txt",
+          "action": "created",
+          "lines": 4
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/structure_analyzer.py",
+          "action": "created",
+          "lines": 453
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/url_folder_manager.py",
+          "action": "created",
+          "lines": 239
+        },
+        {
+          "file": "Scripts/knowledge_acquisition_local_medstuff_library/configurable_web_research_and_scraping_engine_1.py",
+          "action": "created",
+          "lines": 479
+        }
+      ]
+    }
+  ]
+}
