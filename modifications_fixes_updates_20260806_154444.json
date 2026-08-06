@@ -1,0 +1,1607 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1786031084170_3cjzwn",
+  "generated_at": "2026-08-06T15:44:44.169Z",
+  "extension_version": "2.6.56",
+  "project_name": "Digitize_ME_Twins",
+  "machine_id": "machine_6x2hk",
+  "total_steps": 24,
+  "total_files_changed": 88,
+  "providers_used": [
+    "claude_code"
+  ],
+  "report_type": "mixed",
+  "flags": {
+    "has_extension_issues": true,
+    "has_project_issues": true,
+    "was_cancelled": false,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "build_error",
+      "scope": "project",
+      "summary": "Build step failed",
+      "step_id": "5.1",
+      "provider": "claude_code",
+      "count": 1
+    },
+    {
+      "category": "provider_failure",
+      "scope": "extension",
+      "summary": "Provider CLI exited with an error",
+      "step_id": "6.2_env",
+      "provider": "claude_code",
+      "count": 12
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "3.1",
+      "step_name": "Build configurable scraper engine",
+      "phase_id": 3,
+      "phase_name": "Medical Service Site Scraping",
+      "provider_id": "claude_code",
+      "provider_model": "claude-sonnet-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-06T14:36:55.146Z",
+      "duration_ms": 900930,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/medical_service_site_scraping/__init__.py",
+          "action": "created",
+          "lines": 118
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/build_configurable_scraper_engine.py",
+          "action": "created",
+          "lines": 444
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/build_configurable_scraper_engine_1.py",
+          "action": "created",
+          "lines": 343
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/build_configurable_scraper_engine_2.py",
+          "action": "created",
+          "lines": 296
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/build_configurable_scraper_engine_3.py",
+          "action": "created",
+          "lines": 374
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/extract_candidate_medstuff_strings_and_publication.py",
+          "action": "created",
+          "lines": 519
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/extract_candidate_medstuff_strings_and_publication_1.py",
+          "action": "created",
+          "lines": 731
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/extract_candidate_medstuff_strings_and_publication_2.py",
+          "action": "created",
+          "lines": 526
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/extract_candidate_medstuff_strings_and_publication_3.py",
+          "action": "created",
+          "lines": 504
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/scrape_treatments_tests_markers_and_warning_patter.py",
+          "action": "created",
+          "lines": 465
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/scrape_treatments_tests_markers_and_warning_patter_1.py",
+          "action": "created",
+          "lines": 213
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/scrape_treatments_tests_markers_and_warning_patter_2.py",
+          "action": "created",
+          "lines": 276
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/scrape_treatments_tests_markers_and_warning_patter_3.py",
+          "action": "created",
+          "lines": 309
+        },
+        {
+          "file": "Scripts/project_setup_and_core_infrastructure/scaffold_project_structure_and_configuration_1.py",
+          "action": "modified",
+          "lines": 538
+        }
+      ]
+    },
+    {
+      "step_id": "3.2",
+      "step_name": "Scrape treatments, tests, markers and warning patterns",
+      "phase_id": 3,
+      "phase_name": "Medical Service Site Scraping",
+      "provider_id": "claude_code",
+      "provider_model": "claude-sonnet-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-06T14:37:01.438Z",
+      "duration_ms": 907191,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/medical_service_site_scraping/__init__.py",
+          "action": "created",
+          "lines": 118
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/build_configurable_scraper_engine.py",
+          "action": "created",
+          "lines": 444
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/build_configurable_scraper_engine_1.py",
+          "action": "created",
+          "lines": 343
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/build_configurable_scraper_engine_2.py",
+          "action": "created",
+          "lines": 296
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/build_configurable_scraper_engine_3.py",
+          "action": "created",
+          "lines": 374
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/extract_candidate_medstuff_strings_and_publication.py",
+          "action": "created",
+          "lines": 519
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/extract_candidate_medstuff_strings_and_publication_1.py",
+          "action": "created",
+          "lines": 731
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/extract_candidate_medstuff_strings_and_publication_2.py",
+          "action": "created",
+          "lines": 526
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/extract_candidate_medstuff_strings_and_publication_3.py",
+          "action": "created",
+          "lines": 504
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/scrape_treatments_tests_markers_and_warning_patter.py",
+          "action": "created",
+          "lines": 465
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/scrape_treatments_tests_markers_and_warning_patter_1.py",
+          "action": "created",
+          "lines": 213
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/scrape_treatments_tests_markers_and_warning_patter_2.py",
+          "action": "created",
+          "lines": 276
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/scrape_treatments_tests_markers_and_warning_patter_3.py",
+          "action": "created",
+          "lines": 309
+        },
+        {
+          "file": "Scripts/project_setup_and_core_infrastructure/scaffold_project_structure_and_configuration_1.py",
+          "action": "modified",
+          "lines": 538
+        }
+      ]
+    },
+    {
+      "step_id": "3.3",
+      "step_name": "Extract candidate med_stuff strings and publication links",
+      "phase_id": 3,
+      "phase_name": "Medical Service Site Scraping",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-06T14:39:55.650Z",
+      "duration_ms": 1081381,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/medical_service_site_scraping/__init__.py",
+          "action": "created",
+          "lines": 184
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/build_configurable_scraper_engine.py",
+          "action": "created",
+          "lines": 444
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/build_configurable_scraper_engine_1.py",
+          "action": "created",
+          "lines": 343
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/build_configurable_scraper_engine_2.py",
+          "action": "created",
+          "lines": 296
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/build_configurable_scraper_engine_3.py",
+          "action": "created",
+          "lines": 374
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/extract_candidate_medstuff_strings_and_publication.py",
+          "action": "created",
+          "lines": 519
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/extract_candidate_medstuff_strings_and_publication_1.py",
+          "action": "created",
+          "lines": 823
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/extract_candidate_medstuff_strings_and_publication_2.py",
+          "action": "created",
+          "lines": 558
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/extract_candidate_medstuff_strings_and_publication_3.py",
+          "action": "created",
+          "lines": 546
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/scrape_treatments_tests_markers_and_warning_patter.py",
+          "action": "created",
+          "lines": 465
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/scrape_treatments_tests_markers_and_warning_patter_1.py",
+          "action": "created",
+          "lines": 213
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/scrape_treatments_tests_markers_and_warning_patter_2.py",
+          "action": "created",
+          "lines": 276
+        },
+        {
+          "file": "Scripts/medical_service_site_scraping/scrape_treatments_tests_markers_and_warning_patter_3.py",
+          "action": "created",
+          "lines": 309
+        },
+        {
+          "file": "Scripts/project_setup_and_core_infrastructure/scaffold_project_structure_and_configuration_1.py",
+          "action": "modified",
+          "lines": 538
+        }
+      ]
+    },
+    {
+      "step_id": "4.1_adapter",
+      "step_name": "Create data source adapter for Classify candidates via regex, Ollama and Gen_Search",
+      "phase_id": 4,
+      "phase_name": "med_stuff Identification, Verification & Efficiency Scoring",
+      "provider_id": "claude_code",
+      "provider_model": "claude-sonnet-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-06T14:50:13.201Z",
+      "duration_ms": 617269,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/__init__.py",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/classify_candidates_via_regex_ollama_and_gensearch.py",
+          "action": "created",
+          "lines": 439
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/classify_candidates_via_regex_ollama_and_gensearch_1.py",
+          "action": "created",
+          "lines": 276
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/classify_candidates_via_regex_ollama_and_gensearch_2.py",
+          "action": "created",
+          "lines": 392
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/classify_candidates_via_regex_ollama_and_gensearch_3.py",
+          "action": "created",
+          "lines": 253
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/create_data_source_adapter_for_classify_candidates.py",
+          "action": "created",
+          "lines": 632
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/library_lookup_and_crosssite_consistency_verificat_1.py",
+          "action": "created",
+          "lines": 271
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/setup_test_environment_for_classify_candidates_via_1.py",
+          "action": "created",
+          "lines": 443
+        },
+        {
+          "file": "Scripts/project_setup_and_core_infrastructure/scaffold_project_structure_and_configuration_1.py",
+          "action": "modified",
+          "lines": 562
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_classification_cache_db.py",
+          "action": "created",
+          "lines": 233
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/test_gen_search_data.py",
+          "action": "created",
+          "lines": 137
+        },
+        {
+          "file": "Scripts/tests/test_4_1_adapter.py",
+          "action": "created",
+          "lines": 543
+        }
+      ]
+    },
+    {
+      "step_id": "4.1",
+      "step_name": "Classify candidates via regex, Ollama and Gen_Search",
+      "phase_id": 4,
+      "phase_name": "med_stuff Identification, Verification & Efficiency Scoring",
+      "provider_id": "claude_code",
+      "provider_model": "claude-sonnet-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-06T14:54:27.350Z",
+      "duration_ms": 871278,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/__init__.py",
+          "action": "created",
+          "lines": 123
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/classify_candidates_via_regex_ollama_and_gensearch.py",
+          "action": "created",
+          "lines": 441
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/classify_candidates_via_regex_ollama_and_gensearch_1.py",
+          "action": "created",
+          "lines": 278
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/classify_candidates_via_regex_ollama_and_gensearch_2.py",
+          "action": "created",
+          "lines": 392
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/classify_candidates_via_regex_ollama_and_gensearch_3.py",
+          "action": "created",
+          "lines": 253
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/create_data_source_adapter_for_classify_candidates.py",
+          "action": "created",
+          "lines": 632
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/library_lookup_and_crosssite_consistency_verificat.py",
+          "action": "created",
+          "lines": 270
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/library_lookup_and_crosssite_consistency_verificat_1.py",
+          "action": "created",
+          "lines": 271
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/library_lookup_and_crosssite_consistency_verificat_2.py",
+          "action": "created",
+          "lines": 261
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/library_lookup_and_crosssite_consistency_verificat_3.py",
+          "action": "created",
+          "lines": 327
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/setup_test_environment_for_classify_candidates_via.py",
+          "action": "created",
+          "lines": 467
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/setup_test_environment_for_classify_candidates_via_1.py",
+          "action": "created",
+          "lines": 443
+        },
+        {
+          "file": "Scripts/project_setup_and_core_infrastructure/scaffold_project_structure_and_configuration_1.py",
+          "action": "modified",
+          "lines": 562
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/classification_cache.sqlite3",
+          "action": "created",
+          "lines": 46
+        },
+        {
+          "file": "Scripts/test_env/gen_search_responses/candidate_search_fixtures.json",
+          "action": "created",
+          "lines": 440
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_classification_cache_db.py",
+          "action": "created",
+          "lines": 233
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 28
+        },
+        {
+          "file": "Scripts/test_env/test_gen_search_data.py",
+          "action": "created",
+          "lines": 137
+        },
+        {
+          "file": "Scripts/tests/test_4_1_adapter.py",
+          "action": "created",
+          "lines": 543
+        }
+      ]
+    },
+    {
+      "step_id": "4.2",
+      "step_name": "Library lookup and cross-site consistency verification",
+      "phase_id": 4,
+      "phase_name": "med_stuff Identification, Verification & Efficiency Scoring",
+      "provider_id": "claude_code",
+      "provider_model": "claude-sonnet-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-06T14:55:59.547Z",
+      "duration_ms": 963481,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/__init__.py",
+          "action": "created",
+          "lines": 194
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/classify_candidates_via_regex_ollama_and_gensearch.py",
+          "action": "created",
+          "lines": 441
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/classify_candidates_via_regex_ollama_and_gensearch_1.py",
+          "action": "created",
+          "lines": 278
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/classify_candidates_via_regex_ollama_and_gensearch_2.py",
+          "action": "created",
+          "lines": 392
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/classify_candidates_via_regex_ollama_and_gensearch_3.py",
+          "action": "created",
+          "lines": 253
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/create_data_source_adapter_for_classify_candidates.py",
+          "action": "created",
+          "lines": 632
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/library_lookup_and_crosssite_consistency_verificat.py",
+          "action": "created",
+          "lines": 270
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/library_lookup_and_crosssite_consistency_verificat_1.py",
+          "action": "created",
+          "lines": 271
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/library_lookup_and_crosssite_consistency_verificat_2.py",
+          "action": "created",
+          "lines": 261
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/library_lookup_and_crosssite_consistency_verificat_3.py",
+          "action": "created",
+          "lines": 327
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/setup_test_environment_for_classify_candidates_via.py",
+          "action": "created",
+          "lines": 467
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/setup_test_environment_for_classify_candidates_via_1.py",
+          "action": "created",
+          "lines": 443
+        },
+        {
+          "file": "Scripts/project_setup_and_core_infrastructure/scaffold_project_structure_and_configuration_1.py",
+          "action": "modified",
+          "lines": 562
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/classification_cache.sqlite3",
+          "action": "created",
+          "lines": 46
+        },
+        {
+          "file": "Scripts/test_env/gen_search_responses/candidate_search_fixtures.json",
+          "action": "created",
+          "lines": 440
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_classification_cache_db.py",
+          "action": "created",
+          "lines": 233
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 28
+        },
+        {
+          "file": "Scripts/test_env/test_gen_search_data.py",
+          "action": "created",
+          "lines": 137
+        },
+        {
+          "file": "Scripts/tests/test_1_4_adapter.py",
+          "action": "modified",
+          "lines": 424
+        },
+        {
+          "file": "Scripts/tests/test_4_1_adapter.py",
+          "action": "created",
+          "lines": 543
+        },
+        {
+          "file": "Scripts/tests/test_4_1_env.py",
+          "action": "created",
+          "lines": 490
+        }
+      ]
+    },
+    {
+      "step_id": "4.1_env",
+      "step_name": "Setup test environment for Classify candidates via regex, Ollama and Gen_Search",
+      "phase_id": 4,
+      "phase_name": "med_stuff Identification, Verification & Efficiency Scoring",
+      "provider_id": "claude_code",
+      "provider_model": "claude-sonnet-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-06T14:57:18.877Z",
+      "duration_ms": 1042905,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/__init__.py",
+          "action": "created",
+          "lines": 194
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/classify_candidates_via_regex_ollama_and_gensearch.py",
+          "action": "created",
+          "lines": 441
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/classify_candidates_via_regex_ollama_and_gensearch_1.py",
+          "action": "created",
+          "lines": 278
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/classify_candidates_via_regex_ollama_and_gensearch_2.py",
+          "action": "created",
+          "lines": 392
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/classify_candidates_via_regex_ollama_and_gensearch_3.py",
+          "action": "created",
+          "lines": 253
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/create_data_source_adapter_for_classify_candidates.py",
+          "action": "created",
+          "lines": 632
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/library_lookup_and_crosssite_consistency_verificat.py",
+          "action": "created",
+          "lines": 270
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/library_lookup_and_crosssite_consistency_verificat_1.py",
+          "action": "created",
+          "lines": 271
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/library_lookup_and_crosssite_consistency_verificat_2.py",
+          "action": "created",
+          "lines": 261
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/library_lookup_and_crosssite_consistency_verificat_3.py",
+          "action": "created",
+          "lines": 327
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/setup_test_environment_for_classify_candidates_via.py",
+          "action": "created",
+          "lines": 467
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/setup_test_environment_for_classify_candidates_via_1.py",
+          "action": "created",
+          "lines": 443
+        },
+        {
+          "file": "Scripts/project_setup_and_core_infrastructure/scaffold_project_structure_and_configuration_1.py",
+          "action": "modified",
+          "lines": 562
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/classification_cache.sqlite3",
+          "action": "created",
+          "lines": 46
+        },
+        {
+          "file": "Scripts/test_env/gen_search_responses/candidate_search_fixtures.json",
+          "action": "created",
+          "lines": 440
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_classification_cache_db.py",
+          "action": "created",
+          "lines": 233
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 28
+        },
+        {
+          "file": "Scripts/test_env/test_gen_search_data.py",
+          "action": "created",
+          "lines": 137
+        },
+        {
+          "file": "Scripts/tests/test_1_4_adapter.py",
+          "action": "modified",
+          "lines": 424
+        },
+        {
+          "file": "Scripts/tests/test_4_1_adapter.py",
+          "action": "created",
+          "lines": 543
+        },
+        {
+          "file": "Scripts/tests/test_4_1_env.py",
+          "action": "created",
+          "lines": 490
+        }
+      ]
+    },
+    {
+      "step_id": "4.4",
+      "step_name": "Benchmark first 100 med_stuff across site types",
+      "phase_id": 4,
+      "phase_name": "med_stuff Identification, Verification & Efficiency Scoring",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "analyze",
+      "completed_at": "2026-08-06T15:13:27.428Z",
+      "duration_ms": 968353,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/data_analyist/SKILL.md",
+          "action": "created",
+          "lines": 125
+        },
+        {
+          "file": "Scripts/_skills/data_analyist/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/data_analyist/scripts/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/_skills/data_analyist/scripts/analysis.py",
+          "action": "created",
+          "lines": 476
+        },
+        {
+          "file": "Scripts/_skills/data_analyist/scripts/eda.py",
+          "action": "created",
+          "lines": 604
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/__init__.py",
+          "action": "modified",
+          "lines": 402
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/benchmark_first_100_medstuff_across_site_types.py",
+          "action": "created",
+          "lines": 632
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/benchmark_first_100_medstuff_across_site_types_1.py",
+          "action": "created",
+          "lines": 425
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/benchmark_first_100_medstuff_across_site_types_2.py",
+          "action": "created",
+          "lines": 329
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/benchmark_first_100_medstuff_across_site_types_3.py",
+          "action": "created",
+          "lines": 344
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/benchmark_first_100_medstuff_across_site_types_4.py",
+          "action": "created",
+          "lines": 416
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/update_site_success_and_consistency_metadata.py",
+          "action": "created",
+          "lines": 470
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/update_site_success_and_consistency_metadata_1.py",
+          "action": "created",
+          "lines": 263
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/update_site_success_and_consistency_metadata_2.py",
+          "action": "created",
+          "lines": 380
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/update_site_success_and_consistency_metadata_3.py",
+          "action": "created",
+          "lines": 354
+        },
+        {
+          "file": "Scripts/tests/test_4_3.py",
+          "action": "created",
+          "lines": 639
+        }
+      ]
+    },
+    {
+      "step_id": "4.3",
+      "step_name": "Update site success and consistency metadata",
+      "phase_id": 4,
+      "phase_name": "med_stuff Identification, Verification & Efficiency Scoring",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "analyze",
+      "completed_at": "2026-08-06T15:15:33.032Z",
+      "duration_ms": 1093920,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/data_analyist/scripts/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/_skills/data_analyist/scripts/analysis.py",
+          "action": "created",
+          "lines": 476
+        },
+        {
+          "file": "Scripts/_skills/data_analyist/scripts/eda.py",
+          "action": "created",
+          "lines": 604
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/__init__.py",
+          "action": "modified",
+          "lines": 402
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/benchmark_first_100_medstuff_across_site_types.py",
+          "action": "created",
+          "lines": 632
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/benchmark_first_100_medstuff_across_site_types_1.py",
+          "action": "created",
+          "lines": 425
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/benchmark_first_100_medstuff_across_site_types_2.py",
+          "action": "created",
+          "lines": 329
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/benchmark_first_100_medstuff_across_site_types_3.py",
+          "action": "created",
+          "lines": 344
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/benchmark_first_100_medstuff_across_site_types_4.py",
+          "action": "created",
+          "lines": 416
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/update_site_success_and_consistency_metadata.py",
+          "action": "created",
+          "lines": 470
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/update_site_success_and_consistency_metadata_1.py",
+          "action": "created",
+          "lines": 263
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/update_site_success_and_consistency_metadata_2.py",
+          "action": "created",
+          "lines": 380
+        },
+        {
+          "file": "Scripts/medstuff_identification_verification_and_efficienc/update_site_success_and_consistency_metadata_3.py",
+          "action": "created",
+          "lines": 354
+        },
+        {
+          "file": "Scripts/tests/test_4_3.py",
+          "action": "created",
+          "lines": 639
+        }
+      ]
+    },
+    {
+      "step_id": "5.2",
+      "step_name": "Extract publication metadata and med_stuff cross-links",
+      "phase_id": 5,
+      "phase_name": "Publication Download & Metadata Enrichment",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "report",
+      "completed_at": "2026-08-06T15:24:19.027Z",
+      "duration_ms": 522479,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/bibliography-research/SKILL.md",
+          "action": "created",
+          "lines": 187
+        },
+        {
+          "file": "Scripts/_skills/bibliography-research/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/bibliography-research/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/bibliography-research/scripts/bibliography_extractor.py",
+          "action": "created",
+          "lines": 465
+        },
+        {
+          "file": "Scripts/_skills/bibliography-research/scripts/pipeline.py",
+          "action": "created",
+          "lines": 246
+        },
+        {
+          "file": "Scripts/_skills/bibliography-research/scripts/reference_analyzer.py",
+          "action": "created",
+          "lines": 404
+        },
+        {
+          "file": "Scripts/_skills/bibliography-research/scripts/requirements.txt",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/bibliography-research/scripts/research_resolver.py",
+          "action": "created",
+          "lines": 453
+        },
+        {
+          "file": "Scripts/_skills/data-analyst/SKILL.md",
+          "action": "created",
+          "lines": 102
+        },
+        {
+          "file": "Scripts/_skills/data-analyst/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/data-analyst/scripts/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/_skills/data-analyst/scripts/analysis.py",
+          "action": "created",
+          "lines": 476
+        },
+        {
+          "file": "Scripts/_skills/data-analyst/scripts/eda.py",
+          "action": "created",
+          "lines": 604
+        },
+        {
+          "file": "Scripts/_skills/pdf-etl/SKILL.md",
+          "action": "created",
+          "lines": 177
+        },
+        {
+          "file": "Scripts/_skills/pdf-etl/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/__init__.py",
+          "action": "created",
+          "lines": 50
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/build_website_capability_metadata_1.py",
+          "action": "created",
+          "lines": 553
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/download_referenced_and_relevant_publications.py",
+          "action": "created",
+          "lines": 342
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/download_referenced_and_relevant_publications_1.py",
+          "action": "created",
+          "lines": 368
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/download_referenced_and_relevant_publications_2.py",
+          "action": "created",
+          "lines": 386
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/download_referenced_and_relevant_publications_3.py",
+          "action": "created",
+          "lines": 229
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/extract_publication_metadata_and_medstuff_crosslin.py",
+          "action": "created",
+          "lines": 352
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/extract_publication_metadata_and_medstuff_crosslin_1.py",
+          "action": "created",
+          "lines": 373
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/extract_publication_metadata_and_medstuff_crosslin_2.py",
+          "action": "created",
+          "lines": 263
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/extract_publication_metadata_and_medstuff_crosslin_3.py",
+          "action": "created",
+          "lines": 274
+        },
+        {
+          "file": "Scripts/tests/test_5_2.py",
+          "action": "created",
+          "lines": 529
+        }
+      ]
+    },
+    {
+      "step_id": "5.3",
+      "step_name": "Build website capability metadata",
+      "phase_id": 5,
+      "phase_name": "Publication Download & Metadata Enrichment",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "analyze",
+      "completed_at": "2026-08-06T15:37:14.096Z",
+      "duration_ms": 1296920,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/data-analyst/SKILL.md",
+          "action": "created",
+          "lines": 102
+        },
+        {
+          "file": "Scripts/_skills/data-analyst/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/data-analyst/scripts/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/_skills/data-analyst/scripts/analysis.py",
+          "action": "created",
+          "lines": 476
+        },
+        {
+          "file": "Scripts/_skills/data-analyst/scripts/eda.py",
+          "action": "created",
+          "lines": 604
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/__init__.py",
+          "action": "created",
+          "lines": 287
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/build_website_capability_metadata.py",
+          "action": "created",
+          "lines": 443
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/build_website_capability_metadata_1.py",
+          "action": "created",
+          "lines": 553
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/build_website_capability_metadata_2.py",
+          "action": "created",
+          "lines": 664
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/build_website_capability_metadata_3.py",
+          "action": "created",
+          "lines": 419
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/download_referenced_and_relevant_publications.py",
+          "action": "created",
+          "lines": 354
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/download_referenced_and_relevant_publications_1.py",
+          "action": "created",
+          "lines": 368
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/download_referenced_and_relevant_publications_2.py",
+          "action": "created",
+          "lines": 402
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/download_referenced_and_relevant_publications_3.py",
+          "action": "created",
+          "lines": 236
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/extract_publication_metadata_and_medstuff_crosslin.py",
+          "action": "created",
+          "lines": 352
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/extract_publication_metadata_and_medstuff_crosslin_1.py",
+          "action": "created",
+          "lines": 373
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/extract_publication_metadata_and_medstuff_crosslin_2.py",
+          "action": "created",
+          "lines": 263
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/extract_publication_metadata_and_medstuff_crosslin_3.py",
+          "action": "created",
+          "lines": 274
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "modified",
+          "lines": 57
+        },
+        {
+          "file": "Scripts/tests/test_5_1.py",
+          "action": "created",
+          "lines": 418
+        },
+        {
+          "file": "Scripts/tests/test_5_2.py",
+          "action": "created",
+          "lines": 529
+        },
+        {
+          "file": "Scripts/tests/test_5_3.py",
+          "action": "created",
+          "lines": 766
+        }
+      ]
+    },
+    {
+      "step_id": "5.1",
+      "step_name": "Download referenced and relevant publications",
+      "phase_id": 5,
+      "phase_name": "Publication Download & Metadata Enrichment",
+      "provider_id": "claude_code",
+      "provider_model": "claude-sonnet-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-06T15:40:04.230Z",
+      "duration_ms": 1467460,
+      "success": false,
+      "error": "Fix loop exhausted (2/2) — 2 validation error(s) remain. First: Import \"more\" failed in Scripts/publication_download_and_metadata_enrichment/download_referenced_and_relevant_publications_3.py — add to Scripts/requirements.txt and install",
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/data-analyst/SKILL.md",
+          "action": "created",
+          "lines": 102
+        },
+        {
+          "file": "Scripts/_skills/data-analyst/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/data-analyst/scripts/__init__.py",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/_skills/data-analyst/scripts/analysis.py",
+          "action": "created",
+          "lines": 476
+        },
+        {
+          "file": "Scripts/_skills/data-analyst/scripts/eda.py",
+          "action": "created",
+          "lines": 604
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/__init__.py",
+          "action": "created",
+          "lines": 287
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/build_website_capability_metadata.py",
+          "action": "created",
+          "lines": 443
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/build_website_capability_metadata_1.py",
+          "action": "created",
+          "lines": 553
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/build_website_capability_metadata_2.py",
+          "action": "created",
+          "lines": 664
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/build_website_capability_metadata_3.py",
+          "action": "created",
+          "lines": 419
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/download_referenced_and_relevant_publications.py",
+          "action": "created",
+          "lines": 354
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/download_referenced_and_relevant_publications_1.py",
+          "action": "created",
+          "lines": 368
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/download_referenced_and_relevant_publications_2.py",
+          "action": "created",
+          "lines": 409
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/download_referenced_and_relevant_publications_3.py",
+          "action": "created",
+          "lines": 236
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/extract_publication_metadata_and_medstuff_crosslin.py",
+          "action": "created",
+          "lines": 352
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/extract_publication_metadata_and_medstuff_crosslin_1.py",
+          "action": "created",
+          "lines": 373
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/extract_publication_metadata_and_medstuff_crosslin_2.py",
+          "action": "created",
+          "lines": 263
+        },
+        {
+          "file": "Scripts/publication_download_and_metadata_enrichment/extract_publication_metadata_and_medstuff_crosslin_3.py",
+          "action": "created",
+          "lines": 274
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "modified",
+          "lines": 57
+        },
+        {
+          "file": "Scripts/tests/test_5_1.py",
+          "action": "created",
+          "lines": 432
+        },
+        {
+          "file": "Scripts/tests/test_5_2.py",
+          "action": "created",
+          "lines": 529
+        },
+        {
+          "file": "Scripts/tests/test_5_3.py",
+          "action": "created",
+          "lines": 766
+        }
+      ]
+    },
+    {
+      "step_id": "6.2_env",
+      "step_name": "Setup test environment for Ingest data into the graph database",
+      "phase_id": 6,
+      "phase_name": "Graph Database Construction & Linking",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "map_graph",
+      "completed_at": "2026-08-06T15:43:54.513Z",
+      "duration_ms": 226720,
+      "success": false,
+      "error": "Claude Code exited with code 1: You've hit your monthly spend limit · raise it at claude.ai/settings/usage?from=cc_cli_limit_message",
+      "file_changes": [
+        {
+          "file": "Scripts/graph_database_construction_and_linking/design_graph_schema_for_medstuff_and_sites_1.py",
+          "action": "created",
+          "lines": 404
+        },
+        {
+          "file": "Scripts/test_env/test_db_setup.py",
+          "action": "created",
+          "lines": 179
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 34
+        },
+        {
+          "file": "Scripts/test_env/test_graph_db.py",
+          "action": "created",
+          "lines": 551
+        }
+      ]
+    },
+    {
+      "step_id": "6.2",
+      "step_name": "Ingest data into the graph database",
+      "phase_id": 6,
+      "phase_name": "Graph Database Construction & Linking",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "map_graph",
+      "completed_at": "2026-08-06T15:43:54.532Z",
+      "duration_ms": 226431,
+      "success": false,
+      "error": "Claude Code exited with code 1: You've hit your monthly spend limit · raise it at claude.ai/settings/usage?from=cc_cli_limit_message",
+      "file_changes": [
+        {
+          "file": "Scripts/graph_database_construction_and_linking/design_graph_schema_for_medstuff_and_sites_1.py",
+          "action": "created",
+          "lines": 404
+        },
+        {
+          "file": "Scripts/test_env/test_db_setup.py",
+          "action": "created",
+          "lines": 179
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 34
+        },
+        {
+          "file": "Scripts/test_env/test_graph_db.py",
+          "action": "created",
+          "lines": 551
+        }
+      ]
+    },
+    {
+      "step_id": "6.2_adapter",
+      "step_name": "Create data source adapter for Ingest data into the graph database",
+      "phase_id": 6,
+      "phase_name": "Graph Database Construction & Linking",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "map_graph",
+      "completed_at": "2026-08-06T15:44:00.372Z",
+      "duration_ms": 232267,
+      "success": false,
+      "error": "Claude Code exited with code 1: You've hit your monthly spend limit · raise it at claude.ai/settings/usage?from=cc_cli_limit_message",
+      "file_changes": [
+        {
+          "file": "Scripts/graph_database_construction_and_linking/design_graph_schema_for_medstuff_and_sites_1.py",
+          "action": "created",
+          "lines": 404
+        },
+        {
+          "file": "Scripts/test_env/test_db_setup.py",
+          "action": "created",
+          "lines": 179
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 34
+        },
+        {
+          "file": "Scripts/test_env/test_graph_db.py",
+          "action": "created",
+          "lines": 551
+        }
+      ]
+    },
+    {
+      "step_id": "6.1",
+      "step_name": "Design graph schema for med_stuff and sites",
+      "phase_id": 6,
+      "phase_name": "Graph Database Construction & Linking",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "map_graph",
+      "completed_at": "2026-08-06T15:44:39.102Z",
+      "duration_ms": 271547,
+      "success": false,
+      "error": "Claude Code exited with code 1: You've hit your monthly spend limit · raise it at claude.ai/settings/usage?from=cc_cli_limit_message",
+      "file_changes": [
+        {
+          "file": "Scripts/graph_database_construction_and_linking/design_graph_schema_for_medstuff_and_sites_1.py",
+          "action": "created",
+          "lines": 404
+        },
+        {
+          "file": "Scripts/graph_database_construction_and_linking/design_graph_schema_for_medstuff_and_sites_2.py",
+          "action": "created",
+          "lines": 527
+        },
+        {
+          "file": "Scripts/test_env/test_db_setup.py",
+          "action": "created",
+          "lines": 179
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 34
+        },
+        {
+          "file": "Scripts/test_env/test_graph_db.py",
+          "action": "created",
+          "lines": 551
+        }
+      ]
+    },
+    {
+      "step_id": "7.4",
+      "step_name": "Branch selection and build-file export",
+      "phase_id": 7,
+      "phase_name": "Streamlit UI & Interaction",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-06T15:44:41.153Z",
+      "duration_ms": 1874,
+      "success": false,
+      "error": "Claude Code exited with code 1: You've hit your monthly spend limit · raise it at claude.ai/settings/usage?from=cc_cli_limit_message",
+      "file_changes": []
+    },
+    {
+      "step_id": "7.2",
+      "step_name": "Add-website and add-extraction-site forms",
+      "phase_id": 7,
+      "phase_name": "Streamlit UI & Interaction",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-06T15:44:41.184Z",
+      "duration_ms": 1944,
+      "success": false,
+      "error": "Claude Code exited with code 1: You've hit your monthly spend limit · raise it at claude.ai/settings/usage?from=cc_cli_limit_message",
+      "file_changes": []
+    },
+    {
+      "step_id": "7.3",
+      "step_name": "Graph visualization component",
+      "phase_id": 7,
+      "phase_name": "Streamlit UI & Interaction",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "map_graph",
+      "completed_at": "2026-08-06T15:44:41.319Z",
+      "duration_ms": 1987,
+      "success": false,
+      "error": "Claude Code exited with code 1: You've hit your monthly spend limit · raise it at claude.ai/settings/usage?from=cc_cli_limit_message",
+      "file_changes": []
+    },
+    {
+      "step_id": "7.1",
+      "step_name": "Build Streamlit app shell and extraction trigger",
+      "phase_id": 7,
+      "phase_name": "Streamlit UI & Interaction",
+      "provider_id": "claude_code",
+      "provider_model": "claude-sonnet-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-06T15:44:41.365Z",
+      "duration_ms": 2061,
+      "success": false,
+      "error": "Claude Code exited with code 1: You've hit your monthly spend limit · raise it at claude.ai/settings/usage?from=cc_cli_limit_message",
+      "file_changes": []
+    },
+    {
+      "step_id": "8.1",
+      "step_name": "Unit and integration tests for pipeline modules",
+      "phase_id": 8,
+      "phase_name": "Testing, Validation & Delivery",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "test",
+      "completed_at": "2026-08-06T15:44:43.249Z",
+      "duration_ms": 1730,
+      "success": false,
+      "error": "Claude Code exited with code 1: You've hit your monthly spend limit · raise it at claude.ai/settings/usage?from=cc_cli_limit_message",
+      "file_changes": []
+    },
+    {
+      "step_id": "8.2",
+      "step_name": "End-to-end pipeline and UI test",
+      "phase_id": 8,
+      "phase_name": "Testing, Validation & Delivery",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "test",
+      "completed_at": "2026-08-06T15:44:43.458Z",
+      "duration_ms": 1878,
+      "success": false,
+      "error": "Claude Code exited with code 1: You've hit your monthly spend limit · raise it at claude.ai/settings/usage?from=cc_cli_limit_message",
+      "file_changes": []
+    },
+    {
+      "step_id": "8.99_columns",
+      "step_name": "Data source observation & column selection",
+      "phase_id": 8,
+      "phase_name": "Testing, Validation & Delivery",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "analyze",
+      "completed_at": "2026-08-06T15:44:43.477Z",
+      "duration_ms": 1994,
+      "success": false,
+      "error": "Claude Code exited with code 1: You've hit your monthly spend limit · raise it at claude.ai/settings/usage?from=cc_cli_limit_message",
+      "file_changes": []
+    },
+    {
+      "step_id": "8.3",
+      "step_name": "Documentation and delivery report",
+      "phase_id": 8,
+      "phase_name": "Testing, Validation & Delivery",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-4-7",
+      "task_type": "report",
+      "completed_at": "2026-08-06T15:44:43.515Z",
+      "duration_ms": 1972,
+      "success": false,
+      "error": "Claude Code exited with code 1: You've hit your monthly spend limit · raise it at claude.ai/settings/usage?from=cc_cli_limit_message",
+      "file_changes": []
+    }
+  ]
+}
