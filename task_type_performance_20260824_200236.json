@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-24T20:02:36.578Z",
+  "extension_version": "3.4.1",
+  "machine_id": "machine_6x2hk",
+  "stats": [
+    {
+      "provider_id": "codex",
+      "model": "default",
+      "task_type": "coding_simple",
+      "selections": 3,
+      "successes": 2,
+      "failures": 1,
+      "avg_duration_s": 387.2,
+      "total_duration_ms": 774387
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "selections": 9,
+      "successes": 8,
+      "failures": 1,
+      "avg_duration_s": 884.6,
+      "total_duration_ms": 7076501
+    },
+    {
+      "provider_id": "codex",
+      "model": "gpt-5.3-codex",
+      "task_type": "analyze",
+      "selections": 1,
+      "successes": 1,
+      "failures": 0,
+      "avg_duration_s": 678.4,
+      "total_duration_ms": 678430
+    }
+  ]
+}
