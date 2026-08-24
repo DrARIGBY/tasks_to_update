@@ -1,0 +1,3056 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1787536916954_5tkazs",
+  "generated_at": "2026-08-24T02:01:56.950Z",
+  "extension_version": "3.4.1",
+  "project_name": "Healthcare_DT",
+  "machine_id": "machine_6x2hk",
+  "total_steps": 38,
+  "total_files_changed": 302,
+  "providers_used": [
+    "codex",
+    "claude_code"
+  ],
+  "report_type": "mixed",
+  "flags": {
+    "has_extension_issues": true,
+    "has_project_issues": true,
+    "was_cancelled": false,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "build_error",
+      "scope": "project",
+      "summary": "Build step failed",
+      "step_id": "6.4",
+      "provider": "codex",
+      "count": 1
+    },
+    {
+      "category": "timeout",
+      "scope": "extension",
+      "summary": "Provider process timed out or was killed",
+      "step_id": "8.5",
+      "provider": "claude_code",
+      "count": 1
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "1.1",
+      "step_name": "Create virtual environment and install dependencies",
+      "phase_id": 1,
+      "phase_name": "Environment & Scaffolding",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.3-codex",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-23T18:15:13.240Z",
+      "duration_ms": 339066,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/environment_and_scaffolding/__init__.py",
+          "action": "created",
+          "lines": 18
+        },
+        {
+          "file": "Scripts/environment_and_scaffolding/create_virtual_environment_and_install_dependencie.py",
+          "action": "created",
+          "lines": 392
+        },
+        {
+          "file": "Scripts/reqs.txt",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/tests/test_1_1.py",
+          "action": "created",
+          "lines": 167
+        }
+      ]
+    },
+    {
+      "step_id": "1.2",
+      "step_name": "Config module and settings.json",
+      "phase_id": 1,
+      "phase_name": "Environment & Scaffolding",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T18:30:32.202Z",
+      "duration_ms": 918353,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/environment_and_scaffolding/__init__.py",
+          "action": "modified",
+          "lines": 68
+        },
+        {
+          "file": "Scripts/environment_and_scaffolding/config_module_and_settingsjson.py",
+          "action": "created",
+          "lines": 642
+        },
+        {
+          "file": "Scripts/environment_and_scaffolding/config_module_and_settingsjson_1.py",
+          "action": "created",
+          "lines": 607
+        },
+        {
+          "file": "Scripts/environment_and_scaffolding/config_module_and_settingsjson_2.py",
+          "action": "created",
+          "lines": 481
+        },
+        {
+          "file": "Scripts/environment_and_scaffolding/config_module_and_settingsjson_3.py",
+          "action": "created",
+          "lines": 524
+        },
+        {
+          "file": "Scripts/tests/support_1_2.py",
+          "action": "created",
+          "lines": 195
+        },
+        {
+          "file": "Scripts/tests/test_1_2.py",
+          "action": "created",
+          "lines": 666
+        }
+      ]
+    },
+    {
+      "step_id": "1.3",
+      "step_name": "Logging, folder bootstrap and repo hygiene",
+      "phase_id": 1,
+      "phase_name": "Environment & Scaffolding",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.3-codex",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-23T18:38:14.410Z",
+      "duration_ms": 461537,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/environment_and_scaffolding/__init__.py",
+          "action": "modified",
+          "lines": 83
+        },
+        {
+          "file": "Scripts/environment_and_scaffolding/logging_folder_bootstrap_and_repo_hygiene.py",
+          "action": "created",
+          "lines": 325
+        },
+        {
+          "file": "Scripts/tests/test_1_3.py",
+          "action": "created",
+          "lines": 184
+        }
+      ]
+    },
+    {
+      "step_id": "2.1",
+      "step_name": "Research folder scan and document identity",
+      "phase_id": 2,
+      "phase_name": "Document Registry",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T18:56:06.795Z",
+      "duration_ms": 1068767,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/document_registry/__init__.py",
+          "action": "created",
+          "lines": 96
+        },
+        {
+          "file": "Scripts/document_registry/research_folder_scan_and_document_identity.py",
+          "action": "created",
+          "lines": 665
+        },
+        {
+          "file": "Scripts/document_registry/research_folder_scan_and_document_identity_1.py",
+          "action": "created",
+          "lines": 651
+        },
+        {
+          "file": "Scripts/document_registry/research_folder_scan_and_document_identity_2.py",
+          "action": "created",
+          "lines": 423
+        },
+        {
+          "file": "Scripts/document_registry/research_folder_scan_and_document_identity_3.py",
+          "action": "created",
+          "lines": 216
+        },
+        {
+          "file": "Scripts/document_registry/research_folder_scan_and_document_identity_4.py",
+          "action": "created",
+          "lines": 133
+        },
+        {
+          "file": "Scripts/environment_and_scaffolding/logging_folder_bootstrap_and_repo_hygiene.py",
+          "action": "modified",
+          "lines": 351
+        },
+        {
+          "file": "Scripts/tests/test_2_1.py",
+          "action": "created",
+          "lines": 688
+        }
+      ]
+    },
+    {
+      "step_id": "2.2",
+      "step_name": "Catalog delta classification and atomic writes",
+      "phase_id": 2,
+      "phase_name": "Document Registry",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T19:07:53.550Z",
+      "duration_ms": 706627,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/json-settings-config/SKILL.md",
+          "action": "created",
+          "lines": 73
+        },
+        {
+          "file": "Scripts/_skills/json-settings-config/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/json-settings-config/scripts/README.md",
+          "action": "created",
+          "lines": 55
+        },
+        {
+          "file": "Scripts/_skills/json-settings-config/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/document_registry/__init__.py",
+          "action": "modified",
+          "lines": 205
+        },
+        {
+          "file": "Scripts/document_registry/catalog_delta_classification_and_atomic_writes.py",
+          "action": "created",
+          "lines": 684
+        },
+        {
+          "file": "Scripts/document_registry/catalog_delta_classification_and_atomic_writes_1.py",
+          "action": "created",
+          "lines": 585
+        },
+        {
+          "file": "Scripts/document_registry/catalog_delta_classification_and_atomic_writes_2.py",
+          "action": "created",
+          "lines": 402
+        },
+        {
+          "file": "Scripts/document_registry/catalog_delta_classification_and_atomic_writes_3.py",
+          "action": "created",
+          "lines": 409
+        },
+        {
+          "file": "Scripts/environment_and_scaffolding/config_module_and_settingsjson.py",
+          "action": "modified",
+          "lines": 665
+        },
+        {
+          "file": "Scripts/tests/support_2_2.py",
+          "action": "created",
+          "lines": 185
+        },
+        {
+          "file": "Scripts/tests/test_2_2.py",
+          "action": "created",
+          "lines": 580
+        },
+        {
+          "file": "Scripts/tests/test_2_2_1.py",
+          "action": "created",
+          "lines": 201
+        }
+      ]
+    },
+    {
+      "step_id": "2.3",
+      "step_name": "Registry tests including idempotency",
+      "phase_id": 2,
+      "phase_name": "Document Registry",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.4-mini",
+      "task_type": "test",
+      "completed_at": "2026-08-23T19:11:27.409Z",
+      "duration_ms": 213139,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/document_registry/__init__.py",
+          "action": "modified",
+          "lines": 238
+        },
+        {
+          "file": "Scripts/document_registry/registry_tests_including_idempotency.py",
+          "action": "created",
+          "lines": 314
+        },
+        {
+          "file": "Scripts/tests/test_2_3.py",
+          "action": "created",
+          "lines": 109
+        }
+      ]
+    },
+    {
+      "step_id": "7.1",
+      "step_name": "Claude Code CLI subprocess gateway",
+      "phase_id": 7,
+      "phase_name": "Claude CLI Gateway",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T19:26:32.869Z",
+      "duration_ms": 902431,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/claude_cli_gateway/__init__.py",
+          "action": "created",
+          "lines": 223
+        },
+        {
+          "file": "Scripts/claude_cli_gateway/claude_code_cli_subprocess_gateway.py",
+          "action": "created",
+          "lines": 937
+        },
+        {
+          "file": "Scripts/claude_cli_gateway/claude_code_cli_subprocess_gateway_1.py",
+          "action": "created",
+          "lines": 544
+        },
+        {
+          "file": "Scripts/claude_cli_gateway/claude_code_cli_subprocess_gateway_2.py",
+          "action": "created",
+          "lines": 596
+        },
+        {
+          "file": "Scripts/claude_cli_gateway/claude_code_cli_subprocess_gateway_3.py",
+          "action": "created",
+          "lines": 569
+        },
+        {
+          "file": "Scripts/claude_cli_gateway/claude_code_cli_subprocess_gateway_4.py",
+          "action": "created",
+          "lines": 325
+        },
+        {
+          "file": "Scripts/tests/test_7_1.py",
+          "action": "created",
+          "lines": 768
+        }
+      ]
+    },
+    {
+      "step_id": "7.3",
+      "step_name": "Gateway tests with mocked subprocess",
+      "phase_id": 7,
+      "phase_name": "Claude CLI Gateway",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.4-mini",
+      "task_type": "test",
+      "completed_at": "2026-08-23T19:31:41.308Z",
+      "duration_ms": 307921,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/claude_cli_gateway/__init__.py",
+          "action": "modified",
+          "lines": 244
+        },
+        {
+          "file": "Scripts/claude_cli_gateway/gateway_tests_with_mocked_subprocess.py",
+          "action": "created",
+          "lines": 263
+        },
+        {
+          "file": "Scripts/claude_cli_gateway/hardening_json_recovery_retries_preflight_error_cl_1.py",
+          "action": "created",
+          "lines": 660
+        },
+        {
+          "file": "Scripts/tests/test_7_3.py",
+          "action": "created",
+          "lines": 258
+        }
+      ]
+    },
+    {
+      "step_id": "7.2",
+      "step_name": "Hardening: JSON recovery, retries, preflight, error classes",
+      "phase_id": 7,
+      "phase_name": "Claude CLI Gateway",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T19:46:18.151Z",
+      "duration_ms": 1184815,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/claude_cli_gateway/__init__.py",
+          "action": "modified",
+          "lines": 377
+        },
+        {
+          "file": "Scripts/claude_cli_gateway/gateway_tests_with_mocked_subprocess.py",
+          "action": "created",
+          "lines": 263
+        },
+        {
+          "file": "Scripts/claude_cli_gateway/hardening_json_recovery_retries_preflight_error_cl.py",
+          "action": "created",
+          "lines": 394
+        },
+        {
+          "file": "Scripts/claude_cli_gateway/hardening_json_recovery_retries_preflight_error_cl_1.py",
+          "action": "created",
+          "lines": 660
+        },
+        {
+          "file": "Scripts/claude_cli_gateway/hardening_json_recovery_retries_preflight_error_cl_2.py",
+          "action": "created",
+          "lines": 649
+        },
+        {
+          "file": "Scripts/claude_cli_gateway/hardening_json_recovery_retries_preflight_error_cl_3.py",
+          "action": "created",
+          "lines": 657
+        },
+        {
+          "file": "Scripts/claude_cli_gateway/hardening_json_recovery_retries_preflight_error_cl_4.py",
+          "action": "created",
+          "lines": 457
+        },
+        {
+          "file": "Scripts/claude_cli_gateway/hardening_json_recovery_retries_preflight_error_cl_5.py",
+          "action": "created",
+          "lines": 153
+        },
+        {
+          "file": "Scripts/tests/test_7_2.py",
+          "action": "created",
+          "lines": 892
+        },
+        {
+          "file": "Scripts/tests/test_7_3.py",
+          "action": "created",
+          "lines": 258
+        }
+      ]
+    },
+    {
+      "step_id": "3.1",
+      "step_name": "PDF text and section extraction",
+      "phase_id": 3,
+      "phase_name": "PDF Extraction",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T20:01:22.277Z",
+      "duration_ms": 900983,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/pdf-etl-package/SKILL.md",
+          "action": "created",
+          "lines": 177
+        },
+        {
+          "file": "Scripts/_skills/pdf-etl-package/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/pdf-etl-package/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/pdf-etl-package/scripts/pdf_etl_core.py",
+          "action": "created",
+          "lines": 919
+        },
+        {
+          "file": "Scripts/_skills/pdf-section-extraction/SKILL.md",
+          "action": "created",
+          "lines": 100
+        },
+        {
+          "file": "Scripts/_skills/pdf-section-extraction/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/pdf-section-extraction/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/pdf-section-extraction/scripts/pdf_section_detect.py",
+          "action": "created",
+          "lines": 584
+        },
+        {
+          "file": "Scripts/pdf_extraction/__init__.py",
+          "action": "created",
+          "lines": 148
+        },
+        {
+          "file": "Scripts/pdf_extraction/pdf_text_and_section_extraction.py",
+          "action": "created",
+          "lines": 697
+        },
+        {
+          "file": "Scripts/pdf_extraction/pdf_text_and_section_extraction_1.py",
+          "action": "created",
+          "lines": 825
+        },
+        {
+          "file": "Scripts/pdf_extraction/pdf_text_and_section_extraction_2.py",
+          "action": "created",
+          "lines": 452
+        },
+        {
+          "file": "Scripts/pdf_extraction/pdf_text_and_section_extraction_3.py",
+          "action": "created",
+          "lines": 441
+        }
+      ]
+    },
+    {
+      "step_id": "3.3",
+      "step_name": "Table extraction to CSV",
+      "phase_id": 3,
+      "phase_name": "PDF Extraction",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T20:21:02.399Z",
+      "duration_ms": 1179991,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/bibliographic-metadata/SKILL.md",
+          "action": "created",
+          "lines": 103
+        },
+        {
+          "file": "Scripts/_skills/bibliographic-metadata/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/bibliographic-metadata/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/bibliographic-metadata/scripts/bib_metadata_core.py",
+          "action": "created",
+          "lines": 854
+        },
+        {
+          "file": "Scripts/pdf_extraction/__init__.py",
+          "action": "modified",
+          "lines": 518
+        },
+        {
+          "file": "Scripts/pdf_extraction/bibliographic_metadata_and_provenance.py",
+          "action": "created",
+          "lines": 838
+        },
+        {
+          "file": "Scripts/pdf_extraction/bibliographic_metadata_and_provenance_1.py",
+          "action": "created",
+          "lines": 648
+        },
+        {
+          "file": "Scripts/pdf_extraction/bibliographic_metadata_and_provenance_2.py",
+          "action": "created",
+          "lines": 789
+        },
+        {
+          "file": "Scripts/pdf_extraction/bibliographic_metadata_and_provenance_3.py",
+          "action": "created",
+          "lines": 372
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association.py",
+          "action": "created",
+          "lines": 552
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_1.py",
+          "action": "created",
+          "lines": 610
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_2.py",
+          "action": "created",
+          "lines": 589
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_3.py",
+          "action": "created",
+          "lines": 533
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_4.py",
+          "action": "created",
+          "lines": 433
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_5.py",
+          "action": "created",
+          "lines": 162
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_6.py",
+          "action": "created",
+          "lines": 418
+        },
+        {
+          "file": "Scripts/pdf_extraction/table_extraction_to_csv.py",
+          "action": "created",
+          "lines": 778
+        },
+        {
+          "file": "Scripts/pdf_extraction/table_extraction_to_csv_1.py",
+          "action": "created",
+          "lines": 661
+        },
+        {
+          "file": "Scripts/pdf_extraction/table_extraction_to_csv_2.py",
+          "action": "created",
+          "lines": 554
+        },
+        {
+          "file": "Scripts/pdf_extraction/table_extraction_to_csv_3.py",
+          "action": "created",
+          "lines": 874
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "modified",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/tests/support_3_2.py",
+          "action": "created",
+          "lines": 277
+        },
+        {
+          "file": "Scripts/tests/support_3_3.py",
+          "action": "created",
+          "lines": 342
+        },
+        {
+          "file": "Scripts/tests/support_3_4.py",
+          "action": "created",
+          "lines": 269
+        },
+        {
+          "file": "Scripts/tests/test_3_2.py",
+          "action": "created",
+          "lines": 728
+        },
+        {
+          "file": "Scripts/tests/test_3_3.py",
+          "action": "created",
+          "lines": 554
+        },
+        {
+          "file": "Scripts/tests/test_3_4.py",
+          "action": "created",
+          "lines": 662
+        }
+      ]
+    },
+    {
+      "step_id": "3.2",
+      "step_name": "Figure extraction with caption association",
+      "phase_id": 3,
+      "phase_name": "PDF Extraction",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T20:21:53.160Z",
+      "duration_ms": 1230723,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/bibliographic-metadata/SKILL.md",
+          "action": "created",
+          "lines": 103
+        },
+        {
+          "file": "Scripts/_skills/bibliographic-metadata/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/bibliographic-metadata/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/bibliographic-metadata/scripts/bib_metadata_core.py",
+          "action": "created",
+          "lines": 854
+        },
+        {
+          "file": "Scripts/pdf_extraction/__init__.py",
+          "action": "modified",
+          "lines": 518
+        },
+        {
+          "file": "Scripts/pdf_extraction/bibliographic_metadata_and_provenance.py",
+          "action": "created",
+          "lines": 843
+        },
+        {
+          "file": "Scripts/pdf_extraction/bibliographic_metadata_and_provenance_1.py",
+          "action": "created",
+          "lines": 648
+        },
+        {
+          "file": "Scripts/pdf_extraction/bibliographic_metadata_and_provenance_2.py",
+          "action": "created",
+          "lines": 827
+        },
+        {
+          "file": "Scripts/pdf_extraction/bibliographic_metadata_and_provenance_3.py",
+          "action": "created",
+          "lines": 372
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association.py",
+          "action": "created",
+          "lines": 552
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_1.py",
+          "action": "created",
+          "lines": 610
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_2.py",
+          "action": "created",
+          "lines": 589
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_3.py",
+          "action": "created",
+          "lines": 533
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_4.py",
+          "action": "created",
+          "lines": 433
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_5.py",
+          "action": "created",
+          "lines": 162
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_6.py",
+          "action": "created",
+          "lines": 418
+        },
+        {
+          "file": "Scripts/pdf_extraction/table_extraction_to_csv.py",
+          "action": "created",
+          "lines": 778
+        },
+        {
+          "file": "Scripts/pdf_extraction/table_extraction_to_csv_1.py",
+          "action": "created",
+          "lines": 661
+        },
+        {
+          "file": "Scripts/pdf_extraction/table_extraction_to_csv_2.py",
+          "action": "created",
+          "lines": 554
+        },
+        {
+          "file": "Scripts/pdf_extraction/table_extraction_to_csv_3.py",
+          "action": "created",
+          "lines": 874
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "modified",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/tests/support_3_2.py",
+          "action": "created",
+          "lines": 277
+        },
+        {
+          "file": "Scripts/tests/support_3_3.py",
+          "action": "created",
+          "lines": 342
+        },
+        {
+          "file": "Scripts/tests/support_3_4.py",
+          "action": "created",
+          "lines": 269
+        },
+        {
+          "file": "Scripts/tests/test_3_2.py",
+          "action": "created",
+          "lines": 728
+        },
+        {
+          "file": "Scripts/tests/test_3_3.py",
+          "action": "created",
+          "lines": 554
+        },
+        {
+          "file": "Scripts/tests/test_3_4.py",
+          "action": "created",
+          "lines": 665
+        }
+      ]
+    },
+    {
+      "step_id": "3.4",
+      "step_name": "Bibliographic metadata and provenance",
+      "phase_id": 3,
+      "phase_name": "PDF Extraction",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T20:25:58.234Z",
+      "duration_ms": 1475776,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/bibliographic-metadata/SKILL.md",
+          "action": "created",
+          "lines": 103
+        },
+        {
+          "file": "Scripts/_skills/bibliographic-metadata/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/bibliographic-metadata/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/bibliographic-metadata/scripts/bib_metadata_core.py",
+          "action": "created",
+          "lines": 280
+        },
+        {
+          "file": "Scripts/_skills/bibliographic-metadata/scripts/bib_metadata_fields.py",
+          "action": "created",
+          "lines": 690
+        },
+        {
+          "file": "Scripts/pdf_extraction/__init__.py",
+          "action": "modified",
+          "lines": 518
+        },
+        {
+          "file": "Scripts/pdf_extraction/bibliographic_metadata_and_provenance.py",
+          "action": "created",
+          "lines": 676
+        },
+        {
+          "file": "Scripts/pdf_extraction/bibliographic_metadata_and_provenance_1.py",
+          "action": "created",
+          "lines": 648
+        },
+        {
+          "file": "Scripts/pdf_extraction/bibliographic_metadata_and_provenance_2.py",
+          "action": "created",
+          "lines": 517
+        },
+        {
+          "file": "Scripts/pdf_extraction/bibliographic_metadata_and_provenance_3.py",
+          "action": "created",
+          "lines": 372
+        },
+        {
+          "file": "Scripts/pdf_extraction/bibliographic_metadata_and_provenance_4.py",
+          "action": "created",
+          "lines": 245
+        },
+        {
+          "file": "Scripts/pdf_extraction/bibliographic_metadata_and_provenance_5.py",
+          "action": "created",
+          "lines": 382
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association.py",
+          "action": "created",
+          "lines": 552
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_1.py",
+          "action": "created",
+          "lines": 610
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_2.py",
+          "action": "created",
+          "lines": 589
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_3.py",
+          "action": "created",
+          "lines": 533
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_4.py",
+          "action": "created",
+          "lines": 433
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_5.py",
+          "action": "created",
+          "lines": 162
+        },
+        {
+          "file": "Scripts/pdf_extraction/figure_extraction_with_caption_association_6.py",
+          "action": "created",
+          "lines": 418
+        },
+        {
+          "file": "Scripts/pdf_extraction/table_extraction_to_csv.py",
+          "action": "created",
+          "lines": 778
+        },
+        {
+          "file": "Scripts/pdf_extraction/table_extraction_to_csv_1.py",
+          "action": "created",
+          "lines": 661
+        },
+        {
+          "file": "Scripts/pdf_extraction/table_extraction_to_csv_2.py",
+          "action": "created",
+          "lines": 554
+        },
+        {
+          "file": "Scripts/pdf_extraction/table_extraction_to_csv_3.py",
+          "action": "created",
+          "lines": 874
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "modified",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/tests/support_3_2.py",
+          "action": "created",
+          "lines": 277
+        },
+        {
+          "file": "Scripts/tests/support_3_3.py",
+          "action": "created",
+          "lines": 342
+        },
+        {
+          "file": "Scripts/tests/support_3_4.py",
+          "action": "created",
+          "lines": 269
+        },
+        {
+          "file": "Scripts/tests/test_3_2.py",
+          "action": "created",
+          "lines": 728
+        },
+        {
+          "file": "Scripts/tests/test_3_3.py",
+          "action": "created",
+          "lines": 554
+        },
+        {
+          "file": "Scripts/tests/test_3_4.py",
+          "action": "created",
+          "lines": 665
+        }
+      ]
+    },
+    {
+      "step_id": "3.5",
+      "step_name": "PDF extraction tests with synthetic fixtures",
+      "phase_id": 3,
+      "phase_name": "PDF Extraction",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.4-mini",
+      "task_type": "test",
+      "completed_at": "2026-08-23T20:31:33.582Z",
+      "duration_ms": 334564,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/extractor/SKILL.md",
+          "action": "created",
+          "lines": 320
+        },
+        {
+          "file": "Scripts/_skills/extractor/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/extractor/format_output.json",
+          "action": "created",
+          "lines": 422
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/data_cleaner.py",
+          "action": "created",
+          "lines": 319
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/data_standardizer.py",
+          "action": "created",
+          "lines": 187
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/pipeline_orchestrator.py",
+          "action": "created",
+          "lines": 224
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/quality_analyzer.py",
+          "action": "created",
+          "lines": 323
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/report_generator.py",
+          "action": "created",
+          "lines": 550
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/requirements.txt",
+          "action": "created",
+          "lines": 5
+        },
+        {
+          "file": "Scripts/_skills/pdf-etl/SKILL.md",
+          "action": "created",
+          "lines": 177
+        },
+        {
+          "file": "Scripts/_skills/pdf-etl/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/pdf_extraction/__init__.py",
+          "action": "modified",
+          "lines": 563
+        },
+        {
+          "file": "Scripts/pdf_extraction/pdf_extraction_tests_with_synthetic_fixtures.py",
+          "action": "created",
+          "lines": 432
+        },
+        {
+          "file": "Scripts/tests/test_3_5.py",
+          "action": "created",
+          "lines": 142
+        }
+      ]
+    },
+    {
+      "step_id": "4.1",
+      "step_name": "DOCX, HTML and text extractors",
+      "phase_id": 4,
+      "phase_name": "Additional Format Extractors",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T20:46:43.958Z",
+      "duration_ms": 900982,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/document-format-adapters/SKILL.md",
+          "action": "created",
+          "lines": 116
+        },
+        {
+          "file": "Scripts/_skills/document-format-adapters/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/document-format-adapters/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/document-format-adapters/scripts/doc_format_blocks.py",
+          "action": "created",
+          "lines": 920
+        },
+        {
+          "file": "Scripts/_skills/simplifier/SKILL.md",
+          "action": "created",
+          "lines": 344
+        },
+        {
+          "file": "Scripts/_skills/simplifier/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/simplifier/format_output.json",
+          "action": "created",
+          "lines": 478
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/content_parser.py",
+          "action": "created",
+          "lines": 617
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/equation_analyzer.py",
+          "action": "created",
+          "lines": 397
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/latex_generator.py",
+          "action": "created",
+          "lines": 509
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/requirements.txt",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/simplifier_orchestrator.py",
+          "action": "created",
+          "lines": 452
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/table_analyzer.py",
+          "action": "created",
+          "lines": 497
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/web_research.py",
+          "action": "created",
+          "lines": 326
+        },
+        {
+          "file": "Scripts/additional_format_extractors/docx_html_and_text_extractors_1.py",
+          "action": "created",
+          "lines": 984
+        },
+        {
+          "file": "Scripts/additional_format_extractors/docx_html_and_text_extractors_2.py",
+          "action": "created",
+          "lines": 547
+        }
+      ]
+    },
+    {
+      "step_id": "4.2",
+      "step_name": "Extractor dispatch and unsupported-file handling",
+      "phase_id": 4,
+      "phase_name": "Additional Format Extractors",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.3-codex",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-23T20:54:32.209Z",
+      "duration_ms": 467790,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/additional_format_extractors/__init__.py",
+          "action": "created",
+          "lines": 32
+        },
+        {
+          "file": "Scripts/additional_format_extractors/extractor_dispatch_and_unsupportedfile_handling.py",
+          "action": "created",
+          "lines": 622
+        },
+        {
+          "file": "Scripts/additional_format_extractors/extractor_registry.py",
+          "action": "created",
+          "lines": 34
+        },
+        {
+          "file": "Scripts/tests/test_4_2.py",
+          "action": "created",
+          "lines": 249
+        }
+      ]
+    },
+    {
+      "step_id": "5.1",
+      "step_name": "Section-aware chunker",
+      "phase_id": 5,
+      "phase_name": "Chunking",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T21:09:34.694Z",
+      "duration_ms": 901100,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/chunking/__init__.py",
+          "action": "created",
+          "lines": 116
+        },
+        {
+          "file": "Scripts/chunking/sectionaware_chunker.py",
+          "action": "created",
+          "lines": 577
+        },
+        {
+          "file": "Scripts/chunking/sectionaware_chunker_1.py",
+          "action": "created",
+          "lines": 620
+        },
+        {
+          "file": "Scripts/chunking/sectionaware_chunker_2.py",
+          "action": "created",
+          "lines": 508
+        },
+        {
+          "file": "Scripts/chunking/sectionaware_chunker_3.py",
+          "action": "created",
+          "lines": 636
+        },
+        {
+          "file": "Scripts/chunking/sectionaware_chunker_4.py",
+          "action": "created",
+          "lines": 481
+        },
+        {
+          "file": "Scripts/chunking/sectionaware_chunker_5.py",
+          "action": "created",
+          "lines": 507
+        }
+      ]
+    },
+    {
+      "step_id": "5.2",
+      "step_name": "Chunk persistence and contract tests",
+      "phase_id": 5,
+      "phase_name": "Chunking",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T21:24:37.952Z",
+      "duration_ms": 902867,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/chunking/__init__.py",
+          "action": "modified",
+          "lines": 210
+        },
+        {
+          "file": "Scripts/chunking/chunk_persistence_and_contract_tests.py",
+          "action": "created",
+          "lines": 1213
+        },
+        {
+          "file": "Scripts/chunking/chunk_persistence_and_contract_tests_1.py",
+          "action": "created",
+          "lines": 634
+        },
+        {
+          "file": "Scripts/chunking/chunk_persistence_and_contract_tests_2.py",
+          "action": "created",
+          "lines": 526
+        },
+        {
+          "file": "Scripts/chunking/chunk_persistence_and_contract_tests_3.py",
+          "action": "created",
+          "lines": 571
+        },
+        {
+          "file": "Scripts/tests/test_5_2.py",
+          "action": "created",
+          "lines": 966
+        }
+      ]
+    },
+    {
+      "step_id": "6.1",
+      "step_name": "BM25 sparse index",
+      "phase_id": 6,
+      "phase_name": "Indexing & Retrieval",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T21:49:08.782Z",
+      "duration_ms": 1468852,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/indexing_and_retrieval/__init__.py",
+          "action": "created",
+          "lines": 112
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/bm25_sparse_index.py",
+          "action": "created",
+          "lines": 682
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/bm25_sparse_index_1.py",
+          "action": "created",
+          "lines": 848
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/bm25_sparse_index_2.py",
+          "action": "created",
+          "lines": 599
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/bm25_sparse_index_3.py",
+          "action": "created",
+          "lines": 369
+        },
+        {
+          "file": "Scripts/tests/test_6_1.py",
+          "action": "created",
+          "lines": 683
+        }
+      ]
+    },
+    {
+      "step_id": "6.2",
+      "step_name": "Dense embeddings with graceful degradation",
+      "phase_id": 6,
+      "phase_name": "Indexing & Retrieval",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T22:04:09.843Z",
+      "duration_ms": 900970,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/indexing_and_retrieval/__init__.py",
+          "action": "modified",
+          "lines": 218
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/dense_embeddings_with_graceful_degradation.py",
+          "action": "created",
+          "lines": 1446
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/dense_embeddings_with_graceful_degradation_1.py",
+          "action": "created",
+          "lines": 947
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/dense_embeddings_with_graceful_degradation_2.py",
+          "action": "created",
+          "lines": 565
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/dense_embeddings_with_graceful_degradation_3.py",
+          "action": "created",
+          "lines": 471
+        }
+      ]
+    },
+    {
+      "step_id": "6.3",
+      "step_name": "Hybrid retriever with RRF and diversity capping",
+      "phase_id": 6,
+      "phase_name": "Indexing & Retrieval",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T22:19:11.269Z",
+      "duration_ms": 901339,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/indexing_and_retrieval/__init__.py",
+          "action": "modified",
+          "lines": 305
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/hybrid_retriever_with_rrf_and_diversity_capping.py",
+          "action": "created",
+          "lines": 948
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/hybrid_retriever_with_rrf_and_diversity_capping_1.py",
+          "action": "created",
+          "lines": 510
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/hybrid_retriever_with_rrf_and_diversity_capping_2.py",
+          "action": "created",
+          "lines": 559
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/hybrid_retriever_with_rrf_and_diversity_capping_3.py",
+          "action": "created",
+          "lines": 515
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/hybrid_retriever_with_rrf_and_diversity_capping_4.py",
+          "action": "created",
+          "lines": 364
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/hybrid_retriever_with_rrf_and_diversity_capping_5.py",
+          "action": "created",
+          "lines": 297
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/hybrid_retriever_with_rrf_and_diversity_capping_6.py",
+          "action": "created",
+          "lines": 213
+        }
+      ]
+    },
+    {
+      "step_id": "6.4",
+      "step_name": "Retrieval tests including simulated embedding failure",
+      "phase_id": 6,
+      "phase_name": "Indexing & Retrieval",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.4-mini",
+      "task_type": "test",
+      "completed_at": "2026-08-23T22:24:23.411Z",
+      "duration_ms": 311431,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/indexing_and_retrieval/__init__.py",
+          "action": "modified",
+          "lines": 330
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/retrieval_tests_including_simulated_embedding_fail.py",
+          "action": "created",
+          "lines": 272
+        },
+        {
+          "file": "Scripts/tests/test_6_4.py",
+          "action": "created",
+          "lines": 120
+        }
+      ]
+    },
+    {
+      "step_id": "6.4",
+      "step_name": "Retrieval tests including simulated embedding failure",
+      "phase_id": 6,
+      "phase_name": "Indexing & Retrieval",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.4-mini",
+      "task_type": "test",
+      "completed_at": "2026-08-23T22:24:23.472Z",
+      "duration_ms": 311491,
+      "success": false,
+      "error": "tokens[t].push is not a function",
+      "file_changes": [
+        {
+          "file": "Scripts/indexing_and_retrieval/__init__.py",
+          "action": "modified",
+          "lines": 330
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/retrieval_tests_including_simulated_embedding_fail.py",
+          "action": "created",
+          "lines": 272
+        },
+        {
+          "file": "Scripts/tests/test_6_4.py",
+          "action": "created",
+          "lines": 120
+        }
+      ]
+    },
+    {
+      "step_id": "8.1",
+      "step_name": "Prompt templates and corpus brief and focus analysis",
+      "phase_id": 8,
+      "phase_name": "Proposal Engine",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T22:39:30.342Z",
+      "duration_ms": 901173,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/jsonl-record-store/SKILL.md",
+          "action": "created",
+          "lines": 100
+        },
+        {
+          "file": "Scripts/_skills/jsonl-record-store/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/jsonl-record-store/scripts/__init__.py",
+          "action": "created",
+          "lines": 34
+        },
+        {
+          "file": "Scripts/_skills/jsonl-record-store/scripts/jsonl_store.py",
+          "action": "created",
+          "lines": 482
+        },
+        {
+          "file": "Scripts/proposal_engine/prompt_templates_and_corpus_brief_and_focus_analys.py",
+          "action": "created",
+          "lines": 641
+        },
+        {
+          "file": "Scripts/proposal_engine/prompt_templates_and_corpus_brief_and_focus_analys_1.py",
+          "action": "created",
+          "lines": 223
+        },
+        {
+          "file": "Scripts/proposal_engine/prompt_templates_and_corpus_brief_and_focus_analys_2.py",
+          "action": "created",
+          "lines": 727
+        },
+        {
+          "file": "Scripts/proposal_engine/prompt_templates_and_corpus_brief_and_focus_analys_3.py",
+          "action": "created",
+          "lines": 456
+        },
+        {
+          "file": "Scripts/proposal_engine/prompt_templates_and_corpus_brief_and_focus_analys_4.py",
+          "action": "created",
+          "lines": 526
+        },
+        {
+          "file": "Scripts/proposal_engine/prompt_templates_and_corpus_brief_and_focus_analys_5.py",
+          "action": "created",
+          "lines": 438
+        },
+        {
+          "file": "Scripts/proposal_engine/prompt_templates_and_corpus_brief_and_focus_analys_6.py",
+          "action": "created",
+          "lines": 632
+        },
+        {
+          "file": "Scripts/proposal_engine/prompt_templates_and_corpus_brief_and_focus_analys_7.py",
+          "action": "created",
+          "lines": 463
+        },
+        {
+          "file": "Scripts/proposal_engine/prompt_templates_and_corpus_brief_and_focus_analys_8.py",
+          "action": "created",
+          "lines": 605
+        },
+        {
+          "file": "Scripts/proposal_engine/prompt_templates_and_corpus_brief_and_focus_analys_9.py",
+          "action": "created",
+          "lines": 685
+        }
+      ]
+    },
+    {
+      "step_id": "8.2",
+      "step_name": "Evidence assembly (local, no LLM)",
+      "phase_id": 8,
+      "phase_name": "Proposal Engine",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T22:54:31.498Z",
+      "duration_ms": 901046,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/streaming-sparse-index/SKILL.md",
+          "action": "created",
+          "lines": 73
+        },
+        {
+          "file": "Scripts/_skills/streaming-sparse-index/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/streaming-sparse-index/scripts/__init__.py",
+          "action": "created",
+          "lines": 12
+        },
+        {
+          "file": "Scripts/_skills/streaming-sparse-index/scripts/sparse_text_analyzer.py",
+          "action": "created",
+          "lines": 406
+        },
+        {
+          "file": "Scripts/_skills/streaming-sparse-index/scripts/streaming_bm25.py",
+          "action": "created",
+          "lines": 742
+        },
+        {
+          "file": "Scripts/proposal_engine/__init__.py",
+          "action": "created",
+          "lines": 233
+        },
+        {
+          "file": "Scripts/proposal_engine/evidence_assembly_local_no_llm.py",
+          "action": "created",
+          "lines": 995
+        },
+        {
+          "file": "Scripts/proposal_engine/evidence_assembly_local_no_llm_1.py",
+          "action": "created",
+          "lines": 904
+        },
+        {
+          "file": "Scripts/proposal_engine/evidence_assembly_local_no_llm_2.py",
+          "action": "created",
+          "lines": 729
+        },
+        {
+          "file": "Scripts/proposal_engine/evidence_assembly_local_no_llm_3.py",
+          "action": "created",
+          "lines": 462
+        },
+        {
+          "file": "Scripts/proposal_engine/prompt_templates_and_corpus_brief_and_focus_analys_1.py",
+          "action": "modified",
+          "lines": 288
+        }
+      ]
+    },
+    {
+      "step_id": "6.4",
+      "step_name": "Retrieval tests including simulated embedding failure",
+      "phase_id": 6,
+      "phase_name": "Indexing & Retrieval",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.4-mini",
+      "task_type": "test",
+      "completed_at": "2026-08-23T23:07:16.820Z",
+      "duration_ms": 190644,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/degradable-vector-store/SKILL.md",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/_skills/degradable-vector-store/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/degradable-vector-store/scripts/__init__.py",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/_skills/degradable-vector-store/scripts/embedding_backend.py",
+          "action": "created",
+          "lines": 623
+        },
+        {
+          "file": "Scripts/_skills/degradable-vector-store/scripts/vector_store.py",
+          "action": "created",
+          "lines": 844
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/__init__.py",
+          "action": "modified",
+          "lines": 332
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/retrieval_tests_including_simulated_embedding_fail.py",
+          "action": "modified",
+          "lines": 313
+        },
+        {
+          "file": "Scripts/proposal_engine/__init__.py",
+          "action": "modified",
+          "lines": 277
+        },
+        {
+          "file": "Scripts/proposal_engine/section_drafting_with_mandatory_pros_and_cons.py",
+          "action": "created",
+          "lines": 1674
+        },
+        {
+          "file": "Scripts/proposal_engine/section_drafting_with_mandatory_pros_and_cons_2.py",
+          "action": "modified",
+          "lines": 622
+        },
+        {
+          "file": "Scripts/proposal_engine/section_drafting_with_mandatory_pros_and_cons_4.py",
+          "action": "modified",
+          "lines": 567
+        }
+      ]
+    },
+    {
+      "step_id": "8.3",
+      "step_name": "Section drafting with mandatory pros and cons",
+      "phase_id": 8,
+      "phase_name": "Proposal Engine",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T23:09:32.668Z",
+      "duration_ms": 901081,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/claude-cli-json-envelope/SKILL.md",
+          "action": "created",
+          "lines": 66
+        },
+        {
+          "file": "Scripts/_skills/claude-cli-json-envelope/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/claude-cli-json-envelope/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/claude-cli-json-envelope/scripts/cli_json_envelope.py",
+          "action": "created",
+          "lines": 357
+        },
+        {
+          "file": "Scripts/_skills/cli-retry-backoff/SKILL.md",
+          "action": "created",
+          "lines": 83
+        },
+        {
+          "file": "Scripts/_skills/cli-retry-backoff/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/cli-retry-backoff/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/cli-retry-backoff/scripts/retry_backoff.py",
+          "action": "created",
+          "lines": 272
+        },
+        {
+          "file": "Scripts/_skills/degradable-vector-store/SKILL.md",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/_skills/degradable-vector-store/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/degradable-vector-store/scripts/__init__.py",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/_skills/degradable-vector-store/scripts/embedding_backend.py",
+          "action": "created",
+          "lines": 623
+        },
+        {
+          "file": "Scripts/_skills/degradable-vector-store/scripts/vector_store.py",
+          "action": "created",
+          "lines": 844
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/__init__.py",
+          "action": "modified",
+          "lines": 332
+        },
+        {
+          "file": "Scripts/indexing_and_retrieval/retrieval_tests_including_simulated_embedding_fail.py",
+          "action": "modified",
+          "lines": 313
+        },
+        {
+          "file": "Scripts/proposal_engine/__init__.py",
+          "action": "modified",
+          "lines": 312
+        },
+        {
+          "file": "Scripts/proposal_engine/section_drafting_with_mandatory_pros_and_cons.py",
+          "action": "created",
+          "lines": 1674
+        },
+        {
+          "file": "Scripts/proposal_engine/section_drafting_with_mandatory_pros_and_cons_1.py",
+          "action": "created",
+          "lines": 477
+        },
+        {
+          "file": "Scripts/proposal_engine/section_drafting_with_mandatory_pros_and_cons_2.py",
+          "action": "created",
+          "lines": 622
+        },
+        {
+          "file": "Scripts/proposal_engine/section_drafting_with_mandatory_pros_and_cons_3.py",
+          "action": "created",
+          "lines": 451
+        },
+        {
+          "file": "Scripts/proposal_engine/section_drafting_with_mandatory_pros_and_cons_4.py",
+          "action": "created",
+          "lines": 567
+        },
+        {
+          "file": "Scripts/proposal_engine/section_drafting_with_mandatory_pros_and_cons_5.py",
+          "action": "created",
+          "lines": 366
+        }
+      ]
+    },
+    {
+      "step_id": "8.4",
+      "step_name": "Cross-section coherence, executive summary and roadmap",
+      "phase_id": 8,
+      "phase_name": "Proposal Engine",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-23T23:24:34.414Z",
+      "duration_ms": 901144,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/proposal_engine/crosssection_coherence_executive_summary_and_roadm_1.py",
+          "action": "created",
+          "lines": 564
+        },
+        {
+          "file": "Scripts/proposal_engine/crosssection_coherence_executive_summary_and_roadm_2.py",
+          "action": "created",
+          "lines": 467
+        },
+        {
+          "file": "Scripts/proposal_engine/crosssection_coherence_executive_summary_and_roadm_3.py",
+          "action": "created",
+          "lines": 498
+        },
+        {
+          "file": "Scripts/proposal_engine/crosssection_coherence_executive_summary_and_roadm_4.py",
+          "action": "created",
+          "lines": 375
+        },
+        {
+          "file": "Scripts/proposal_engine/crosssection_coherence_executive_summary_and_roadm_5.py",
+          "action": "created",
+          "lines": 292
+        },
+        {
+          "file": "Scripts/proposal_engine/crosssection_coherence_executive_summary_and_roadm_6.py",
+          "action": "created",
+          "lines": 668
+        },
+        {
+          "file": "Scripts/proposal_engine/crosssection_coherence_executive_summary_and_roadm_7.py",
+          "action": "created",
+          "lines": 476
+        },
+        {
+          "file": "Scripts/proposal_engine/crosssection_coherence_executive_summary_and_roadm_8.py",
+          "action": "created",
+          "lines": 388
+        }
+      ]
+    },
+    {
+      "step_id": "8.5",
+      "step_name": "Citation validation and proposal assembly",
+      "phase_id": 8,
+      "phase_name": "Proposal Engine",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-24T00:18:07.716Z",
+      "duration_ms": 3213203,
+      "success": false,
+      "error": "Claude Code CLI timed out after 900s (no output received)",
+      "file_changes": [
+        {
+          "file": "Scripts/proposal_engine/__init__.py",
+          "action": "modified",
+          "lines": 382
+        },
+        {
+          "file": "Scripts/proposal_engine/citation_validation_and_proposal_assembly.py",
+          "action": "created",
+          "lines": 605
+        },
+        {
+          "file": "Scripts/proposal_engine/citation_validation_and_proposal_assembly_1.py",
+          "action": "created",
+          "lines": 494
+        },
+        {
+          "file": "Scripts/proposal_engine/citation_validation_and_proposal_assembly_10.py",
+          "action": "created",
+          "lines": 520
+        },
+        {
+          "file": "Scripts/proposal_engine/citation_validation_and_proposal_assembly_11.py",
+          "action": "created",
+          "lines": 512
+        },
+        {
+          "file": "Scripts/proposal_engine/citation_validation_and_proposal_assembly_12.py",
+          "action": "created",
+          "lines": 667
+        },
+        {
+          "file": "Scripts/proposal_engine/citation_validation_and_proposal_assembly_2.py",
+          "action": "created",
+          "lines": 624
+        },
+        {
+          "file": "Scripts/proposal_engine/citation_validation_and_proposal_assembly_3.py",
+          "action": "created",
+          "lines": 311
+        },
+        {
+          "file": "Scripts/proposal_engine/citation_validation_and_proposal_assembly_4.py",
+          "action": "created",
+          "lines": 539
+        },
+        {
+          "file": "Scripts/proposal_engine/citation_validation_and_proposal_assembly_5.py",
+          "action": "created",
+          "lines": 703
+        },
+        {
+          "file": "Scripts/proposal_engine/citation_validation_and_proposal_assembly_6.py",
+          "action": "created",
+          "lines": 648
+        },
+        {
+          "file": "Scripts/proposal_engine/citation_validation_and_proposal_assembly_7.py",
+          "action": "created",
+          "lines": 412
+        },
+        {
+          "file": "Scripts/proposal_engine/citation_validation_and_proposal_assembly_8.py",
+          "action": "created",
+          "lines": 439
+        },
+        {
+          "file": "Scripts/proposal_engine/citation_validation_and_proposal_assembly_9.py",
+          "action": "created",
+          "lines": 453
+        },
+        {
+          "file": "Scripts/tests/test_8_5.py",
+          "action": "created",
+          "lines": 1707
+        }
+      ]
+    },
+    {
+      "step_id": "9.2",
+      "step_name": "PDF exporter using ReportLab",
+      "phase_id": 9,
+      "phase_name": "Exporters",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-24T00:33:09.345Z",
+      "duration_ms": 901047,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/data-graph-db/SKILL.md",
+          "action": "created",
+          "lines": 395
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/references/output_schema.json",
+          "action": "created",
+          "lines": 434
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/column_matcher.py",
+          "action": "created",
+          "lines": 374
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/data_extractor.py",
+          "action": "created",
+          "lines": 429
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/graph_generator.py",
+          "action": "created",
+          "lines": 545
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/graph_pipeline.py",
+          "action": "created",
+          "lines": 440
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/id_identifier.py",
+          "action": "created",
+          "lines": 370
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/id_mapper.py",
+          "action": "created",
+          "lines": 434
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/requirements.txt",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/exporters/__init__.py",
+          "action": "created",
+          "lines": 165
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx.py",
+          "action": "created",
+          "lines": 688
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_1.py",
+          "action": "created",
+          "lines": 746
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_2.py",
+          "action": "created",
+          "lines": 748
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_3.py",
+          "action": "created",
+          "lines": 615
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_4.py",
+          "action": "created",
+          "lines": 580
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_5.py",
+          "action": "created",
+          "lines": 568
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_6.py",
+          "action": "created",
+          "lines": 451
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_7.py",
+          "action": "created",
+          "lines": 288
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter.py",
+          "action": "created",
+          "lines": 626
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_1.py",
+          "action": "created",
+          "lines": 600
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_2.py",
+          "action": "created",
+          "lines": 520
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_3.py",
+          "action": "created",
+          "lines": 553
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_4.py",
+          "action": "created",
+          "lines": 684
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_5.py",
+          "action": "created",
+          "lines": 503
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_6.py",
+          "action": "created",
+          "lines": 641
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab.py",
+          "action": "created",
+          "lines": 1034
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_1.py",
+          "action": "created",
+          "lines": 509
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_2.py",
+          "action": "created",
+          "lines": 810
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_3.py",
+          "action": "created",
+          "lines": 482
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_4.py",
+          "action": "created",
+          "lines": 633
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_5.py",
+          "action": "created",
+          "lines": 681
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_6.py",
+          "action": "created",
+          "lines": 667
+        },
+        {
+          "file": "Scripts/proposal_engine/__init__.py",
+          "action": "modified",
+          "lines": 619
+        },
+        {
+          "file": "Scripts/tests/test_8_5.py",
+          "action": "modified",
+          "lines": 1712
+        }
+      ]
+    },
+    {
+      "step_id": "9.1",
+      "step_name": "Markdown exporter",
+      "phase_id": 9,
+      "phase_name": "Exporters",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-24T00:40:43.567Z",
+      "duration_ms": 1355125,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/data-graph-db/SKILL.md",
+          "action": "created",
+          "lines": 395
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/references/output_schema.json",
+          "action": "created",
+          "lines": 434
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/column_matcher.py",
+          "action": "created",
+          "lines": 374
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/data_extractor.py",
+          "action": "created",
+          "lines": 429
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/graph_generator.py",
+          "action": "created",
+          "lines": 545
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/graph_pipeline.py",
+          "action": "created",
+          "lines": 440
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/id_identifier.py",
+          "action": "created",
+          "lines": 370
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/id_mapper.py",
+          "action": "created",
+          "lines": 434
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/requirements.txt",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/exporters/__init__.py",
+          "action": "created",
+          "lines": 165
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx.py",
+          "action": "created",
+          "lines": 720
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_1.py",
+          "action": "created",
+          "lines": 761
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_2.py",
+          "action": "created",
+          "lines": 748
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_3.py",
+          "action": "created",
+          "lines": 625
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_4.py",
+          "action": "created",
+          "lines": 602
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_5.py",
+          "action": "created",
+          "lines": 567
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_6.py",
+          "action": "created",
+          "lines": 450
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_7.py",
+          "action": "created",
+          "lines": 288
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter.py",
+          "action": "created",
+          "lines": 695
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_1.py",
+          "action": "created",
+          "lines": 605
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_2.py",
+          "action": "created",
+          "lines": 522
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_3.py",
+          "action": "created",
+          "lines": 618
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_4.py",
+          "action": "created",
+          "lines": 692
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_5.py",
+          "action": "created",
+          "lines": 503
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_6.py",
+          "action": "created",
+          "lines": 636
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab.py",
+          "action": "created",
+          "lines": 1034
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_1.py",
+          "action": "created",
+          "lines": 509
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_2.py",
+          "action": "created",
+          "lines": 810
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_3.py",
+          "action": "created",
+          "lines": 482
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_4.py",
+          "action": "created",
+          "lines": 633
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_5.py",
+          "action": "created",
+          "lines": 681
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_6.py",
+          "action": "created",
+          "lines": 667
+        },
+        {
+          "file": "Scripts/proposal_engine/__init__.py",
+          "action": "modified",
+          "lines": 619
+        },
+        {
+          "file": "Scripts/tests/support_8_6.py",
+          "action": "created",
+          "lines": 197
+        },
+        {
+          "file": "Scripts/tests/test_8_5.py",
+          "action": "modified",
+          "lines": 1712
+        },
+        {
+          "file": "Scripts/tests/test_9_1.py",
+          "action": "created",
+          "lines": 1088
+        },
+        {
+          "file": "Scripts/tests/test_9_3.py",
+          "action": "created",
+          "lines": 900
+        },
+        {
+          "file": "Scripts/tests/test_proposal_engine.py",
+          "action": "created",
+          "lines": 366
+        }
+      ]
+    },
+    {
+      "step_id": "9.3",
+      "step_name": "DOCX exporter using python-docx",
+      "phase_id": 9,
+      "phase_name": "Exporters",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-24T00:41:38.620Z",
+      "duration_ms": 1410248,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/data-graph-db/SKILL.md",
+          "action": "created",
+          "lines": 395
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/references/output_schema.json",
+          "action": "created",
+          "lines": 434
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/column_matcher.py",
+          "action": "created",
+          "lines": 374
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/data_extractor.py",
+          "action": "created",
+          "lines": 429
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/graph_generator.py",
+          "action": "created",
+          "lines": 545
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/graph_pipeline.py",
+          "action": "created",
+          "lines": 440
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/id_identifier.py",
+          "action": "created",
+          "lines": 370
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/id_mapper.py",
+          "action": "created",
+          "lines": 434
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/requirements.txt",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/exporters/__init__.py",
+          "action": "created",
+          "lines": 165
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx.py",
+          "action": "created",
+          "lines": 720
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_1.py",
+          "action": "created",
+          "lines": 761
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_2.py",
+          "action": "created",
+          "lines": 809
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_3.py",
+          "action": "created",
+          "lines": 625
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_4.py",
+          "action": "created",
+          "lines": 602
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_5.py",
+          "action": "created",
+          "lines": 567
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_6.py",
+          "action": "created",
+          "lines": 450
+        },
+        {
+          "file": "Scripts/exporters/docx_exporter_using_pythondocx_7.py",
+          "action": "created",
+          "lines": 288
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter.py",
+          "action": "created",
+          "lines": 695
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_1.py",
+          "action": "created",
+          "lines": 605
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_2.py",
+          "action": "created",
+          "lines": 522
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_3.py",
+          "action": "created",
+          "lines": 618
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_4.py",
+          "action": "created",
+          "lines": 692
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_5.py",
+          "action": "created",
+          "lines": 503
+        },
+        {
+          "file": "Scripts/exporters/markdown_exporter_6.py",
+          "action": "created",
+          "lines": 636
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab.py",
+          "action": "created",
+          "lines": 1034
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_1.py",
+          "action": "created",
+          "lines": 509
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_2.py",
+          "action": "created",
+          "lines": 810
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_3.py",
+          "action": "created",
+          "lines": 482
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_4.py",
+          "action": "created",
+          "lines": 633
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_5.py",
+          "action": "created",
+          "lines": 681
+        },
+        {
+          "file": "Scripts/exporters/pdf_exporter_using_reportlab_6.py",
+          "action": "created",
+          "lines": 667
+        },
+        {
+          "file": "Scripts/proposal_engine/__init__.py",
+          "action": "modified",
+          "lines": 619
+        },
+        {
+          "file": "Scripts/tests/support_8_6.py",
+          "action": "created",
+          "lines": 197
+        },
+        {
+          "file": "Scripts/tests/test_8_5.py",
+          "action": "modified",
+          "lines": 1712
+        },
+        {
+          "file": "Scripts/tests/test_9_1.py",
+          "action": "created",
+          "lines": 1088
+        },
+        {
+          "file": "Scripts/tests/test_9_3.py",
+          "action": "created",
+          "lines": 900
+        },
+        {
+          "file": "Scripts/tests/test_proposal_engine.py",
+          "action": "created",
+          "lines": 366
+        }
+      ]
+    },
+    {
+      "step_id": "10.1",
+      "step_name": "App shell, sidebar status and session state",
+      "phase_id": 10,
+      "phase_name": "Streamlit User Interface",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-24T00:53:06.941Z",
+      "duration_ms": 677324,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/internal-comms/SKILL.md",
+          "action": "created",
+          "lines": 33
+        },
+        {
+          "file": "Scripts/_skills/internal-comms/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/__init__.py",
+          "action": "created",
+          "lines": 186
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/app_shell_sidebar_status_and_session_state.py",
+          "action": "created",
+          "lines": 446
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/app_shell_sidebar_status_and_session_state_1.py",
+          "action": "created",
+          "lines": 394
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/app_shell_sidebar_status_and_session_state_2.py",
+          "action": "created",
+          "lines": 585
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/app_shell_sidebar_status_and_session_state_3.py",
+          "action": "created",
+          "lines": 405
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/app_shell_sidebar_status_and_session_state_4.py",
+          "action": "created",
+          "lines": 282
+        },
+        {
+          "file": "Scripts/tests/test_10_1.py",
+          "action": "created",
+          "lines": 869
+        }
+      ]
+    },
+    {
+      "step_id": "10.4",
+      "step_name": "Settings tab",
+      "phase_id": 10,
+      "phase_name": "Streamlit User Interface",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.3-codex",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-24T00:59:34.346Z",
+      "duration_ms": 386559,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/streamlit_user_interface/__init__.py",
+          "action": "modified",
+          "lines": 212
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/research_library_and_extracted_info_tabs_1.py",
+          "action": "created",
+          "lines": 599
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/research_library_and_extracted_info_tabs_2.py",
+          "action": "created",
+          "lines": 537
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/settings_tab.py",
+          "action": "created",
+          "lines": 635
+        },
+        {
+          "file": "Scripts/tests/test_10_4.py",
+          "action": "created",
+          "lines": 194
+        }
+      ]
+    },
+    {
+      "step_id": "10.2",
+      "step_name": "Research Library and Extracted Info tabs",
+      "phase_id": 10,
+      "phase_name": "Streamlit User Interface",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-24T01:08:08.330Z",
+      "duration_ms": 901213,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/staged-cancellable-job/SKILL.md",
+          "action": "created",
+          "lines": 84
+        },
+        {
+          "file": "Scripts/_skills/staged-cancellable-job/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/staged-cancellable-job/scripts/__init__.py",
+          "action": "created",
+          "lines": 46
+        },
+        {
+          "file": "Scripts/_skills/staged-cancellable-job/scripts/staged_job.py",
+          "action": "created",
+          "lines": 942
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/__init__.py",
+          "action": "modified",
+          "lines": 303
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/proposal_focus_and_proposal_output_tabs_1.py",
+          "action": "created",
+          "lines": 821
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/proposal_focus_and_proposal_output_tabs_2.py",
+          "action": "created",
+          "lines": 629
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/proposal_focus_and_proposal_output_tabs_3.py",
+          "action": "created",
+          "lines": 1152
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/proposal_focus_and_proposal_output_tabs_4.py",
+          "action": "created",
+          "lines": 662
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/research_library_and_extracted_info_tabs.py",
+          "action": "created",
+          "lines": 325
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/research_library_and_extracted_info_tabs_1.py",
+          "action": "created",
+          "lines": 599
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/research_library_and_extracted_info_tabs_2.py",
+          "action": "created",
+          "lines": 537
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/research_library_and_extracted_info_tabs_3.py",
+          "action": "created",
+          "lines": 449
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/research_library_and_extracted_info_tabs_4.py",
+          "action": "created",
+          "lines": 521
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/research_library_and_extracted_info_tabs_5.py",
+          "action": "created",
+          "lines": 549
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/research_library_and_extracted_info_tabs_6.py",
+          "action": "created",
+          "lines": 355
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/settings_tab.py",
+          "action": "created",
+          "lines": 635
+        },
+        {
+          "file": "Scripts/tests/test_10_4.py",
+          "action": "created",
+          "lines": 194
+        }
+      ]
+    },
+    {
+      "step_id": "10.3",
+      "step_name": "Proposal Focus and Proposal Output tabs",
+      "phase_id": 10,
+      "phase_name": "Streamlit User Interface",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-24T01:15:16.510Z",
+      "duration_ms": 1329348,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/staged-cancellable-job/SKILL.md",
+          "action": "created",
+          "lines": 84
+        },
+        {
+          "file": "Scripts/_skills/staged-cancellable-job/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/staged-cancellable-job/scripts/__init__.py",
+          "action": "created",
+          "lines": 46
+        },
+        {
+          "file": "Scripts/_skills/staged-cancellable-job/scripts/staged_job.py",
+          "action": "created",
+          "lines": 942
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/__init__.py",
+          "action": "modified",
+          "lines": 433
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/proposal_focus_and_proposal_output_tabs.py",
+          "action": "created",
+          "lines": 985
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/proposal_focus_and_proposal_output_tabs_1.py",
+          "action": "created",
+          "lines": 821
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/proposal_focus_and_proposal_output_tabs_2.py",
+          "action": "created",
+          "lines": 629
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/proposal_focus_and_proposal_output_tabs_3.py",
+          "action": "created",
+          "lines": 1152
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/proposal_focus_and_proposal_output_tabs_4.py",
+          "action": "created",
+          "lines": 662
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/proposal_focus_and_proposal_output_tabs_5.py",
+          "action": "created",
+          "lines": 1072
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/proposal_focus_and_proposal_output_tabs_6.py",
+          "action": "created",
+          "lines": 835
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/research_library_and_extracted_info_tabs.py",
+          "action": "created",
+          "lines": 325
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/research_library_and_extracted_info_tabs_1.py",
+          "action": "created",
+          "lines": 599
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/research_library_and_extracted_info_tabs_2.py",
+          "action": "created",
+          "lines": 537
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/research_library_and_extracted_info_tabs_3.py",
+          "action": "created",
+          "lines": 449
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/research_library_and_extracted_info_tabs_4.py",
+          "action": "created",
+          "lines": 521
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/research_library_and_extracted_info_tabs_5.py",
+          "action": "created",
+          "lines": 549
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/research_library_and_extracted_info_tabs_6.py",
+          "action": "created",
+          "lines": 355
+        },
+        {
+          "file": "Scripts/streamlit_user_interface/settings_tab.py",
+          "action": "created",
+          "lines": 635
+        },
+        {
+          "file": "Scripts/tests/test_10_4.py",
+          "action": "created",
+          "lines": 194
+        }
+      ]
+    },
+    {
+      "step_id": "11.1",
+      "step_name": "End-to-end acceptance test",
+      "phase_id": 11,
+      "phase_name": "End-to-End Validation & Documentation",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.4-mini",
+      "task_type": "test",
+      "completed_at": "2026-08-24T01:24:39.749Z",
+      "duration_ms": 557118,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/endtoend_validation_and_documentation/__init__.py",
+          "action": "created",
+          "lines": 40
+        },
+        {
+          "file": "Scripts/endtoend_validation_and_documentation/endtoend_acceptance_test.py",
+          "action": "created",
+          "lines": 651
+        },
+        {
+          "file": "Scripts/tests/test_11_1.py",
+          "action": "created",
+          "lines": 331
+        }
+      ]
+    },
+    {
+      "step_id": "11.2",
+      "step_name": "Documentation and synthetic sample corpus",
+      "phase_id": 11,
+      "phase_name": "End-to-End Validation & Documentation",
+      "provider_id": "claude_code",
+      "provider_model": "claude-sonnet-5",
+      "task_type": "report",
+      "completed_at": "2026-08-24T01:38:53.306Z",
+      "duration_ms": 852935,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/doc-coauthoring/SKILL.md",
+          "action": "created",
+          "lines": 376
+        },
+        {
+          "file": "Scripts/_skills/doc-coauthoring/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/document-patch-reconciler/SKILL.md",
+          "action": "created",
+          "lines": 99
+        },
+        {
+          "file": "Scripts/_skills/document-patch-reconciler/__init__.py",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/_skills/document-patch-reconciler/scripts/__init__.py",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/_skills/document-patch-reconciler/scripts/patch_reconciler.py",
+          "action": "created",
+          "lines": 749
+        },
+        {
+          "file": "Scripts/endtoend_validation_and_documentation/__init__.py",
+          "action": "modified",
+          "lines": 81
+        },
+        {
+          "file": "Scripts/endtoend_validation_and_documentation/documentation_and_synthetic_sample_corpus.py",
+          "action": "created",
+          "lines": 423
+        },
+        {
+          "file": "Scripts/endtoend_validation_and_documentation/documentation_and_synthetic_sample_corpus_1.py",
+          "action": "created",
+          "lines": 333
+        },
+        {
+          "file": "Scripts/endtoend_validation_and_documentation/documentation_and_synthetic_sample_corpus_2.py",
+          "action": "created",
+          "lines": 310
+        },
+        {
+          "file": "Scripts/endtoend_validation_and_documentation/documentation_and_synthetic_sample_corpus_3.py",
+          "action": "created",
+          "lines": 425
+        }
+      ]
+    }
+  ]
+}
