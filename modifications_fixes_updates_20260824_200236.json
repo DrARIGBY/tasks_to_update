@@ -1,0 +1,1541 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1787601756576_c3vbqz",
+  "generated_at": "2026-08-24T20:02:36.574Z",
+  "extension_version": "3.4.1",
+  "project_name": "Grant_Me_A_Grant",
+  "machine_id": "machine_6x2hk",
+  "total_steps": 13,
+  "total_files_changed": 247,
+  "providers_used": [
+    "codex",
+    "claude_code"
+  ],
+  "report_type": "mixed",
+  "flags": {
+    "has_extension_issues": true,
+    "has_project_issues": true,
+    "was_cancelled": true,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [
+    {
+      "category": "test_failure",
+      "scope": "project",
+      "summary": "Test failure",
+      "step_id": "1.2_adapter",
+      "provider": "codex",
+      "count": 1
+    },
+    {
+      "category": "timeout",
+      "scope": "extension",
+      "summary": "Provider process timed out or was killed",
+      "step_id": "4.1",
+      "provider": "claude_code",
+      "count": 1
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "1.1",
+      "step_name": "Bootstrap .venv and pin all project dependencies",
+      "phase_id": 1,
+      "phase_name": "Environment, Configuration & External Solution Wiring",
+      "provider_id": "codex",
+      "provider_model": "default",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-24T17:31:55.900Z",
+      "duration_ms": 404494,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/environment-bootstrap/SKILL.md",
+          "action": "created",
+          "lines": 22
+        },
+        {
+          "file": "Scripts/_skills/environment-bootstrap/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/environment-bootstrap/scripts/README.md",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/environment-bootstrap/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/environment_configuration_and_external_solution_wi/__init__.py",
+          "action": "created",
+          "lines": 18
+        },
+        {
+          "file": "Scripts/environment_configuration_and_external_solution_wi/bootstrap_venv_and_pin_all_project_dependencies.py",
+          "action": "created",
+          "lines": 363
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/tests/test_1_1.py",
+          "action": "created",
+          "lines": 117
+        }
+      ]
+    },
+    {
+      "step_id": "1.2_adapter",
+      "step_name": "Create data source adapter for Define layered settings and .env.example",
+      "phase_id": 1,
+      "phase_name": "Environment, Configuration & External Solution Wiring",
+      "provider_id": "codex",
+      "provider_model": "default",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-24T17:42:38.845Z",
+      "duration_ms": 642546,
+      "success": false,
+      "error": "Fix loop exhausted (2/2) — 1 validation error(s) remain. First: Test failures in Scripts/tests/test_1_2_adapter.py: FAILED Scripts/tests/test_1_2_adapter.py::test_dev_adapter_reads_messy_jsonl_and_discovers_contract",
+      "file_changes": [
+        {
+          "file": "Scripts/environment_configuration_and_external_solution_wi/__init__.py",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/environment_configuration_and_external_solution_wi/create_data_source_adapter_for_define_layered_sett.py",
+          "action": "created",
+          "lines": 172
+        },
+        {
+          "file": "Scripts/src/__init__.py",
+          "action": "created",
+          "lines": 22
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "created",
+          "lines": 475
+        },
+        {
+          "file": "Scripts/tests/test_1_2_adapter.py",
+          "action": "created",
+          "lines": 101
+        }
+      ]
+    },
+    {
+      "step_id": "1.2_env",
+      "step_name": "Setup test environment for Define layered settings and .env.example",
+      "phase_id": 1,
+      "phase_name": "Environment, Configuration & External Solution Wiring",
+      "provider_id": "codex",
+      "provider_model": "default",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-24T17:48:48.953Z",
+      "duration_ms": 369893,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/azure-agent/SKILL.md",
+          "action": "created",
+          "lines": 142
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/references/azure_services_catalog.json",
+          "action": "created",
+          "lines": 291
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/references/cli_commands.md",
+          "action": "created",
+          "lines": 327
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/references/documentation_tracker.json",
+          "action": "created",
+          "lines": 116
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/references/portal_setup_guides.json",
+          "action": "created",
+          "lines": 644
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/references/pricing_reference.json",
+          "action": "created",
+          "lines": 275
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/references/usage_guide.md",
+          "action": "created",
+          "lines": 225
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/scripts/azure_docs_scraper.py",
+          "action": "created",
+          "lines": 841
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/scripts/azure_setup.py",
+          "action": "created",
+          "lines": 677
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/scripts/key_manager.py",
+          "action": "created",
+          "lines": 437
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/scripts/latex_manual_generator.py",
+          "action": "created",
+          "lines": 1388
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/scripts/pdf_generator.py",
+          "action": "created",
+          "lines": 637
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/scripts/pipeline_generator.py",
+          "action": "created",
+          "lines": 419
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/__init__.py",
+          "action": "created",
+          "lines": 28
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/base_service.py",
+          "action": "created",
+          "lines": 229
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/cognitive_services.py",
+          "action": "created",
+          "lines": 314
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/cosmos_db.py",
+          "action": "created",
+          "lines": 292
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/document_intelligence.py",
+          "action": "created",
+          "lines": 198
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/functions.py",
+          "action": "created",
+          "lines": 389
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/openai_service.py",
+          "action": "created",
+          "lines": 372
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/speech_services.py",
+          "action": "created",
+          "lines": 308
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/services/storage.py",
+          "action": "created",
+          "lines": 306
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/templates/Keys.json.template",
+          "action": "created",
+          "lines": 201
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/templates/input.env.template",
+          "action": "created",
+          "lines": 128
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/templates/latex/chapter_templates.tex",
+          "action": "created",
+          "lines": 354
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/templates/latex/manual_template.tex",
+          "action": "created",
+          "lines": 288
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/templates/output.env.template",
+          "action": "created",
+          "lines": 108
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/templates/output.json.template",
+          "action": "created",
+          "lines": 398
+        },
+        {
+          "file": "Scripts/_skills/azure-agent/templates/pipeline_config.yaml",
+          "action": "created",
+          "lines": 183
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/SKILL.md",
+          "action": "created",
+          "lines": 395
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/references/output_schema.json",
+          "action": "created",
+          "lines": 434
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/column_matcher.py",
+          "action": "created",
+          "lines": 374
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/data_extractor.py",
+          "action": "created",
+          "lines": 429
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/graph_generator.py",
+          "action": "created",
+          "lines": 545
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/graph_pipeline.py",
+          "action": "created",
+          "lines": 440
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/id_identifier.py",
+          "action": "created",
+          "lines": 370
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/id_mapper.py",
+          "action": "created",
+          "lines": 434
+        },
+        {
+          "file": "Scripts/_skills/data-graph-db/scripts/requirements.txt",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/environment_configuration_and_external_solution_wi/__init__.py",
+          "action": "modified",
+          "lines": 30
+        },
+        {
+          "file": "Scripts/environment_configuration_and_external_solution_wi/setup_test_environment_for_define_layered_settings.py",
+          "action": "created",
+          "lines": 571
+        },
+        {
+          "file": "Scripts/test_env/api_provider_fixtures.json",
+          "action": "created",
+          "lines": 36
+        },
+        {
+          "file": "Scripts/test_env/api_runs.sqlite",
+          "action": "created",
+          "lines": 45
+        },
+        {
+          "file": "Scripts/test_env/llm_request_examples.jsonl",
+          "action": "created",
+          "lines": 15
+        },
+        {
+          "file": "Scripts/test_env/local_storage_index.json",
+          "action": "created",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/test_env/manifest.json",
+          "action": "created",
+          "lines": 857
+        },
+        {
+          "file": "Scripts/test_env/schema_hints.json",
+          "action": "created",
+          "lines": 752
+        },
+        {
+          "file": "Scripts/test_env/settings_layers.json",
+          "action": "created",
+          "lines": 27
+        },
+        {
+          "file": "Scripts/test_env/storage/request:483371f9-b12a-52a7-8c8c-861cf69e4c35.txt",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/test_env/storage/request:49be8026-1c41-59cb-85ce-dc66e780136b.txt",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/test_env/storage/request:6a10a49d-8303-5bdd-a078-82439ea92290.txt",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/test_env/storage/request:a9462ee4-833d-5fdb-95e1-e540c21ccc70.txt",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/tests/test_1_2_env.py",
+          "action": "created",
+          "lines": 115
+        }
+      ]
+    },
+    {
+      "step_id": "2.1",
+      "step_name": "Extract Research_Proposals into reading-order blocks",
+      "phase_id": 2,
+      "phase_name": "Corpus Ingestion & Grant Structure Learning",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-24T18:06:08.974Z",
+      "duration_ms": 1037238,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/content-hash-file-registry/SKILL.md",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/_skills/content-hash-file-registry/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/content-hash-file-registry/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/content-hash-file-registry/scripts/content_hash_registry.py",
+          "action": "created",
+          "lines": 348
+        },
+        {
+          "file": "Scripts/_skills/document-format-adapters/SKILL.md",
+          "action": "created",
+          "lines": 116
+        },
+        {
+          "file": "Scripts/_skills/document-format-adapters/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/document-format-adapters/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/document-format-adapters/scripts/doc_format_blocks.py",
+          "action": "created",
+          "lines": 920
+        },
+        {
+          "file": "Scripts/_skills/extractor-dispatch-registry/SKILL.md",
+          "action": "created",
+          "lines": 39
+        },
+        {
+          "file": "Scripts/_skills/extractor-dispatch-registry/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/extractor-dispatch-registry/agents/openai.yaml",
+          "action": "created",
+          "lines": 5
+        },
+        {
+          "file": "Scripts/_skills/extractor-dispatch-registry/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/extractor-dispatch-registry/scripts/classify_extensions.py",
+          "action": "created",
+          "lines": 56
+        },
+        {
+          "file": "Scripts/_skills/pdf-etl-package/SKILL.md",
+          "action": "created",
+          "lines": 177
+        },
+        {
+          "file": "Scripts/_skills/pdf-etl-package/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/pdf-section-extraction/SKILL.md",
+          "action": "created",
+          "lines": 100
+        },
+        {
+          "file": "Scripts/_skills/pdf-section-extraction/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/pdf-section-extraction/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/pdf-section-extraction/scripts/pdf_section_detect.py",
+          "action": "created",
+          "lines": 584
+        },
+        {
+          "file": "Scripts/corpus_ingestion_and_grant_structure_learning/__init__.py",
+          "action": "created",
+          "lines": 142
+        },
+        {
+          "file": "Scripts/corpus_ingestion_and_grant_structure_learning/extract_researchproposals_into_readingorder_blocks.py",
+          "action": "created",
+          "lines": 676
+        },
+        {
+          "file": "Scripts/corpus_ingestion_and_grant_structure_learning/extract_researchproposals_into_readingorder_blocks_1.py",
+          "action": "created",
+          "lines": 690
+        },
+        {
+          "file": "Scripts/corpus_ingestion_and_grant_structure_learning/extract_researchproposals_into_readingorder_blocks_2.py",
+          "action": "created",
+          "lines": 534
+        },
+        {
+          "file": "Scripts/corpus_ingestion_and_grant_structure_learning/extract_researchproposals_into_readingorder_blocks_3.py",
+          "action": "created",
+          "lines": 472
+        },
+        {
+          "file": "Scripts/corpus_ingestion_and_grant_structure_learning/extract_researchproposals_into_readingorder_blocks_4.py",
+          "action": "created",
+          "lines": 409
+        },
+        {
+          "file": "Scripts/tests/test_2_1.py",
+          "action": "created",
+          "lines": 645
+        }
+      ]
+    },
+    {
+      "step_id": "2.2",
+      "step_name": "Learn grant layouts from the Grant folder examples",
+      "phase_id": 2,
+      "phase_name": "Corpus Ingestion & Grant Structure Learning",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.3-codex",
+      "task_type": "analyze",
+      "completed_at": "2026-08-24T18:17:27.796Z",
+      "duration_ms": 678430,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/document_creator/SKILL.md",
+          "action": "created",
+          "lines": 497
+        },
+        {
+          "file": "Scripts/_skills/document_creator/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/document_creator/format_output.json",
+          "action": "created",
+          "lines": 284
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/corrections_handler.py",
+          "action": "created",
+          "lines": 543
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/document_orchestrator.py",
+          "action": "created",
+          "lines": 452
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/docx_builder.py",
+          "action": "created",
+          "lines": 477
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/latex_builder.py",
+          "action": "created",
+          "lines": 666
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/pptx_builder.py",
+          "action": "created",
+          "lines": 481
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/requirements.txt",
+          "action": "created",
+          "lines": 21
+        },
+        {
+          "file": "Scripts/_skills/document_creator/scripts/source_tracker.py",
+          "action": "created",
+          "lines": 413
+        },
+        {
+          "file": "Scripts/_skills/document_creator/templates/latex/academic.tex",
+          "action": "created",
+          "lines": 109
+        },
+        {
+          "file": "Scripts/_skills/document_creator/templates/latex/minimal.tex",
+          "action": "created",
+          "lines": 59
+        },
+        {
+          "file": "Scripts/_skills/document_creator/templates/latex/report.tex",
+          "action": "created",
+          "lines": 109
+        },
+        {
+          "file": "Scripts/corpus_ingestion_and_grant_structure_learning/__init__.py",
+          "action": "modified",
+          "lines": 173
+        },
+        {
+          "file": "Scripts/corpus_ingestion_and_grant_structure_learning/learn_grant_layouts_from_the_grant_folder_examples.py",
+          "action": "created",
+          "lines": 392
+        },
+        {
+          "file": "Scripts/corpus_ingestion_and_grant_structure_learning/learn_grant_layouts_from_the_grant_folder_examples_1.py",
+          "action": "created",
+          "lines": 465
+        },
+        {
+          "file": "Scripts/tests/test_2_2.py",
+          "action": "created",
+          "lines": 127
+        }
+      ]
+    },
+    {
+      "step_id": "2.3",
+      "step_name": "Build hybrid sparse+dense retrieval over the corpus",
+      "phase_id": 2,
+      "phase_name": "Corpus Ingestion & Grant Structure Learning",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-24T18:37:15.912Z",
+      "duration_ms": 1187626,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/degradable-vector-store/SKILL.md",
+          "action": "created",
+          "lines": 94
+        },
+        {
+          "file": "Scripts/_skills/degradable-vector-store/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/degradable-vector-store/scripts/__init__.py",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/_skills/degradable-vector-store/scripts/embedding_backend.py",
+          "action": "created",
+          "lines": 623
+        },
+        {
+          "file": "Scripts/_skills/degradable-vector-store/scripts/vector_store.py",
+          "action": "created",
+          "lines": 844
+        },
+        {
+          "file": "Scripts/_skills/jsonl-record-store/SKILL.md",
+          "action": "created",
+          "lines": 100
+        },
+        {
+          "file": "Scripts/_skills/jsonl-record-store/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/jsonl-record-store/scripts/__init__.py",
+          "action": "created",
+          "lines": 34
+        },
+        {
+          "file": "Scripts/_skills/jsonl-record-store/scripts/jsonl_store.py",
+          "action": "created",
+          "lines": 482
+        },
+        {
+          "file": "Scripts/_skills/rank-fusion-diversity/SKILL.md",
+          "action": "created",
+          "lines": 103
+        },
+        {
+          "file": "Scripts/_skills/rank-fusion-diversity/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/rank-fusion-diversity/scripts/__init__.py",
+          "action": "created",
+          "lines": 12
+        },
+        {
+          "file": "Scripts/_skills/rank-fusion-diversity/scripts/diversity_cap.py",
+          "action": "created",
+          "lines": 371
+        },
+        {
+          "file": "Scripts/_skills/rank-fusion-diversity/scripts/rank_fusion.py",
+          "action": "created",
+          "lines": 432
+        },
+        {
+          "file": "Scripts/_skills/streaming-sparse-index/SKILL.md",
+          "action": "created",
+          "lines": 73
+        },
+        {
+          "file": "Scripts/_skills/streaming-sparse-index/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/streaming-sparse-index/scripts/__init__.py",
+          "action": "created",
+          "lines": 12
+        },
+        {
+          "file": "Scripts/_skills/streaming-sparse-index/scripts/sparse_text_analyzer.py",
+          "action": "created",
+          "lines": 406
+        },
+        {
+          "file": "Scripts/_skills/streaming-sparse-index/scripts/streaming_bm25.py",
+          "action": "created",
+          "lines": 742
+        },
+        {
+          "file": "Scripts/corpus_ingestion_and_grant_structure_learning/__init__.py",
+          "action": "modified",
+          "lines": 230
+        },
+        {
+          "file": "Scripts/corpus_ingestion_and_grant_structure_learning/build_hybrid_sparsedense_retrieval_over_the_corpus.py",
+          "action": "created",
+          "lines": 366
+        },
+        {
+          "file": "Scripts/corpus_ingestion_and_grant_structure_learning/build_hybrid_sparsedense_retrieval_over_the_corpus_1.py",
+          "action": "created",
+          "lines": 599
+        },
+        {
+          "file": "Scripts/corpus_ingestion_and_grant_structure_learning/build_hybrid_sparsedense_retrieval_over_the_corpus_2.py",
+          "action": "created",
+          "lines": 636
+        },
+        {
+          "file": "Scripts/corpus_ingestion_and_grant_structure_learning/build_hybrid_sparsedense_retrieval_over_the_corpus_3.py",
+          "action": "created",
+          "lines": 478
+        },
+        {
+          "file": "Scripts/retrieval/__init__.py",
+          "action": "created",
+          "lines": 110
+        },
+        {
+          "file": "Scripts/retrieval/hybrid_search.py",
+          "action": "created",
+          "lines": 907
+        },
+        {
+          "file": "Scripts/retrieval/retrieval_contract.py",
+          "action": "created",
+          "lines": 452
+        },
+        {
+          "file": "Scripts/tests/test_2_3.py",
+          "action": "created",
+          "lines": 558
+        }
+      ]
+    },
+    {
+      "step_id": "3.1_adapter",
+      "step_name": "Create data source adapter for Implement the SnR search-and-research adapter",
+      "phase_id": 3,
+      "phase_name": "Optional External Research Enrichment (SnR)",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-24T18:47:05.891Z",
+      "duration_ms": 585179,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/cli-retry-backoff/SKILL.md",
+          "action": "created",
+          "lines": 83
+        },
+        {
+          "file": "Scripts/_skills/cli-retry-backoff/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/cli-retry-backoff/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/cli-retry-backoff/scripts/retry_backoff.py",
+          "action": "created",
+          "lines": 272
+        },
+        {
+          "file": "Scripts/_skills/data-source-adapter/SKILL.md",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/_skills/data-source-adapter/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/data-source-adapter/scripts/README.md",
+          "action": "created",
+          "lines": 4
+        },
+        {
+          "file": "Scripts/_skills/data-source-adapter/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/publication-corrections/SKILL.md",
+          "action": "created",
+          "lines": 191
+        },
+        {
+          "file": "Scripts/_skills/publication-corrections/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/publication-corrections/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/publication-corrections/scripts/codebase_scanner.py",
+          "action": "created",
+          "lines": 333
+        },
+        {
+          "file": "Scripts/_skills/publication-corrections/scripts/correction_extractor.py",
+          "action": "created",
+          "lines": 245
+        },
+        {
+          "file": "Scripts/_skills/publication-corrections/scripts/correction_mapper.py",
+          "action": "created",
+          "lines": 459
+        },
+        {
+          "file": "Scripts/_skills/publication-corrections/scripts/pipeline.py",
+          "action": "created",
+          "lines": 124
+        },
+        {
+          "file": "Scripts/_skills/publication-corrections/scripts/requirements.txt",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/environment_configuration_and_external_solution_wi/create_data_source_adapter_for_define_layered_sett.py",
+          "action": "modified",
+          "lines": 214
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/__init__.py",
+          "action": "created",
+          "lines": 26
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/create_data_source_adapter_for_implement_the_snr_s.py",
+          "action": "created",
+          "lines": 414
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/create_data_source_adapter_for_implement_the_snr_s_1.py",
+          "action": "created",
+          "lines": 358
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/create_data_source_adapter_for_implement_the_snr_s_2.py",
+          "action": "created",
+          "lines": 359
+        },
+        {
+          "file": "Scripts/tests/test_1_2_adapter.py",
+          "action": "modified",
+          "lines": 110
+        },
+        {
+          "file": "Scripts/tests/test_3_1_adapter.py",
+          "action": "created",
+          "lines": 480
+        }
+      ]
+    },
+    {
+      "step_id": "3.1_env",
+      "step_name": "Setup test environment for Implement the SnR search-and-research adapter",
+      "phase_id": 3,
+      "phase_name": "Optional External Research Enrichment (SnR)",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-24T19:01:27.998Z",
+      "duration_ms": 861997,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/__init__.py",
+          "action": "modified",
+          "lines": 44
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/setup_test_environment_for_implement_the_snr_searc.py",
+          "action": "created",
+          "lines": 659
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/setup_test_environment_for_implement_the_snr_searc_1.py",
+          "action": "created",
+          "lines": 414
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/setup_test_environment_for_implement_the_snr_searc_2.py",
+          "action": "created",
+          "lines": 452
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/setup_test_environment_for_implement_the_snr_searc_3.py",
+          "action": "created",
+          "lines": 441
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/setup_test_environment_for_implement_the_snr_searc_4.py",
+          "action": "created",
+          "lines": 312
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "modified",
+          "lines": 20
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 481
+        },
+        {
+          "file": "Scripts/test_env/snr_publications.jsonl",
+          "action": "created",
+          "lines": 15
+        },
+        {
+          "file": "Scripts/test_env/snr_search_results_partial.jsonl",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/snr_search_runs.sqlite",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/test_env/snr_webpages.json",
+          "action": "created",
+          "lines": 88
+        },
+        {
+          "file": "Scripts/test_env/step_3_1_schema_hints.json",
+          "action": "created",
+          "lines": 164
+        },
+        {
+          "file": "Scripts/test_env/step_3_1_storage_index.json",
+          "action": "created",
+          "lines": 56
+        },
+        {
+          "file": "Scripts/test_env/step_3_1_test_env_manifest.json",
+          "action": "created",
+          "lines": 365
+        },
+        {
+          "file": "Scripts/test_env/storage/snr_cache/snr_finding_0001.txt",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/test_env/storage/snr_cache/snr_finding_0002.txt",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/test_env/storage/snr_cache/snr_finding_0003.txt",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/test_env/storage/snr_cache/snr_finding_0004.txt",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/test_env/storage/snr_cache/snr_finding_0005.txt",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/test_env/storage/snr_cache/snr_finding_0006.txt",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/tests/test_3_1_env.py",
+          "action": "created",
+          "lines": 413
+        }
+      ]
+    },
+    {
+      "step_id": "3.1",
+      "step_name": "Implement the SnR search-and-research adapter",
+      "phase_id": 3,
+      "phase_name": "Optional External Research Enrichment (SnR)",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-24T19:17:07.788Z",
+      "duration_ms": 939687,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/claude-cli-json-envelope/SKILL.md",
+          "action": "created",
+          "lines": 66
+        },
+        {
+          "file": "Scripts/_skills/claude-cli-json-envelope/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/claude-cli-json-envelope/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/claude-cli-json-envelope/scripts/cli_json_envelope.py",
+          "action": "created",
+          "lines": 357
+        },
+        {
+          "file": "Scripts/_skills/staged-cancellable-job/SKILL.md",
+          "action": "created",
+          "lines": 84
+        },
+        {
+          "file": "Scripts/_skills/staged-cancellable-job/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/staged-cancellable-job/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/staged-cancellable-job/scripts/staged_job.py",
+          "action": "created",
+          "lines": 942
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/SKILL.md",
+          "action": "created",
+          "lines": 523
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/format_output.json",
+          "action": "created",
+          "lines": 570
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/content_scraper.py",
+          "action": "created",
+          "lines": 671
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/debug_wikipedia_structure.py",
+          "action": "created",
+          "lines": 61
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/equation_cleaner.py",
+          "action": "created",
+          "lines": 286
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/link_filter.py",
+          "action": "created",
+          "lines": 353
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/pdf_generator.py",
+          "action": "created",
+          "lines": 700
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/pipeline_orchestrator.py",
+          "action": "created",
+          "lines": 378
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/reference_extractor.py",
+          "action": "created",
+          "lines": 270
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/requirements.txt",
+          "action": "created",
+          "lines": 4
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/structure_analyzer.py",
+          "action": "created",
+          "lines": 453
+        },
+        {
+          "file": "Scripts/_skills/web-scrapper/scripts/url_folder_manager.py",
+          "action": "created",
+          "lines": 239
+        },
+        {
+          "file": "Scripts/external_adapters/__init__.py",
+          "action": "created",
+          "lines": 25
+        },
+        {
+          "file": "Scripts/external_adapters/snr_adapter.py",
+          "action": "created",
+          "lines": 340
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/__init__.py",
+          "action": "modified",
+          "lines": 110
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/implement_the_snr_searchandresearch_adapter.py",
+          "action": "created",
+          "lines": 545
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/implement_the_snr_searchandresearch_adapter_1.py",
+          "action": "created",
+          "lines": 650
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/implement_the_snr_searchandresearch_adapter_2.py",
+          "action": "created",
+          "lines": 505
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/implement_the_snr_searchandresearch_adapter_3.py",
+          "action": "created",
+          "lines": 373
+        },
+        {
+          "file": "Scripts/src/data_source_config.json",
+          "action": "created",
+          "lines": 7
+        },
+        {
+          "file": "Scripts/test_env/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "created",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "created",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/tests/test_3_1.py",
+          "action": "created",
+          "lines": 564
+        }
+      ]
+    },
+    {
+      "step_id": "3.2",
+      "step_name": "Merge external findings into the searchable corpus",
+      "phase_id": 3,
+      "phase_name": "Optional External Research Enrichment (SnR)",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-24T19:32:08.798Z",
+      "duration_ms": 900923,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/bibliographic-metadata/SKILL.md",
+          "action": "created",
+          "lines": 103
+        },
+        {
+          "file": "Scripts/_skills/bibliographic-metadata/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/bibliographic-metadata/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/bibliographic-metadata/scripts/bib_metadata_core.py",
+          "action": "created",
+          "lines": 854
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/merge_external_findings_into_the_searchable_corpus.py",
+          "action": "created",
+          "lines": 651
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/merge_external_findings_into_the_searchable_corpus_1.py",
+          "action": "created",
+          "lines": 746
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/merge_external_findings_into_the_searchable_corpus_2.py",
+          "action": "created",
+          "lines": 843
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/merge_external_findings_into_the_searchable_corpus_3.py",
+          "action": "created",
+          "lines": 654
+        },
+        {
+          "file": "Scripts/optional_external_research_enrichment_snr/merge_external_findings_into_the_searchable_corpus_4.py",
+          "action": "created",
+          "lines": 503
+        }
+      ]
+    },
+    {
+      "step_id": "4.1_adapter",
+      "step_name": "Create data source adapter for Build the Claude + Codex subscription CLI client",
+      "phase_id": 4,
+      "phase_name": "Dual-LLM Grant Drafting & Verification",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-24T19:42:43.612Z",
+      "duration_ms": 630167,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/dualllm_grant_drafting_and_verification/__init__.py",
+          "action": "created",
+          "lines": 84
+        },
+        {
+          "file": "Scripts/dualllm_grant_drafting_and_verification/create_data_source_adapter_for_build_the_claude_co.py",
+          "action": "created",
+          "lines": 468
+        },
+        {
+          "file": "Scripts/dualllm_grant_drafting_and_verification/create_data_source_adapter_for_build_the_claude_co_1.py",
+          "action": "created",
+          "lines": 345
+        },
+        {
+          "file": "Scripts/dualllm_grant_drafting_and_verification/create_data_source_adapter_for_build_the_claude_co_2.py",
+          "action": "created",
+          "lines": 452
+        },
+        {
+          "file": "Scripts/src/data_source_adapter.py",
+          "action": "modified",
+          "lines": 553
+        },
+        {
+          "file": "Scripts/tests/test_4_1_adapter.py",
+          "action": "created",
+          "lines": 626
+        }
+      ]
+    },
+    {
+      "step_id": "4.1_env",
+      "step_name": "Setup test environment for Build the Claude + Codex subscription CLI client",
+      "phase_id": 4,
+      "phase_name": "Dual-LLM Grant Drafting & Verification",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-24T19:58:17.378Z",
+      "duration_ms": 933684,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/dualllm_grant_drafting_and_verification/__init__.py",
+          "action": "modified",
+          "lines": 186
+        },
+        {
+          "file": "Scripts/dualllm_grant_drafting_and_verification/setup_test_environment_for_build_the_claude_codex_.py",
+          "action": "created",
+          "lines": 591
+        },
+        {
+          "file": "Scripts/dualllm_grant_drafting_and_verification/setup_test_environment_for_build_the_claude_codex__1.py",
+          "action": "created",
+          "lines": 268
+        },
+        {
+          "file": "Scripts/dualllm_grant_drafting_and_verification/setup_test_environment_for_build_the_claude_codex__2.py",
+          "action": "created",
+          "lines": 352
+        },
+        {
+          "file": "Scripts/dualllm_grant_drafting_and_verification/setup_test_environment_for_build_the_claude_codex__3.py",
+          "action": "created",
+          "lines": 377
+        },
+        {
+          "file": "Scripts/dualllm_grant_drafting_and_verification/setup_test_environment_for_build_the_claude_codex__4.py",
+          "action": "created",
+          "lines": 610
+        },
+        {
+          "file": "Scripts/test_env/cli_provider_profiles.json",
+          "action": "created",
+          "lines": 112
+        },
+        {
+          "file": "Scripts/test_env/llm_cli_runs.sqlite",
+          "action": "created",
+          "lines": 11
+        },
+        {
+          "file": "Scripts/test_env/llm_exchange_captures.jsonl",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/test_env/llm_response_partial_capture.jsonl",
+          "action": "created",
+          "lines": 6
+        },
+        {
+          "file": "Scripts/test_env/provider_credential_registry.json",
+          "action": "created",
+          "lines": 62
+        },
+        {
+          "file": "Scripts/test_env/step_4_1_schema_hints.json",
+          "action": "created",
+          "lines": 263
+        },
+        {
+          "file": "Scripts/test_env/step_4_1_storage_index.json",
+          "action": "created",
+          "lines": 46
+        },
+        {
+          "file": "Scripts/test_env/step_4_1_test_env_manifest.json",
+          "action": "created",
+          "lines": 906
+        },
+        {
+          "file": "Scripts/test_env/storage/step_4_1_cli_stdout/claude_result_envelope.txt",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/storage/step_4_1_cli_stdout/claude_stream_events.txt",
+          "action": "created",
+          "lines": 4
+        },
+        {
+          "file": "Scripts/test_env/storage/step_4_1_cli_stdout/claude_timeout_empty.txt",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/test_env/storage/step_4_1_cli_stdout/codex_exec_events.txt",
+          "action": "created",
+          "lines": 3
+        },
+        {
+          "file": "Scripts/test_env/storage/step_4_1_cli_stdout/codex_rate_limited.txt",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/tests/test_4_1_env.py",
+          "action": "created",
+          "lines": 364
+        }
+      ]
+    },
+    {
+      "step_id": "4.1",
+      "step_name": "Build the Claude + Codex subscription CLI client",
+      "phase_id": 4,
+      "phase_name": "Dual-LLM Grant Drafting & Verification",
+      "provider_id": "claude_code",
+      "provider_model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "completed_at": "2026-08-24T20:02:35.119Z",
+      "duration_ms": 257649,
+      "success": false,
+      "error": "Claude Code killed (signal SIGTERM) — Cancelled by user (Stop clicked)",
+      "file_changes": [
+        {
+          "file": "Scripts/dualllm_grant_drafting_and_verification/build_the_claude_codex_subscription_cli_client_1.py",
+          "action": "created",
+          "lines": 834
+        },
+        {
+          "file": "Scripts/test_env/api_responses/item_detail.json",
+          "action": "modified",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/test_env/api_responses/users_list.json",
+          "action": "modified",
+          "lines": 24
+        },
+        {
+          "file": "Scripts/test_env/test_api_data.py",
+          "action": "modified",
+          "lines": 60
+        },
+        {
+          "file": "Scripts/test_env/test_env_config.json",
+          "action": "modified",
+          "lines": 27
+        }
+      ]
+    }
+  ]
+}
