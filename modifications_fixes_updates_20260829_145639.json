@@ -1,0 +1,969 @@
+{
+  "schema_version": "2.0.0",
+  "submission_id": "mfu_1788015399612_vcuw78",
+  "generated_at": "2026-08-29T14:56:39.612Z",
+  "extension_version": "3.7.2",
+  "project_name": "Publication_Creation",
+  "machine_id": "machine_setjcq",
+  "total_steps": 5,
+  "total_files_changed": 172,
+  "providers_used": [
+    "codex"
+  ],
+  "report_type": "project",
+  "flags": {
+    "has_extension_issues": false,
+    "has_project_issues": false,
+    "was_cancelled": false,
+    "had_provider_fallback": false,
+    "hit_rate_limit": false
+  },
+  "issues": [],
+  "steps": [
+    {
+      "step_id": "1.1",
+      "step_name": "Create .venv and install aggregated requirements",
+      "phase_id": 1,
+      "phase_name": "Environment, Solution Registry and Subprocess Adapters",
+      "provider_id": "codex",
+      "provider_model": "default",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-28T21:58:51.581Z",
+      "duration_ms": 2810788,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/.env.example",
+          "action": "created",
+          "lines": 4
+        },
+        {
+          "file": "Scripts/environment_solution_registry_and_subprocess_adapt/__init__.py",
+          "action": "created",
+          "lines": 32
+        },
+        {
+          "file": "Scripts/environment_solution_registry_and_subprocess_adapt/create_venv_and_install_aggregated_requirements.py",
+          "action": "created",
+          "lines": 695
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "created",
+          "lines": 25
+        },
+        {
+          "file": "Scripts/tests/test_1_1.py",
+          "action": "created",
+          "lines": 69
+        },
+        {
+          "file": "Scripts/tests/test_1_1_functions.py",
+          "action": "created",
+          "lines": 200
+        },
+        {
+          "file": "Scripts/tests/test_discover_skill_requirement_sources.py",
+          "action": "created",
+          "lines": 602
+        }
+      ]
+    },
+    {
+      "step_id": "1.4",
+      "step_name": "Solution registry loader with loud path resolution",
+      "phase_id": 1,
+      "phase_name": "Environment, Solution Registry and Subprocess Adapters",
+      "provider_id": "codex",
+      "provider_model": "default",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-29T00:29:50.492Z",
+      "duration_ms": 2604788,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/extractor/SKILL.md",
+          "action": "created",
+          "lines": 320
+        },
+        {
+          "file": "Scripts/_skills/extractor/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/extractor/format_output.json",
+          "action": "created",
+          "lines": 422
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/data_cleaner.py",
+          "action": "created",
+          "lines": 319
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/data_standardizer.py",
+          "action": "created",
+          "lines": 187
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/pipeline_orchestrator.py",
+          "action": "created",
+          "lines": 224
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/quality_analyzer.py",
+          "action": "created",
+          "lines": 323
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/report_generator.py",
+          "action": "created",
+          "lines": 550
+        },
+        {
+          "file": "Scripts/_skills/extractor/scripts/requirements.txt",
+          "action": "created",
+          "lines": 5
+        },
+        {
+          "file": "Scripts/_skills/pdf-etl/SKILL.md",
+          "action": "created",
+          "lines": 177
+        },
+        {
+          "file": "Scripts/_skills/pdf-etl/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/pdf-etl-package/SKILL.md",
+          "action": "created",
+          "lines": 177
+        },
+        {
+          "file": "Scripts/_skills/pdf-etl-package/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/simplifier/SKILL.md",
+          "action": "created",
+          "lines": 344
+        },
+        {
+          "file": "Scripts/_skills/simplifier/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/simplifier/format_output.json",
+          "action": "created",
+          "lines": 478
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/content_parser.py",
+          "action": "created",
+          "lines": 617
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/equation_analyzer.py",
+          "action": "created",
+          "lines": 397
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/latex_generator.py",
+          "action": "created",
+          "lines": 509
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/requirements.txt",
+          "action": "created",
+          "lines": 23
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/simplifier_orchestrator.py",
+          "action": "created",
+          "lines": 452
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/table_analyzer.py",
+          "action": "created",
+          "lines": 497
+        },
+        {
+          "file": "Scripts/_skills/simplifier/scripts/web_research.py",
+          "action": "created",
+          "lines": 326
+        },
+        {
+          "file": "Scripts/environment_solution_registry_and_subprocess_adapt/__init__.py",
+          "action": "modified",
+          "lines": 257
+        },
+        {
+          "file": "Scripts/environment_solution_registry_and_subprocess_adapt/solution_registry_loader_contracts.py",
+          "action": "created",
+          "lines": 314
+        },
+        {
+          "file": "Scripts/environment_solution_registry_and_subprocess_adapt/solution_registry_loader_helpers.py",
+          "action": "created",
+          "lines": 376
+        },
+        {
+          "file": "Scripts/environment_solution_registry_and_subprocess_adapt/solution_registry_loader_with_loud_path_resolution.py",
+          "action": "created",
+          "lines": 293
+        },
+        {
+          "file": "Scripts/pubcreate/registry.py",
+          "action": "created",
+          "lines": 42
+        },
+        {
+          "file": "Scripts/requirements.txt",
+          "action": "modified",
+          "lines": 33
+        },
+        {
+          "file": "Scripts/tests/test_1_4.py",
+          "action": "created",
+          "lines": 28
+        },
+        {
+          "file": "Scripts/tests/test_1_4_functions.py",
+          "action": "created",
+          "lines": 217
+        }
+      ]
+    },
+    {
+      "step_id": "2.1",
+      "step_name": "Unify JOURNAL_CONFIGS with real style files",
+      "phase_id": 2,
+      "phase_name": "Venue Format Registry",
+      "provider_id": "codex",
+      "provider_model": "default",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-29T02:15:21.283Z",
+      "duration_ms": 2470145,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/_skills/doc-coauthoring/SKILL.md",
+          "action": "created",
+          "lines": 376
+        },
+        {
+          "file": "Scripts/_skills/doc-coauthoring/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/SKILL.md",
+          "action": "created",
+          "lines": 250
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/scripts/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/scripts/analyzer.py",
+          "action": "created",
+          "lines": 400
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/scripts/compiler.py",
+          "action": "created",
+          "lines": 250
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/scripts/generator.py",
+          "action": "created",
+          "lines": 739
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/scripts/integrator.py",
+          "action": "created",
+          "lines": 246
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/scripts/pipeline.py",
+          "action": "created",
+          "lines": 406
+        },
+        {
+          "file": "Scripts/_skills/supporting-material/scripts/requirements.txt",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/_skills/xlsx/SKILL.md",
+          "action": "created",
+          "lines": 289
+        },
+        {
+          "file": "Scripts/_skills/xlsx/__init__.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/pubcreate/venues.py",
+          "action": "created",
+          "lines": 52
+        },
+        {
+          "file": "Scripts/tests/test_2_1.py",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/tests/test_2_1_build_venue_registry_context.py",
+          "action": "created",
+          "lines": 61
+        },
+        {
+          "file": "Scripts/tests/test_2_1_functions.py",
+          "action": "created",
+          "lines": 164
+        },
+        {
+          "file": "Scripts/tests/test_2_1_merge_real_style_assets.py",
+          "action": "created",
+          "lines": 76
+        },
+        {
+          "file": "Scripts/tests/test_2_1_validate_unified_venue_registry.py",
+          "action": "created",
+          "lines": 93
+        },
+        {
+          "file": "Scripts/tests/test_2_1_write_venue_registry_json.py",
+          "action": "created",
+          "lines": 85
+        },
+        {
+          "file": "Scripts/venue_format_registry/__init__.py",
+          "action": "created",
+          "lines": 48
+        },
+        {
+          "file": "Scripts/venue_format_registry/unify_journalconfigs_with_real_style_files.py",
+          "action": "created",
+          "lines": 616
+        }
+      ]
+    },
+    {
+      "step_id": "6.1",
+      "step_name": "pubcreate CLI with resumable subcommands",
+      "phase_id": 6,
+      "phase_name": "CLI, Streamlit UI and End-to-End Verification",
+      "provider_id": "codex",
+      "provider_model": "default",
+      "task_type": "coding_simple",
+      "completed_at": "2026-08-29T11:52:24.431Z",
+      "duration_ms": 2889933,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/cli_streamlit_ui_and_endtoend_verification/__init__.py",
+          "action": "created",
+          "lines": 32
+        },
+        {
+          "file": "Scripts/cli_streamlit_ui_and_endtoend_verification/pubcreate_cli_with_resumable_subcommands.py",
+          "action": "created",
+          "lines": 655
+        },
+        {
+          "file": "Scripts/pubcreate_cli.py",
+          "action": "created",
+          "lines": 45
+        },
+        {
+          "file": "Scripts/tests/test_6_1.py",
+          "action": "created",
+          "lines": 91
+        },
+        {
+          "file": "Scripts/tests/test_6_1_adapt_stage_result_to_state_patch.py",
+          "action": "created",
+          "lines": 59
+        },
+        {
+          "file": "Scripts/tests/test_6_1_functions.py",
+          "action": "created",
+          "lines": 189
+        },
+        {
+          "file": "Scripts/tests/test_6_1_load_or_initialize_run_state.py",
+          "action": "created",
+          "lines": 93
+        },
+        {
+          "file": "Scripts/tests/test_6_1_persist_run_state_checkpoint.py",
+          "action": "created",
+          "lines": 72
+        },
+        {
+          "file": "Scripts/tests/test_6_1_plan_resumable_stage_execution.py",
+          "action": "created",
+          "lines": 78
+        },
+        {
+          "file": "Scripts/tests/test_6_1_resolve_stage_input_bundle.py",
+          "action": "created",
+          "lines": 73
+        },
+        {
+          "file": "Scripts/tests/test_6_1_validate_run_request.py",
+          "action": "created",
+          "lines": 76
+        }
+      ]
+    },
+    {
+      "step_id": "6.3",
+      "step_name": "Unit and integration test suite with mocked siblings",
+      "phase_id": 6,
+      "phase_name": "CLI, Streamlit UI and End-to-End Verification",
+      "provider_id": "codex",
+      "provider_model": "gpt-5.4-mini",
+      "task_type": "test",
+      "completed_at": "2026-08-29T12:18:58.193Z",
+      "duration_ms": 1593484,
+      "success": true,
+      "file_changes": [
+        {
+          "file": "Scripts/cli_streamlit_ui_and_endtoend_verification/__init__.py",
+          "action": "modified",
+          "lines": 50
+        },
+        {
+          "file": "Scripts/cli_streamlit_ui_and_endtoend_verification/unit_and_integration_test_suite_with_mocked_siblin.py",
+          "action": "created",
+          "lines": 440
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/fixtures/correction_plan.json",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/fixtures/unresolved_citations.json",
+          "action": "created",
+          "lines": 89
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/generated_tests/recorded_siblings/merged_resolved_references.json",
+          "action": "created",
+          "lines": 213
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/generated_tests/recorded_siblings/merged_topic_reference_index.json",
+          "action": "created",
+          "lines": 87
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/generated_tests/recorded_siblings/merged_topics.json",
+          "action": "created",
+          "lines": 33
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/generated_tests/recorded_siblings/reviewer_correction_plan.json",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/generated_tests/recorded_siblings/rewrite_malformed_envelopes.json",
+          "action": "created",
+          "lines": 19
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/generated_tests/recorded_siblings/rewrite_ok_envelope.json",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/generated_tests/recorded_siblings/unresolved_citations.json",
+          "action": "created",
+          "lines": 89
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/generated_tests/test_mocked_cli_tracing.py",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/generated_tests/test_mocked_fail_loud_contracts.py",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/generated_tests/test_mocked_integration_offline.py",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/generated_tests/test_mocked_unit_contracts.py",
+          "action": "created",
+          "lines": 14
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/generated_tests/test_report.json",
+          "action": "created",
+          "lines": 221
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/mock_modules/fact_guard.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/mock_modules/registry.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/mock_modules/rewrite_me.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_integration/mock_modules/venue_validator.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/context_success/fixture_shapes/correction_plan.json",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/context_success/fixture_shapes/unresolved_citations.json",
+          "action": "created",
+          "lines": 89
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/context_success/mock_modules/fact_guard.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/context_success/mock_modules/registry.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/context_success/mock_modules/rewrite_me.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/context_success/mock_modules/venue_validator.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/fixtures_success/fixture_shapes/correction_plan.json",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/fixtures_success/fixture_shapes/unresolved_citations.json",
+          "action": "created",
+          "lines": 89
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/fixtures_success/generated_tests/recorded_siblings/merged_resolved_references.json",
+          "action": "created",
+          "lines": 213
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/fixtures_success/generated_tests/recorded_siblings/merged_topic_reference_index.json",
+          "action": "created",
+          "lines": 87
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/fixtures_success/generated_tests/recorded_siblings/merged_topics.json",
+          "action": "created",
+          "lines": 33
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/fixtures_success/generated_tests/recorded_siblings/reviewer_correction_plan.json",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/fixtures_success/generated_tests/recorded_siblings/rewrite_malformed_envelopes.json",
+          "action": "created",
+          "lines": 19
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/fixtures_success/generated_tests/recorded_siblings/rewrite_ok_envelope.json",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/fixtures_success/generated_tests/recorded_siblings/unresolved_citations.json",
+          "action": "created",
+          "lines": 89
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/fixtures_success/mock_modules/fact_guard.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/fixtures_success/mock_modules/registry.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/fixtures_success/mock_modules/rewrite_me.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/fixtures_success/mock_modules/venue_validator.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/plan_failure/fixture_shapes/correction_plan.json",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/plan_failure/fixture_shapes/unresolved_citations.json",
+          "action": "created",
+          "lines": 89
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/plan_failure/generated_tests/recorded_siblings/merged_resolved_references.json",
+          "action": "created",
+          "lines": 213
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/plan_failure/generated_tests/recorded_siblings/merged_topic_reference_index.json",
+          "action": "created",
+          "lines": 87
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/plan_failure/generated_tests/recorded_siblings/merged_topics.json",
+          "action": "created",
+          "lines": 33
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/plan_failure/generated_tests/recorded_siblings/reviewer_correction_plan.json",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/plan_failure/generated_tests/recorded_siblings/rewrite_malformed_envelopes.json",
+          "action": "created",
+          "lines": 19
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/plan_failure/generated_tests/recorded_siblings/rewrite_ok_envelope.json",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/plan_failure/generated_tests/recorded_siblings/unresolved_citations.json",
+          "action": "created",
+          "lines": 89
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/plan_failure/mock_modules/fact_guard.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/plan_failure/mock_modules/registry.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/plan_failure/mock_modules/rewrite_me.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/plan_failure/mock_modules/venue_validator.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/fixture_shapes/correction_plan.json",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/fixture_shapes/unresolved_citations.json",
+          "action": "created",
+          "lines": 89
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/generated_tests/recorded_siblings/merged_resolved_references.json",
+          "action": "created",
+          "lines": 213
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/generated_tests/recorded_siblings/merged_topic_reference_index.json",
+          "action": "created",
+          "lines": 87
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/generated_tests/recorded_siblings/merged_topics.json",
+          "action": "created",
+          "lines": 33
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/generated_tests/recorded_siblings/reviewer_correction_plan.json",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/generated_tests/recorded_siblings/rewrite_malformed_envelopes.json",
+          "action": "created",
+          "lines": 19
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/generated_tests/recorded_siblings/rewrite_ok_envelope.json",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/generated_tests/recorded_siblings/unresolved_citations.json",
+          "action": "created",
+          "lines": 89
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/generated_tests/test_mocked_cli_tracing.py",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/generated_tests/test_mocked_fail_loud_contracts.py",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/generated_tests/test_mocked_integration_offline.py",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/generated_tests/test_mocked_unit_contracts.py",
+          "action": "created",
+          "lines": 14
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/generated_tests/test_report.json",
+          "action": "created",
+          "lines": 42
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/mock_modules/fact_guard.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/mock_modules/registry.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/mock_modules/rewrite_me.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/run_suite/mock_modules/venue_validator.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_report/test_report.json",
+          "action": "created",
+          "lines": 221
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_suite/fixture_shapes/correction_plan.json",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_suite/fixture_shapes/unresolved_citations.json",
+          "action": "created",
+          "lines": 89
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_suite/generated_tests/recorded_siblings/merged_resolved_references.json",
+          "action": "created",
+          "lines": 213
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_suite/generated_tests/recorded_siblings/merged_topic_reference_index.json",
+          "action": "created",
+          "lines": 87
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_suite/generated_tests/recorded_siblings/merged_topics.json",
+          "action": "created",
+          "lines": 33
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_suite/generated_tests/recorded_siblings/reviewer_correction_plan.json",
+          "action": "created",
+          "lines": 71
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_suite/generated_tests/recorded_siblings/rewrite_malformed_envelopes.json",
+          "action": "created",
+          "lines": 19
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_suite/generated_tests/recorded_siblings/rewrite_ok_envelope.json",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_suite/generated_tests/recorded_siblings/unresolved_citations.json",
+          "action": "created",
+          "lines": 89
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_suite/generated_tests/test_mocked_cli_tracing.py",
+          "action": "created",
+          "lines": 16
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_suite/generated_tests/test_mocked_fail_loud_contracts.py",
+          "action": "created",
+          "lines": 13
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_suite/generated_tests/test_mocked_integration_offline.py",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_suite/generated_tests/test_mocked_unit_contracts.py",
+          "action": "created",
+          "lines": 14
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_suite/mock_modules/fact_guard.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_suite/mock_modules/registry.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_suite/mock_modules/rewrite_me.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_6_3_runtime/write_suite/mock_modules/venue_validator.py",
+          "action": "created",
+          "lines": 2
+        },
+        {
+          "file": "Scripts/tests/_tmp_recorded_smoke/recorded_siblings/merged_resolved_references.json",
+          "action": "created",
+          "lines": 213
+        },
+        {
+          "file": "Scripts/tests/_tmp_recorded_smoke/recorded_siblings/merged_topic_reference_index.json",
+          "action": "created",
+          "lines": 87
+        },
+        {
+          "file": "Scripts/tests/_tmp_recorded_smoke/recorded_siblings/merged_topics.json",
+          "action": "created",
+          "lines": 33
+        },
+        {
+          "file": "Scripts/tests/_tmp_recorded_smoke/recorded_siblings/reviewer_correction_plan.json",
+          "action": "created",
+          "lines": 10
+        },
+        {
+          "file": "Scripts/tests/_tmp_recorded_smoke/recorded_siblings/rewrite_malformed_envelopes.json",
+          "action": "created",
+          "lines": 19
+        },
+        {
+          "file": "Scripts/tests/_tmp_recorded_smoke/recorded_siblings/rewrite_ok_envelope.json",
+          "action": "created",
+          "lines": 17
+        },
+        {
+          "file": "Scripts/tests/_tmp_recorded_smoke/recorded_siblings/unresolved_citations.json",
+          "action": "created",
+          "lines": 11
+        },
+        {
+          "file": "Scripts/tests/_tmp_recorded_smoke/shape_corrections.json",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/tests/_tmp_recorded_smoke/shape_unresolved.json",
+          "action": "created",
+          "lines": 1
+        },
+        {
+          "file": "Scripts/tests/_tmp_write_report/test_report.json",
+          "action": "created",
+          "lines": 52
+        },
+        {
+          "file": "Scripts/tests/readline.py",
+          "action": "created",
+          "lines": 8
+        },
+        {
+          "file": "Scripts/tests/test_6_3.py",
+          "action": "created",
+          "lines": 89
+        },
+        {
+          "file": "Scripts/tests/test_6_3_functions.py",
+          "action": "created",
+          "lines": 209
+        },
+        {
+          "file": "Scripts/tests/test_report.json",
+          "action": "created",
+          "lines": 221
+        }
+      ]
+    }
+  ]
+}
