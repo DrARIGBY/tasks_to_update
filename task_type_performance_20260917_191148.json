@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-09-17T19:11:48.197Z",
+  "extension_version": "3.13.3",
+  "machine_id": "machine_setjcq",
+  "stats": [
+    {
+      "provider_id": "codex",
+      "model": "default",
+      "task_type": "coding_simple",
+      "selections": 12,
+      "successes": 12,
+      "failures": 0,
+      "avg_duration_s": 394.8,
+      "total_duration_ms": 4737113
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-opus-5",
+      "task_type": "plan",
+      "selections": 3,
+      "successes": 3,
+      "failures": 0,
+      "avg_duration_s": 329.4,
+      "total_duration_ms": 988282
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-code",
+      "task_type": "unknown",
+      "selections": 1,
+      "successes": 0,
+      "failures": 1,
+      "avg_duration_s": 0,
+      "total_duration_ms": 0
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-opus-5",
+      "task_type": "coding_complex",
+      "selections": 17,
+      "successes": 17,
+      "failures": 0,
+      "avg_duration_s": 644.2,
+      "total_duration_ms": 10952186
+    },
+    {
+      "provider_id": "codex",
+      "model": "gpt-5.4-mini",
+      "task_type": "test",
+      "selections": 3,
+      "successes": 3,
+      "failures": 0,
+      "avg_duration_s": 533.4,
+      "total_duration_ms": 1600054
+    },
+    {
+      "provider_id": "claude_code",
+      "model": "claude-opus-5",
+      "task_type": "analyze",
+      "selections": 1,
+      "successes": 1,
+      "failures": 0,
+      "avg_duration_s": 844,
+      "total_duration_ms": 844042
+    },
+    {
+      "provider_id": "codex",
+      "model": "gpt-5.4",
+      "task_type": "validate",
+      "selections": 1,
+      "successes": 1,
+      "failures": 0,
+      "avg_duration_s": 419.6,
+      "total_duration_ms": 419644
+    },
+    {
+      "provider_id": "codex",
+      "model": "default",
+      "task_type": "report",
+      "selections": 1,
+      "successes": 1,
+      "failures": 0,
+      "avg_duration_s": 406.5,
+      "total_duration_ms": 406530
+    }
+  ]
+}
